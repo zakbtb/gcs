@@ -1,0 +1,950 @@
+{
+  "_aide": "Prix TTC en euros. Un prix peut être : un nombre (ex. 89), un objet avec plusieurs qualités (ex. {\"Qualité compatible\": 89, \"Qualité origine\": 149}) ou null pour afficher « Sur devis ». Pour retirer une réparation d'un modèle, supprimez la ligne. Pour ajouter une marque, copiez le bloc « apple » dans « marques » et changez id, nom et modeles.",
+  "devise": "EUR",
+  "reparations": {
+    "ecran": {
+      "nom": "Écran",
+      "description": "Écran cassé, tactile défaillant, taches ou lignes. Remplacement de l'écran complet.",
+      "duree": "30 à 45 min",
+      "icone": "smartphone"
+    },
+    "batterie": {
+      "nom": "Batterie",
+      "description": "Autonomie en baisse, extinctions soudaines ou batterie gonflée.",
+      "duree": "20 à 30 min",
+      "icone": "battery"
+    },
+    "camera-arriere": {
+      "nom": "Caméra arrière",
+      "description": "Photos floues, tâches, mise au point ou stabilisation défaillante.",
+      "duree": "30 min",
+      "icone": "camera"
+    },
+    "camera-avant": {
+      "nom": "Caméra avant",
+      "description": "Caméra selfie noire, floue ou qui ne s'ouvre plus.",
+      "duree": "30 à 45 min",
+      "icone": "scan-face"
+    },
+    "lentille-camera": {
+      "nom": "Lentille de caméra",
+      "description": "Verre de protection de l'objectif fissuré ou rayé.",
+      "duree": "20 min",
+      "icone": "aperture"
+    },
+    "connecteur-charge": {
+      "nom": "Connecteur de charge",
+      "description": "Le téléphone ne charge plus ou seulement en tenant le câble.",
+      "duree": "30 à 45 min",
+      "icone": "plug"
+    },
+    "vitre-arriere": {
+      "nom": "Vitre arrière",
+      "description": "Dos en verre fissuré ou éclaté, remplacé au laser.",
+      "duree": "1 à 2 h",
+      "icone": "layers"
+    },
+    "haut-parleur": {
+      "nom": "Haut-parleur",
+      "description": "Son faible, grésillements ou plus de son en mains-libres.",
+      "duree": "30 min",
+      "icone": "volume-2"
+    },
+    "ecouteur-interne": {
+      "nom": "Écouteur interne",
+      "description": "Vous n'entendez plus vos correspondants pendant les appels.",
+      "duree": "30 à 45 min",
+      "icone": "ear"
+    },
+    "boutons": {
+      "nom": "Boutons (power / volume)",
+      "description": "Bouton bloqué, enfoncé ou qui ne répond plus.",
+      "duree": "45 min",
+      "icone": "toggle-right"
+    },
+    "desoxydation": {
+      "nom": "Désoxydation",
+      "description": "Chute dans l'eau ou liquide renversé : nettoyage en profondeur de la carte mère.",
+      "duree": "24 à 48 h",
+      "icone": "droplets"
+    },
+    "micro-soudure": {
+      "nom": "Micro-soudure / carte mère",
+      "description": "Panne de carte mère, puce audio, rétroéclairage, Face ID… Réparation au microscope.",
+      "duree": "Sur diagnostic",
+      "icone": "cpu"
+    }
+  },
+  "marques": [
+    {
+      "id": "apple",
+      "nom": "Apple",
+      "modeles": [
+        {
+          "id": "iphone-18-pro-max",
+          "nom": "iPhone 18 Pro Max",
+          "annee": 2026,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 274,
+              "Qualité origine": 494
+            },
+            "batterie": 104,
+            "camera-arriere": 229,
+            "camera-avant": 134,
+            "lentille-camera": 54,
+            "connecteur-charge": 109,
+            "vitre-arriere": null,
+            "haut-parleur": 84,
+            "ecouteur-interne": 84,
+            "boutons": 84,
+            "desoxydation": 84,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-18-pro",
+          "nom": "iPhone 18 Pro",
+          "annee": 2026,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 264,
+              "Qualité origine": 474
+            },
+            "batterie": 99,
+            "camera-arriere": 219,
+            "camera-avant": 129,
+            "lentille-camera": 54,
+            "connecteur-charge": 109,
+            "vitre-arriere": null,
+            "haut-parleur": 79,
+            "ecouteur-interne": 79,
+            "boutons": 79,
+            "desoxydation": 84,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-17e",
+          "nom": "iPhone 17e",
+          "annee": 2026,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 189,
+              "Qualité origine": 339
+            },
+            "batterie": 79,
+            "camera-arriere": 149,
+            "camera-avant": 99,
+            "lentille-camera": 44,
+            "connecteur-charge": 89,
+            "vitre-arriere": null,
+            "haut-parleur": 64,
+            "ecouteur-interne": 64,
+            "boutons": 64,
+            "desoxydation": 69,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-17-pro-max",
+          "nom": "iPhone 17 Pro Max",
+          "annee": 2025,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 249,
+              "Qualité origine": 449
+            },
+            "batterie": 94,
+            "camera-arriere": 214,
+            "camera-avant": 124,
+            "lentille-camera": 54,
+            "connecteur-charge": 104,
+            "vitre-arriere": 169,
+            "haut-parleur": 79,
+            "ecouteur-interne": 79,
+            "boutons": 79,
+            "desoxydation": 79,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-17-pro",
+          "nom": "iPhone 17 Pro",
+          "annee": 2025,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 239,
+              "Qualité origine": 429
+            },
+            "batterie": 94,
+            "camera-arriere": 204,
+            "camera-avant": 119,
+            "lentille-camera": 49,
+            "connecteur-charge": 99,
+            "vitre-arriere": 164,
+            "haut-parleur": 74,
+            "ecouteur-interne": 74,
+            "boutons": 74,
+            "desoxydation": 79,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-air",
+          "nom": "iPhone Air",
+          "annee": 2025,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 224,
+              "Qualité origine": 404
+            },
+            "batterie": 89,
+            "camera-arriere": 174,
+            "camera-avant": 114,
+            "lentille-camera": 49,
+            "connecteur-charge": 99,
+            "vitre-arriere": 154,
+            "haut-parleur": 74,
+            "ecouteur-interne": 74,
+            "boutons": 74,
+            "desoxydation": 74,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-17",
+          "nom": "iPhone 17",
+          "annee": 2025,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 214,
+              "Qualité origine": 384
+            },
+            "batterie": 84,
+            "camera-arriere": 164,
+            "camera-avant": 109,
+            "lentille-camera": 49,
+            "connecteur-charge": 94,
+            "vitre-arriere": 149,
+            "haut-parleur": 69,
+            "ecouteur-interne": 69,
+            "boutons": 69,
+            "desoxydation": 74,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-16-pro-max",
+          "nom": "iPhone 16 Pro Max",
+          "annee": 2024,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 224,
+              "Qualité origine": 404
+            },
+            "batterie": 89,
+            "camera-arriere": 194,
+            "camera-avant": 114,
+            "lentille-camera": 49,
+            "connecteur-charge": 99,
+            "vitre-arriere": 154,
+            "haut-parleur": 74,
+            "ecouteur-interne": 74,
+            "boutons": 74,
+            "desoxydation": 74,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-16-pro",
+          "nom": "iPhone 16 Pro",
+          "annee": 2024,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 214,
+              "Qualité origine": 384
+            },
+            "batterie": 84,
+            "camera-arriere": 184,
+            "camera-avant": 109,
+            "lentille-camera": 49,
+            "connecteur-charge": 94,
+            "vitre-arriere": 149,
+            "haut-parleur": 69,
+            "ecouteur-interne": 69,
+            "boutons": 69,
+            "desoxydation": 74,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-16-plus",
+          "nom": "iPhone 16 Plus",
+          "annee": 2024,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 204,
+              "Qualité origine": 364
+            },
+            "batterie": 84,
+            "camera-arriere": 154,
+            "camera-avant": 104,
+            "lentille-camera": 44,
+            "connecteur-charge": 89,
+            "vitre-arriere": 144,
+            "haut-parleur": 69,
+            "ecouteur-interne": 69,
+            "boutons": 69,
+            "desoxydation": 74,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-16",
+          "nom": "iPhone 16",
+          "annee": 2024,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 189,
+              "Qualité origine": 339
+            },
+            "batterie": 79,
+            "camera-arriere": 149,
+            "camera-avant": 99,
+            "lentille-camera": 44,
+            "connecteur-charge": 89,
+            "vitre-arriere": 134,
+            "haut-parleur": 64,
+            "ecouteur-interne": 64,
+            "boutons": 64,
+            "desoxydation": 69,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-16e",
+          "nom": "iPhone 16e",
+          "annee": 2025,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 164,
+              "Qualité origine": 294
+            },
+            "batterie": 74,
+            "camera-arriere": 129,
+            "camera-avant": 89,
+            "lentille-camera": 39,
+            "connecteur-charge": 79,
+            "vitre-arriere": 119,
+            "haut-parleur": 59,
+            "ecouteur-interne": 59,
+            "boutons": 59,
+            "desoxydation": 64,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-15-pro-max",
+          "nom": "iPhone 15 Pro Max",
+          "annee": 2023,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 204,
+              "Qualité origine": 364
+            },
+            "batterie": 84,
+            "camera-arriere": 174,
+            "camera-avant": 104,
+            "lentille-camera": 44,
+            "connecteur-charge": 89,
+            "vitre-arriere": 144,
+            "haut-parleur": 69,
+            "ecouteur-interne": 69,
+            "boutons": 69,
+            "desoxydation": 74,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-15-pro",
+          "nom": "iPhone 15 Pro",
+          "annee": 2023,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 189,
+              "Qualité origine": 339
+            },
+            "batterie": 79,
+            "camera-arriere": 169,
+            "camera-avant": 99,
+            "lentille-camera": 44,
+            "connecteur-charge": 89,
+            "vitre-arriere": 134,
+            "haut-parleur": 64,
+            "ecouteur-interne": 64,
+            "boutons": 64,
+            "desoxydation": 69,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-15-plus",
+          "nom": "iPhone 15 Plus",
+          "annee": 2023,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 179,
+              "Qualité origine": 319
+            },
+            "batterie": 74,
+            "camera-arriere": 139,
+            "camera-avant": 94,
+            "lentille-camera": 44,
+            "connecteur-charge": 84,
+            "vitre-arriere": 129,
+            "haut-parleur": 64,
+            "ecouteur-interne": 64,
+            "boutons": 64,
+            "desoxydation": 69,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-15",
+          "nom": "iPhone 15",
+          "annee": 2023,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 164,
+              "Qualité origine": 294
+            },
+            "batterie": 74,
+            "camera-arriere": 129,
+            "camera-avant": 89,
+            "lentille-camera": 39,
+            "connecteur-charge": 79,
+            "vitre-arriere": 119,
+            "haut-parleur": 59,
+            "ecouteur-interne": 59,
+            "boutons": 59,
+            "desoxydation": 64,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-14-pro-max",
+          "nom": "iPhone 14 Pro Max",
+          "annee": 2022,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 179,
+              "Qualité origine": 319
+            },
+            "batterie": 74,
+            "camera-arriere": 159,
+            "camera-avant": 94,
+            "lentille-camera": 44,
+            "connecteur-charge": 84,
+            "vitre-arriere": 129,
+            "haut-parleur": 64,
+            "ecouteur-interne": 64,
+            "boutons": 64,
+            "desoxydation": 69,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-14-pro",
+          "nom": "iPhone 14 Pro",
+          "annee": 2022,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 164,
+              "Qualité origine": 294
+            },
+            "batterie": 74,
+            "camera-arriere": 149,
+            "camera-avant": 89,
+            "lentille-camera": 39,
+            "connecteur-charge": 79,
+            "vitre-arriere": 119,
+            "haut-parleur": 59,
+            "ecouteur-interne": 59,
+            "boutons": 59,
+            "desoxydation": 64,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-14-plus",
+          "nom": "iPhone 14 Plus",
+          "annee": 2022,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 154,
+              "Qualité origine": 274
+            },
+            "batterie": 69,
+            "camera-arriere": 119,
+            "camera-avant": 84,
+            "lentille-camera": 39,
+            "connecteur-charge": 74,
+            "vitre-arriere": 114,
+            "haut-parleur": 59,
+            "ecouteur-interne": 59,
+            "boutons": 59,
+            "desoxydation": 64,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-14",
+          "nom": "iPhone 14",
+          "annee": 2022,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 144,
+              "Qualité origine": 254
+            },
+            "batterie": 64,
+            "camera-arriere": 109,
+            "camera-avant": 79,
+            "lentille-camera": 39,
+            "connecteur-charge": 74,
+            "vitre-arriere": 109,
+            "haut-parleur": 54,
+            "ecouteur-interne": 54,
+            "boutons": 54,
+            "desoxydation": 64,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-13-pro-max",
+          "nom": "iPhone 13 Pro Max",
+          "annee": 2021,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 154,
+              "Qualité origine": 274
+            },
+            "batterie": 69,
+            "camera-arriere": 139,
+            "camera-avant": 84,
+            "lentille-camera": 39,
+            "connecteur-charge": 74,
+            "vitre-arriere": 114,
+            "haut-parleur": 59,
+            "ecouteur-interne": 59,
+            "boutons": 59,
+            "desoxydation": 64,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-13-pro",
+          "nom": "iPhone 13 Pro",
+          "annee": 2021,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 144,
+              "Qualité origine": 254
+            },
+            "batterie": 64,
+            "camera-arriere": 129,
+            "camera-avant": 79,
+            "lentille-camera": 39,
+            "connecteur-charge": 74,
+            "vitre-arriere": 109,
+            "haut-parleur": 54,
+            "ecouteur-interne": 54,
+            "boutons": 54,
+            "desoxydation": 64,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-13",
+          "nom": "iPhone 13",
+          "annee": 2021,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 129,
+              "Qualité origine": 229
+            },
+            "batterie": 64,
+            "camera-arriere": 104,
+            "camera-avant": 74,
+            "lentille-camera": 39,
+            "connecteur-charge": 69,
+            "vitre-arriere": 99,
+            "haut-parleur": 54,
+            "ecouteur-interne": 54,
+            "boutons": 54,
+            "desoxydation": 59,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-13-mini",
+          "nom": "iPhone 13 mini",
+          "annee": 2021,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 119,
+              "Qualité origine": 209
+            },
+            "batterie": 59,
+            "camera-arriere": 94,
+            "camera-avant": 69,
+            "lentille-camera": 34,
+            "connecteur-charge": 64,
+            "vitre-arriere": 94,
+            "haut-parleur": 49,
+            "ecouteur-interne": 49,
+            "boutons": 49,
+            "desoxydation": 59,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-12-pro-max",
+          "nom": "iPhone 12 Pro Max",
+          "annee": 2020,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 129,
+              "Qualité origine": 229
+            },
+            "batterie": 64,
+            "camera-arriere": 124,
+            "camera-avant": 74,
+            "lentille-camera": 39,
+            "connecteur-charge": 69,
+            "vitre-arriere": 99,
+            "haut-parleur": 54,
+            "ecouteur-interne": 54,
+            "boutons": 54,
+            "desoxydation": 59,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-12-pro",
+          "nom": "iPhone 12 Pro",
+          "annee": 2020,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 119,
+              "Qualité origine": 209
+            },
+            "batterie": 59,
+            "camera-arriere": 114,
+            "camera-avant": 69,
+            "lentille-camera": 34,
+            "connecteur-charge": 64,
+            "vitre-arriere": 94,
+            "haut-parleur": 49,
+            "ecouteur-interne": 49,
+            "boutons": 49,
+            "desoxydation": 59,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-12",
+          "nom": "iPhone 12",
+          "annee": 2020,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 119,
+              "Qualité origine": 209
+            },
+            "batterie": 59,
+            "camera-arriere": 94,
+            "camera-avant": 69,
+            "lentille-camera": 34,
+            "connecteur-charge": 64,
+            "vitre-arriere": 94,
+            "haut-parleur": 49,
+            "ecouteur-interne": 49,
+            "boutons": 49,
+            "desoxydation": 59,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-12-mini",
+          "nom": "iPhone 12 mini",
+          "annee": 2020,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 104,
+              "Qualité origine": 184
+            },
+            "batterie": 59,
+            "camera-arriere": 84,
+            "camera-avant": 64,
+            "lentille-camera": 34,
+            "connecteur-charge": 64,
+            "vitre-arriere": 84,
+            "haut-parleur": 49,
+            "ecouteur-interne": 49,
+            "boutons": 49,
+            "desoxydation": 54,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-11-pro-max",
+          "nom": "iPhone 11 Pro Max",
+          "annee": 2019,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 119,
+              "Qualité origine": 209
+            },
+            "batterie": 59,
+            "camera-arriere": 114,
+            "camera-avant": 69,
+            "lentille-camera": 34,
+            "connecteur-charge": 64,
+            "vitre-arriere": 94,
+            "haut-parleur": 49,
+            "ecouteur-interne": 49,
+            "boutons": 49,
+            "desoxydation": 59,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-11-pro",
+          "nom": "iPhone 11 Pro",
+          "annee": 2019,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 104,
+              "Qualité origine": 184
+            },
+            "batterie": 59,
+            "camera-arriere": 104,
+            "camera-avant": 64,
+            "lentille-camera": 34,
+            "connecteur-charge": 64,
+            "vitre-arriere": 84,
+            "haut-parleur": 49,
+            "ecouteur-interne": 49,
+            "boutons": 49,
+            "desoxydation": 54,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-11",
+          "nom": "iPhone 11",
+          "annee": 2019,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 94,
+              "Qualité origine": 164
+            },
+            "batterie": 54,
+            "camera-arriere": 74,
+            "camera-avant": 59,
+            "lentille-camera": 34,
+            "connecteur-charge": 59,
+            "vitre-arriere": 79,
+            "haut-parleur": 44,
+            "ecouteur-interne": 44,
+            "boutons": 44,
+            "desoxydation": 54,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-xs-max",
+          "nom": "iPhone XS Max",
+          "annee": 2018,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 104,
+              "Qualité origine": 184
+            },
+            "batterie": 59,
+            "camera-arriere": 84,
+            "camera-avant": 64,
+            "lentille-camera": 34,
+            "connecteur-charge": 64,
+            "vitre-arriere": 84,
+            "haut-parleur": 49,
+            "ecouteur-interne": 49,
+            "boutons": 49,
+            "desoxydation": 54,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-xs",
+          "nom": "iPhone XS",
+          "annee": 2018,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 94,
+              "Qualité origine": 164
+            },
+            "batterie": 54,
+            "camera-arriere": 74,
+            "camera-avant": 59,
+            "lentille-camera": 34,
+            "connecteur-charge": 59,
+            "vitre-arriere": 79,
+            "haut-parleur": 44,
+            "ecouteur-interne": 44,
+            "boutons": 44,
+            "desoxydation": 54,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-xr",
+          "nom": "iPhone XR",
+          "annee": 2018,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 84,
+              "Qualité origine": 144
+            },
+            "batterie": 49,
+            "camera-arriere": 64,
+            "camera-avant": 54,
+            "lentille-camera": 29,
+            "connecteur-charge": 54,
+            "vitre-arriere": 74,
+            "haut-parleur": 44,
+            "ecouteur-interne": 44,
+            "boutons": 44,
+            "desoxydation": 54,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-x",
+          "nom": "iPhone X",
+          "annee": 2017,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 84,
+              "Qualité origine": 144
+            },
+            "batterie": 49,
+            "camera-arriere": 64,
+            "camera-avant": 54,
+            "lentille-camera": 29,
+            "connecteur-charge": 54,
+            "vitre-arriere": 74,
+            "haut-parleur": 44,
+            "ecouteur-interne": 44,
+            "boutons": 44,
+            "desoxydation": 54,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-se-2022",
+          "nom": "iPhone SE (2022)",
+          "annee": 2022,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 69,
+              "Qualité origine": 119
+            },
+            "batterie": 49,
+            "camera-arriere": 59,
+            "camera-avant": 49,
+            "lentille-camera": 29,
+            "connecteur-charge": 49,
+            "vitre-arriere": 64,
+            "haut-parleur": 39,
+            "ecouteur-interne": 39,
+            "boutons": 39,
+            "desoxydation": 49,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-se-2020",
+          "nom": "iPhone SE (2020)",
+          "annee": 2020,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 59,
+              "Qualité origine": 99
+            },
+            "batterie": 44,
+            "camera-arriere": 49,
+            "camera-avant": 44,
+            "lentille-camera": 29,
+            "connecteur-charge": 49,
+            "vitre-arriere": 59,
+            "haut-parleur": 39,
+            "ecouteur-interne": 39,
+            "boutons": 39,
+            "desoxydation": 49,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-8-plus",
+          "nom": "iPhone 8 Plus",
+          "annee": 2017,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 69,
+              "Qualité origine": 119
+            },
+            "batterie": 49,
+            "camera-arriere": 59,
+            "camera-avant": 49,
+            "lentille-camera": 29,
+            "connecteur-charge": 49,
+            "vitre-arriere": 64,
+            "haut-parleur": 39,
+            "ecouteur-interne": 39,
+            "boutons": 39,
+            "desoxydation": 49,
+            "micro-soudure": null
+          }
+        },
+        {
+          "id": "iphone-8",
+          "nom": "iPhone 8",
+          "annee": 2017,
+          "prix": {
+            "ecran": {
+              "Qualité compatible": 59,
+              "Qualité origine": 99
+            },
+            "batterie": 44,
+            "camera-arriere": 49,
+            "camera-avant": 44,
+            "lentille-camera": 29,
+            "connecteur-charge": 49,
+            "vitre-arriere": 59,
+            "haut-parleur": 39,
+            "ecouteur-interne": 39,
+            "boutons": 39,
+            "desoxydation": 49,
+            "micro-soudure": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "samsung",
+      "nom": "Samsung",
+      "bientot": true,
+      "modeles": []
+    }
+  ]
+}

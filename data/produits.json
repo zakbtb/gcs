@@ -1,0 +1,1457 @@
+{
+  "_aide": "Catalogue de la boutique. Vous pouvez modifier ce fichier directement OU utiliser l'espace admin (/admin). Prix TTC en euros. 'stock' : quantité disponible (si le produit a des 'variantes', c'est le stock de chaque variante qui compte). 'actif': false masque le produit.",
+  "categories": [
+    {
+      "id": "chargeurs",
+      "nom": "Chargeurs",
+      "description": "Chargeurs secteur, voiture et sans fil."
+    },
+    {
+      "id": "cables",
+      "nom": "Câbles",
+      "description": "Lightning, USB-C, 3 en 1 : des câbles qui durent."
+    },
+    {
+      "id": "coques",
+      "nom": "Coques",
+      "description": "Protection et style pour votre iPhone."
+    },
+    {
+      "id": "protections",
+      "nom": "Protections d'écran & hydrogel",
+      "description": "Verre trempé et films hydrogel posés en boutique."
+    },
+    {
+      "id": "batteries-externes",
+      "nom": "Batteries externes",
+      "description": "De l'énergie partout, tout le temps."
+    },
+    {
+      "id": "ecouteurs",
+      "nom": "Écouteurs & audio",
+      "description": "Sans fil, filaires et casques."
+    }
+  ],
+  "produits": [
+    {
+      "id": "chargeur-usb-c-20w",
+      "slug": "chargeur-usb-c-20w",
+      "nom": "Chargeur secteur USB-C 20 W",
+      "categorie": "chargeurs",
+      "marque": "GCS Essentials",
+      "prix": 19.9,
+      "description": "Charge rapide Power Delivery : 50 % d'un iPhone en 30 minutes.",
+      "descriptionLongue": "Compact et léger, ce chargeur USB-C Power Delivery 20 W recharge votre iPhone jusqu'à 50 % en une trentaine de minutes. Protections intégrées contre la surchauffe, les surtensions et les courts-circuits. Compatible avec tous les appareils USB-C (iPhone, iPad, Samsung, écouteurs…).",
+      "images": [
+        "/images/produits/chargeur-usb-c-20w-1.svg",
+        "/images/produits/chargeur-usb-c-20w-2.svg"
+      ],
+      "compatibilite": [
+        "iPhone 8 et +",
+        "Samsung",
+        "Universel USB-C"
+      ],
+      "caracteristiques": {
+        "Puissance": "20 W",
+        "Port": "1 × USB-C",
+        "Norme": "USB Power Delivery 3.0",
+        "Garantie": "2 ans"
+      },
+      "options": [
+        {
+          "nom": "Couleur",
+          "valeurs": [
+            "Blanc",
+            "Noir"
+          ]
+        }
+      ],
+      "variantes": [
+        {
+          "id": "blanc",
+          "options": {
+            "Couleur": "Blanc"
+          },
+          "stock": 15,
+          "image": "/images/produits/chargeur-usb-c-20w-1.svg"
+        },
+        {
+          "id": "noir",
+          "options": {
+            "Couleur": "Noir"
+          },
+          "stock": 15,
+          "image": "/images/produits/chargeur-usb-c-20w-2.svg"
+        }
+      ],
+      "misEnAvant": true,
+      "actif": true
+    },
+    {
+      "id": "chargeur-gan-65w",
+      "slug": "chargeur-gan-65w",
+      "nom": "Chargeur GaN 65 W 3 ports",
+      "categorie": "chargeurs",
+      "marque": "GCS Essentials",
+      "prix": 44.9,
+      "prixBarre": 54.9,
+      "description": "Un seul chargeur pour téléphone, tablette et ordinateur portable.",
+      "descriptionLongue": "Grâce à la technologie GaN (nitrure de gallium), ce chargeur 65 W est jusqu'à 40 % plus petit qu'un chargeur classique. Ses deux ports USB-C et son port USB-A permettent de charger trois appareils simultanément, y compris un MacBook Air ou un PC portable USB-C.",
+      "images": [
+        "/images/produits/chargeur-gan-65w-1.svg",
+        "/images/produits/chargeur-gan-65w-2.svg"
+      ],
+      "compatibilite": [
+        "Universel USB-C",
+        "Ordinateurs USB-C"
+      ],
+      "caracteristiques": {
+        "Puissance max.": "65 W",
+        "Ports": "2 × USB-C + 1 × USB-A",
+        "Technologie": "GaN",
+        "Garantie": "2 ans"
+      },
+      "options": [
+        {
+          "nom": "Couleur",
+          "valeurs": [
+            "Blanc",
+            "Noir"
+          ]
+        }
+      ],
+      "variantes": [
+        {
+          "id": "blanc",
+          "options": {
+            "Couleur": "Blanc"
+          },
+          "stock": 8,
+          "image": "/images/produits/chargeur-gan-65w-1.svg"
+        },
+        {
+          "id": "noir",
+          "options": {
+            "Couleur": "Noir"
+          },
+          "stock": 8,
+          "image": "/images/produits/chargeur-gan-65w-2.svg"
+        }
+      ],
+      "misEnAvant": false,
+      "actif": true
+    },
+    {
+      "id": "chargeur-voiture-38w",
+      "slug": "chargeur-voiture-38w",
+      "nom": "Chargeur allume-cigare 38 W",
+      "categorie": "chargeurs",
+      "marque": "GCS Essentials",
+      "prix": 17.9,
+      "description": "Charge rapide en voiture, USB-C + USB-A.",
+      "descriptionLongue": "Chargeur voiture double port (USB-C PD 20 W + USB-A QC 18 W) pour recharger deux appareils en roulant. Boîtier aluminium, voyant LED discret.",
+      "images": [
+        "/images/produits/chargeur-voiture-38w-1.svg",
+        "/images/produits/chargeur-voiture-38w-2.svg"
+      ],
+      "compatibilite": [
+        "Universel"
+      ],
+      "caracteristiques": {
+        "Puissance": "38 W",
+        "Ports": "1 × USB-C + 1 × USB-A",
+        "Tension": "12 / 24 V"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 12,
+      "misEnAvant": false,
+      "actif": true
+    },
+    {
+      "id": "chargeur-magsafe-15w",
+      "slug": "chargeur-magsafe-15w",
+      "nom": "Chargeur sans fil magnétique 15 W",
+      "categorie": "chargeurs",
+      "marque": "GCS Essentials",
+      "prix": 29.9,
+      "description": "Se fixe magnétiquement au dos de votre iPhone.",
+      "descriptionLongue": "Chargeur à induction magnétique compatible MagSafe : il s'aligne automatiquement au dos de l'iPhone pour une charge optimale jusqu'à 15 W. Câble USB-C intégré de 1 m.",
+      "images": [
+        "/images/produits/chargeur-magsafe-15w-1.svg",
+        "/images/produits/chargeur-magsafe-15w-2.svg"
+      ],
+      "compatibilite": [
+        "iPhone 12 et +",
+        "Coques MagSafe"
+      ],
+      "caracteristiques": {
+        "Puissance": "15 W max.",
+        "Connectique": "Câble USB-C 1 m",
+        "Compatibilité": "MagSafe / Qi2"
+      },
+      "options": [
+        {
+          "nom": "Couleur",
+          "valeurs": [
+            "Blanc",
+            "Noir"
+          ]
+        }
+      ],
+      "variantes": [
+        {
+          "id": "blanc",
+          "options": {
+            "Couleur": "Blanc"
+          },
+          "stock": 0,
+          "image": "/images/produits/chargeur-magsafe-15w-1.svg"
+        },
+        {
+          "id": "noir",
+          "options": {
+            "Couleur": "Noir"
+          },
+          "stock": 0,
+          "image": "/images/produits/chargeur-magsafe-15w-2.svg"
+        }
+      ],
+      "misEnAvant": false,
+      "actif": true
+    },
+    {
+      "id": "cable-usb-c-lightning-1m",
+      "slug": "cable-usb-c-lightning-1m",
+      "nom": "Câble USB-C vers Lightning 1 m",
+      "categorie": "cables",
+      "marque": "GCS Essentials",
+      "prix": 14.9,
+      "description": "Gaine tressée renforcée, certifiée MFi.",
+      "descriptionLongue": "Câble certifié MFi (Made for iPhone) pour une charge rapide et une synchronisation fiable. Gaine en nylon tressé et embouts renforcés testés à 10 000 pliages.",
+      "images": [
+        "/images/produits/cable-usb-c-lightning-1m-1.svg",
+        "/images/produits/cable-usb-c-lightning-1m-2.svg"
+      ],
+      "compatibilite": [
+        "iPhone 5 à iPhone 14"
+      ],
+      "caracteristiques": {
+        "Longueur": "1 m",
+        "Certification": "Apple MFi",
+        "Charge rapide": "Oui (jusqu'à 27 W)"
+      },
+      "options": [
+        {
+          "nom": "Couleur",
+          "valeurs": [
+            "Blanc",
+            "Noir"
+          ]
+        }
+      ],
+      "variantes": [
+        {
+          "id": "blanc",
+          "options": {
+            "Couleur": "Blanc"
+          },
+          "stock": 15,
+          "image": "/images/produits/cable-usb-c-lightning-1m-1.svg"
+        },
+        {
+          "id": "noir",
+          "options": {
+            "Couleur": "Noir"
+          },
+          "stock": 15,
+          "image": "/images/produits/cable-usb-c-lightning-1m-2.svg"
+        }
+      ],
+      "misEnAvant": true,
+      "actif": true
+    },
+    {
+      "id": "cable-usb-c-usb-c-2m",
+      "slug": "cable-usb-c-usb-c-2m",
+      "nom": "Câble USB-C vers USB-C 2 m – 60 W",
+      "categorie": "cables",
+      "marque": "GCS Essentials",
+      "prix": 16.9,
+      "description": "Charge rapide 60 W et transfert de données.",
+      "descriptionLongue": "Câble USB-C tressé de 2 m pour iPhone 15 et suivants, Android, iPad et ordinateurs. Supporte la charge rapide jusqu'à 60 W.",
+      "images": [
+        "/images/produits/cable-usb-c-usb-c-2m-1.svg",
+        "/images/produits/cable-usb-c-usb-c-2m-2.svg",
+        "/images/produits/cable-usb-c-usb-c-2m-3.svg"
+      ],
+      "compatibilite": [
+        "iPhone 15 et +",
+        "Samsung",
+        "Universel USB-C"
+      ],
+      "caracteristiques": {
+        "Longueur": "2 m",
+        "Puissance": "60 W",
+        "Données": "USB 2.0 (480 Mb/s)"
+      },
+      "options": [
+        {
+          "nom": "Couleur",
+          "valeurs": [
+            "Noir",
+            "Blanc",
+            "Bleu"
+          ]
+        }
+      ],
+      "variantes": [
+        {
+          "id": "noir",
+          "options": {
+            "Couleur": "Noir"
+          },
+          "stock": 15,
+          "image": "/images/produits/cable-usb-c-usb-c-2m-1.svg"
+        },
+        {
+          "id": "blanc",
+          "options": {
+            "Couleur": "Blanc"
+          },
+          "stock": 15,
+          "image": "/images/produits/cable-usb-c-usb-c-2m-2.svg"
+        },
+        {
+          "id": "bleu",
+          "options": {
+            "Couleur": "Bleu"
+          },
+          "stock": 15,
+          "image": "/images/produits/cable-usb-c-usb-c-2m-3.svg"
+        }
+      ],
+      "misEnAvant": false,
+      "actif": true
+    },
+    {
+      "id": "cable-3-en-1",
+      "slug": "cable-3-en-1",
+      "nom": "Câble 3 en 1 (USB-C, Lightning, Micro-USB)",
+      "categorie": "cables",
+      "marque": "GCS Essentials",
+      "prix": 12.9,
+      "description": "Un seul câble pour tous vos appareils.",
+      "descriptionLongue": "Idéal pour la voiture ou le sac : trois embouts pour charger iPhone, Android récents et anciens appareils Micro-USB.",
+      "images": [
+        "/images/produits/cable-3-en-1-1.svg",
+        "/images/produits/cable-3-en-1-2.svg"
+      ],
+      "compatibilite": [
+        "Universel"
+      ],
+      "caracteristiques": {
+        "Longueur": "1,2 m",
+        "Embouts": "USB-C, Lightning, Micro-USB",
+        "Entrée": "USB-A"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 20,
+      "misEnAvant": false,
+      "actif": true
+    },
+    {
+      "id": "coque-silicone",
+      "slug": "coque-silicone",
+      "nom": "Coque silicone douce",
+      "categorie": "coques",
+      "marque": "GCS Essentials",
+      "prix": 19.9,
+      "description": "Toucher doux, intérieur microfibre, protection caméra.",
+      "descriptionLongue": "Coque en silicone liquide au toucher velouté, doublure microfibre pour protéger le dos de votre iPhone. Rebords surélevés autour de l'écran et du module photo.",
+      "images": [
+        "/images/produits/coque-silicone-1.svg",
+        "/images/produits/coque-silicone-2.svg",
+        "/images/produits/coque-silicone-3.svg"
+      ],
+      "compatibilite": [
+        "iPhone 13",
+        "iPhone 14",
+        "iPhone 15",
+        "iPhone 16",
+        "iPhone 17"
+      ],
+      "caracteristiques": {
+        "Matière": "Silicone liquide",
+        "Intérieur": "Microfibre",
+        "MagSafe": "Non"
+      },
+      "options": [
+        {
+          "nom": "Couleur",
+          "valeurs": [
+            "Noir",
+            "Bleu",
+            "Rose",
+            "Vert"
+          ]
+        },
+        {
+          "nom": "Modèle",
+          "valeurs": [
+            "iPhone 13",
+            "iPhone 14",
+            "iPhone 15",
+            "iPhone 16",
+            "iPhone 17"
+          ]
+        }
+      ],
+      "variantes": [
+        {
+          "id": "noir-iphone13",
+          "options": {
+            "Couleur": "Noir",
+            "Modèle": "iPhone 13"
+          },
+          "stock": 3,
+          "image": "/images/produits/coque-silicone-1.svg"
+        },
+        {
+          "id": "noir-iphone14",
+          "options": {
+            "Couleur": "Noir",
+            "Modèle": "iPhone 14"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-1.svg"
+        },
+        {
+          "id": "noir-iphone15",
+          "options": {
+            "Couleur": "Noir",
+            "Modèle": "iPhone 15"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-1.svg"
+        },
+        {
+          "id": "noir-iphone16",
+          "options": {
+            "Couleur": "Noir",
+            "Modèle": "iPhone 16"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-1.svg"
+        },
+        {
+          "id": "noir-iphone17",
+          "options": {
+            "Couleur": "Noir",
+            "Modèle": "iPhone 17"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-1.svg"
+        },
+        {
+          "id": "bleu-iphone13",
+          "options": {
+            "Couleur": "Bleu",
+            "Modèle": "iPhone 13"
+          },
+          "stock": 3,
+          "image": "/images/produits/coque-silicone-2.svg"
+        },
+        {
+          "id": "bleu-iphone14",
+          "options": {
+            "Couleur": "Bleu",
+            "Modèle": "iPhone 14"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-2.svg"
+        },
+        {
+          "id": "bleu-iphone15",
+          "options": {
+            "Couleur": "Bleu",
+            "Modèle": "iPhone 15"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-2.svg"
+        },
+        {
+          "id": "bleu-iphone16",
+          "options": {
+            "Couleur": "Bleu",
+            "Modèle": "iPhone 16"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-2.svg"
+        },
+        {
+          "id": "bleu-iphone17",
+          "options": {
+            "Couleur": "Bleu",
+            "Modèle": "iPhone 17"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-2.svg"
+        },
+        {
+          "id": "rose-iphone13",
+          "options": {
+            "Couleur": "Rose",
+            "Modèle": "iPhone 13"
+          },
+          "stock": 0,
+          "image": "/images/produits/coque-silicone-3.svg"
+        },
+        {
+          "id": "rose-iphone14",
+          "options": {
+            "Couleur": "Rose",
+            "Modèle": "iPhone 14"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-3.svg"
+        },
+        {
+          "id": "rose-iphone15",
+          "options": {
+            "Couleur": "Rose",
+            "Modèle": "iPhone 15"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-3.svg"
+        },
+        {
+          "id": "rose-iphone16",
+          "options": {
+            "Couleur": "Rose",
+            "Modèle": "iPhone 16"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-3.svg"
+        },
+        {
+          "id": "rose-iphone17",
+          "options": {
+            "Couleur": "Rose",
+            "Modèle": "iPhone 17"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-3.svg"
+        },
+        {
+          "id": "vert-iphone13",
+          "options": {
+            "Couleur": "Vert",
+            "Modèle": "iPhone 13"
+          },
+          "stock": 2,
+          "image": "/images/produits/coque-silicone-3.svg"
+        },
+        {
+          "id": "vert-iphone14",
+          "options": {
+            "Couleur": "Vert",
+            "Modèle": "iPhone 14"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-3.svg"
+        },
+        {
+          "id": "vert-iphone15",
+          "options": {
+            "Couleur": "Vert",
+            "Modèle": "iPhone 15"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-3.svg"
+        },
+        {
+          "id": "vert-iphone16",
+          "options": {
+            "Couleur": "Vert",
+            "Modèle": "iPhone 16"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-3.svg"
+        },
+        {
+          "id": "vert-iphone17",
+          "options": {
+            "Couleur": "Vert",
+            "Modèle": "iPhone 17"
+          },
+          "stock": 6,
+          "image": "/images/produits/coque-silicone-3.svg"
+        }
+      ],
+      "misEnAvant": true,
+      "actif": true
+    },
+    {
+      "id": "coque-transparente-magsafe",
+      "slug": "coque-transparente-magsafe",
+      "nom": "Coque transparente MagSafe antichoc",
+      "categorie": "coques",
+      "marque": "GCS Essentials",
+      "prix": 24.9,
+      "description": "Ne jaunit pas, coins renforcés, aimants MagSafe.",
+      "descriptionLongue": "Coque transparente traitée anti-jaunissement avec anneau magnétique intégré pour les accessoires MagSafe. Coins à coussin d'air contre les chutes jusqu'à 2 m.",
+      "images": [
+        "/images/produits/coque-transparente-magsafe-1.svg",
+        "/images/produits/coque-transparente-magsafe-2.svg"
+      ],
+      "compatibilite": [
+        "iPhone 13",
+        "iPhone 14",
+        "iPhone 15",
+        "iPhone 16",
+        "iPhone 17"
+      ],
+      "caracteristiques": {
+        "Matière": "TPU + polycarbonate",
+        "MagSafe": "Oui",
+        "Protection chute": "2 m"
+      },
+      "options": [
+        {
+          "nom": "Modèle",
+          "valeurs": [
+            "iPhone 13",
+            "iPhone 14",
+            "iPhone 15",
+            "iPhone 16",
+            "iPhone 17"
+          ]
+        }
+      ],
+      "variantes": [
+        {
+          "id": "iphone13",
+          "options": {
+            "Modèle": "iPhone 13"
+          },
+          "stock": 10
+        },
+        {
+          "id": "iphone14",
+          "options": {
+            "Modèle": "iPhone 14"
+          },
+          "stock": 10
+        },
+        {
+          "id": "iphone15",
+          "options": {
+            "Modèle": "iPhone 15"
+          },
+          "stock": 10
+        },
+        {
+          "id": "iphone16",
+          "options": {
+            "Modèle": "iPhone 16"
+          },
+          "stock": 10
+        },
+        {
+          "id": "iphone17",
+          "options": {
+            "Modèle": "iPhone 17"
+          },
+          "stock": 10
+        }
+      ],
+      "misEnAvant": false,
+      "actif": true
+    },
+    {
+      "id": "coque-portefeuille",
+      "slug": "coque-portefeuille",
+      "nom": "Étui portefeuille cuir synthétique",
+      "categorie": "coques",
+      "marque": "GCS Essentials",
+      "prix": 27.9,
+      "description": "Rangement cartes, rabat aimanté, fonction support.",
+      "descriptionLongue": "Étui à rabat en cuir synthétique avec 3 emplacements pour cartes et une poche billets. Se transforme en support pour regarder vos vidéos.",
+      "images": [
+        "/images/produits/coque-portefeuille-1.svg",
+        "/images/produits/coque-portefeuille-2.svg"
+      ],
+      "compatibilite": [
+        "iPhone 14",
+        "iPhone 15",
+        "iPhone 16",
+        "iPhone 17"
+      ],
+      "caracteristiques": {
+        "Matière": "Cuir synthétique",
+        "Rangements": "3 cartes + billets",
+        "Fermeture": "Aimantée"
+      },
+      "options": [
+        {
+          "nom": "Couleur",
+          "valeurs": [
+            "Noir",
+            "Beige"
+          ]
+        },
+        {
+          "nom": "Modèle",
+          "valeurs": [
+            "iPhone 14",
+            "iPhone 15",
+            "iPhone 16",
+            "iPhone 17"
+          ]
+        }
+      ],
+      "variantes": [
+        {
+          "id": "noir-iphone14",
+          "options": {
+            "Couleur": "Noir",
+            "Modèle": "iPhone 14"
+          },
+          "stock": 4,
+          "image": "/images/produits/coque-portefeuille-1.svg"
+        },
+        {
+          "id": "noir-iphone15",
+          "options": {
+            "Couleur": "Noir",
+            "Modèle": "iPhone 15"
+          },
+          "stock": 4,
+          "image": "/images/produits/coque-portefeuille-1.svg"
+        },
+        {
+          "id": "noir-iphone16",
+          "options": {
+            "Couleur": "Noir",
+            "Modèle": "iPhone 16"
+          },
+          "stock": 4,
+          "image": "/images/produits/coque-portefeuille-1.svg"
+        },
+        {
+          "id": "noir-iphone17",
+          "options": {
+            "Couleur": "Noir",
+            "Modèle": "iPhone 17"
+          },
+          "stock": 4,
+          "image": "/images/produits/coque-portefeuille-1.svg"
+        },
+        {
+          "id": "beige-iphone14",
+          "options": {
+            "Couleur": "Beige",
+            "Modèle": "iPhone 14"
+          },
+          "stock": 4,
+          "image": "/images/produits/coque-portefeuille-2.svg"
+        },
+        {
+          "id": "beige-iphone15",
+          "options": {
+            "Couleur": "Beige",
+            "Modèle": "iPhone 15"
+          },
+          "stock": 4,
+          "image": "/images/produits/coque-portefeuille-2.svg"
+        },
+        {
+          "id": "beige-iphone16",
+          "options": {
+            "Couleur": "Beige",
+            "Modèle": "iPhone 16"
+          },
+          "stock": 4,
+          "image": "/images/produits/coque-portefeuille-2.svg"
+        },
+        {
+          "id": "beige-iphone17",
+          "options": {
+            "Couleur": "Beige",
+            "Modèle": "iPhone 17"
+          },
+          "stock": 4,
+          "image": "/images/produits/coque-portefeuille-2.svg"
+        }
+      ],
+      "misEnAvant": false,
+      "actif": true
+    },
+    {
+      "id": "coque-antichoc-renforcee",
+      "slug": "coque-antichoc-renforcee",
+      "nom": "Coque antichoc renforcée militaire",
+      "categorie": "coques",
+      "marque": "GCS Essentials",
+      "prix": 29.9,
+      "description": "Double couche, norme MIL-STD-810G.",
+      "descriptionLongue": "Protection maximale pour les métiers exposés : double couche polycarbonate et TPU, boutons protégés, béquille intégrée.",
+      "images": [
+        "/images/produits/coque-antichoc-renforcee-1.svg",
+        "/images/produits/coque-antichoc-renforcee-2.svg"
+      ],
+      "compatibilite": [
+        "iPhone 13",
+        "iPhone 14",
+        "iPhone 15",
+        "iPhone 16",
+        "iPhone 17"
+      ],
+      "caracteristiques": {
+        "Norme": "MIL-STD-810G",
+        "Couches": "2",
+        "Béquille": "Oui"
+      },
+      "options": [
+        {
+          "nom": "Couleur",
+          "valeurs": [
+            "Noir",
+            "Gris"
+          ]
+        },
+        {
+          "nom": "Modèle",
+          "valeurs": [
+            "iPhone 13",
+            "iPhone 14",
+            "iPhone 15",
+            "iPhone 16",
+            "iPhone 17"
+          ]
+        }
+      ],
+      "variantes": [
+        {
+          "id": "noir-iphone13",
+          "options": {
+            "Couleur": "Noir",
+            "Modèle": "iPhone 13"
+          },
+          "stock": 5,
+          "image": "/images/produits/coque-antichoc-renforcee-1.svg"
+        },
+        {
+          "id": "noir-iphone14",
+          "options": {
+            "Couleur": "Noir",
+            "Modèle": "iPhone 14"
+          },
+          "stock": 5,
+          "image": "/images/produits/coque-antichoc-renforcee-1.svg"
+        },
+        {
+          "id": "noir-iphone15",
+          "options": {
+            "Couleur": "Noir",
+            "Modèle": "iPhone 15"
+          },
+          "stock": 5,
+          "image": "/images/produits/coque-antichoc-renforcee-1.svg"
+        },
+        {
+          "id": "noir-iphone16",
+          "options": {
+            "Couleur": "Noir",
+            "Modèle": "iPhone 16"
+          },
+          "stock": 5,
+          "image": "/images/produits/coque-antichoc-renforcee-1.svg"
+        },
+        {
+          "id": "noir-iphone17",
+          "options": {
+            "Couleur": "Noir",
+            "Modèle": "iPhone 17"
+          },
+          "stock": 5,
+          "image": "/images/produits/coque-antichoc-renforcee-1.svg"
+        },
+        {
+          "id": "gris-iphone13",
+          "options": {
+            "Couleur": "Gris",
+            "Modèle": "iPhone 13"
+          },
+          "stock": 5,
+          "image": "/images/produits/coque-antichoc-renforcee-2.svg"
+        },
+        {
+          "id": "gris-iphone14",
+          "options": {
+            "Couleur": "Gris",
+            "Modèle": "iPhone 14"
+          },
+          "stock": 5,
+          "image": "/images/produits/coque-antichoc-renforcee-2.svg"
+        },
+        {
+          "id": "gris-iphone15",
+          "options": {
+            "Couleur": "Gris",
+            "Modèle": "iPhone 15"
+          },
+          "stock": 5,
+          "image": "/images/produits/coque-antichoc-renforcee-2.svg"
+        },
+        {
+          "id": "gris-iphone16",
+          "options": {
+            "Couleur": "Gris",
+            "Modèle": "iPhone 16"
+          },
+          "stock": 5,
+          "image": "/images/produits/coque-antichoc-renforcee-2.svg"
+        },
+        {
+          "id": "gris-iphone17",
+          "options": {
+            "Couleur": "Gris",
+            "Modèle": "iPhone 17"
+          },
+          "stock": 5,
+          "image": "/images/produits/coque-antichoc-renforcee-2.svg"
+        }
+      ],
+      "misEnAvant": false,
+      "actif": true
+    },
+    {
+      "id": "verre-trempe-9h",
+      "slug": "verre-trempe-9h",
+      "nom": "Verre trempé 9H bords à bords",
+      "categorie": "protections",
+      "marque": "GCS Essentials",
+      "prix": 14.9,
+      "description": "Pose offerte en boutique. Dureté 9H, anti-traces.",
+      "descriptionLongue": "Protection d'écran en verre trempé 9H couvrant tout l'écran. Traitement oléophobe anti-traces. Pose gratuite et sans bulles en boutique à Montpellier sur simple présentation de votre commande.",
+      "images": [
+        "/images/produits/verre-trempe-9h-1.svg",
+        "/images/produits/verre-trempe-9h-2.svg"
+      ],
+      "compatibilite": [
+        "iPhone 13",
+        "iPhone 14",
+        "iPhone 15",
+        "iPhone 16",
+        "iPhone 17",
+        "iPhone 11",
+        "iPhone 12"
+      ],
+      "caracteristiques": {
+        "Dureté": "9H",
+        "Épaisseur": "0,33 mm",
+        "Couverture": "Bords à bords"
+      },
+      "options": [
+        {
+          "nom": "Modèle",
+          "valeurs": [
+            "iPhone 11",
+            "iPhone 12",
+            "iPhone 13",
+            "iPhone 14",
+            "iPhone 15",
+            "iPhone 16",
+            "iPhone 17"
+          ]
+        }
+      ],
+      "variantes": [
+        {
+          "id": "iphone11",
+          "options": {
+            "Modèle": "iPhone 11"
+          },
+          "stock": 25
+        },
+        {
+          "id": "iphone12",
+          "options": {
+            "Modèle": "iPhone 12"
+          },
+          "stock": 25
+        },
+        {
+          "id": "iphone13",
+          "options": {
+            "Modèle": "iPhone 13"
+          },
+          "stock": 25
+        },
+        {
+          "id": "iphone14",
+          "options": {
+            "Modèle": "iPhone 14"
+          },
+          "stock": 25
+        },
+        {
+          "id": "iphone15",
+          "options": {
+            "Modèle": "iPhone 15"
+          },
+          "stock": 25
+        },
+        {
+          "id": "iphone16",
+          "options": {
+            "Modèle": "iPhone 16"
+          },
+          "stock": 25
+        },
+        {
+          "id": "iphone17",
+          "options": {
+            "Modèle": "iPhone 17"
+          },
+          "stock": 25
+        }
+      ],
+      "misEnAvant": true,
+      "actif": true
+    },
+    {
+      "id": "verre-trempe-anti-espion",
+      "slug": "verre-trempe-anti-espion",
+      "nom": "Verre trempé anti-espion",
+      "categorie": "protections",
+      "marque": "GCS Essentials",
+      "prix": 19.9,
+      "description": "Écran visible uniquement de face. Confidentialité garantie.",
+      "descriptionLongue": "Filtre de confidentialité intégré : l'écran devient noir vu de côté. Parfait dans les transports.",
+      "images": [
+        "/images/produits/verre-trempe-anti-espion-1.svg",
+        "/images/produits/verre-trempe-anti-espion-2.svg"
+      ],
+      "compatibilite": [
+        "iPhone 13",
+        "iPhone 14",
+        "iPhone 15",
+        "iPhone 16",
+        "iPhone 17"
+      ],
+      "caracteristiques": {
+        "Dureté": "9H",
+        "Angle de confidentialité": "30°"
+      },
+      "options": [
+        {
+          "nom": "Modèle",
+          "valeurs": [
+            "iPhone 13",
+            "iPhone 14",
+            "iPhone 15",
+            "iPhone 16",
+            "iPhone 17"
+          ]
+        }
+      ],
+      "variantes": [
+        {
+          "id": "iphone13",
+          "options": {
+            "Modèle": "iPhone 13"
+          },
+          "stock": 9
+        },
+        {
+          "id": "iphone14",
+          "options": {
+            "Modèle": "iPhone 14"
+          },
+          "stock": 9
+        },
+        {
+          "id": "iphone15",
+          "options": {
+            "Modèle": "iPhone 15"
+          },
+          "stock": 9
+        },
+        {
+          "id": "iphone16",
+          "options": {
+            "Modèle": "iPhone 16"
+          },
+          "stock": 9
+        },
+        {
+          "id": "iphone17",
+          "options": {
+            "Modèle": "iPhone 17"
+          },
+          "stock": 9
+        }
+      ],
+      "misEnAvant": false,
+      "actif": true
+    },
+    {
+      "id": "film-hydrogel-ecran",
+      "slug": "film-hydrogel-ecran",
+      "nom": "Film hydrogel écran – découpe sur mesure",
+      "categorie": "protections",
+      "marque": "GCS",
+      "prix": 14.9,
+      "description": "Découpé à la machine pour votre modèle exact, posé en boutique.",
+      "descriptionLongue": "Film hydrogel autocicatrisant découpé sur mesure pour plus de 5 000 modèles de smartphones, tablettes et montres. Les micro-rayures disparaissent d'elles-mêmes. Retrait en boutique avec pose offerte.",
+      "images": [
+        "/images/produits/film-hydrogel-ecran-1.svg",
+        "/images/produits/film-hydrogel-ecran-2.svg"
+      ],
+      "compatibilite": [
+        "Tous modèles (découpe sur mesure)"
+      ],
+      "caracteristiques": {
+        "Type": "Hydrogel TPU autocicatrisant",
+        "Finition": "Brillant",
+        "Pose": "Offerte en boutique"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "misEnAvant": true,
+      "actif": true
+    },
+    {
+      "id": "film-hydrogel-mat",
+      "slug": "film-hydrogel-mat",
+      "nom": "Film hydrogel mat anti-reflets",
+      "categorie": "protections",
+      "marque": "GCS",
+      "prix": 17.9,
+      "description": "Finition mate anti-traces, idéal gamers.",
+      "descriptionLongue": "Version mate du film hydrogel : réduit les reflets et les traces de doigts, toucher soyeux. Découpe sur mesure en boutique.",
+      "images": [
+        "/images/produits/film-hydrogel-mat-1.svg",
+        "/images/produits/film-hydrogel-mat-2.svg"
+      ],
+      "compatibilite": [
+        "Tous modèles (découpe sur mesure)"
+      ],
+      "caracteristiques": {
+        "Type": "Hydrogel TPU",
+        "Finition": "Mat",
+        "Pose": "Offerte en boutique"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "misEnAvant": false,
+      "actif": true
+    },
+    {
+      "id": "batterie-externe-10000",
+      "slug": "batterie-externe-10000",
+      "nom": "Batterie externe 10 000 mAh USB-C 20 W",
+      "categorie": "batteries-externes",
+      "marque": "GCS Essentials",
+      "prix": 29.9,
+      "description": "2 recharges complètes d'iPhone, format poche.",
+      "descriptionLongue": "Batterie externe fine avec charge rapide USB-C PD 20 W en entrée et en sortie. Indicateur LED de niveau.",
+      "images": [
+        "/images/produits/batterie-externe-10000-1.svg",
+        "/images/produits/batterie-externe-10000-2.svg"
+      ],
+      "compatibilite": [
+        "Universel"
+      ],
+      "caracteristiques": {
+        "Capacité": "10 000 mAh",
+        "Sortie max.": "20 W",
+        "Ports": "USB-C + USB-A",
+        "Poids": "210 g"
+      },
+      "options": [
+        {
+          "nom": "Couleur",
+          "valeurs": [
+            "Noir",
+            "Blanc"
+          ]
+        }
+      ],
+      "variantes": [
+        {
+          "id": "noir",
+          "options": {
+            "Couleur": "Noir"
+          },
+          "stock": 14,
+          "image": "/images/produits/batterie-externe-10000-1.svg"
+        },
+        {
+          "id": "blanc",
+          "options": {
+            "Couleur": "Blanc"
+          },
+          "stock": 14,
+          "image": "/images/produits/batterie-externe-10000-2.svg"
+        }
+      ],
+      "misEnAvant": true,
+      "actif": true
+    },
+    {
+      "id": "batterie-externe-magsafe-5000",
+      "slug": "batterie-externe-magsafe-5000",
+      "nom": "Batterie externe magnétique 5 000 mAh",
+      "categorie": "batteries-externes",
+      "marque": "GCS Essentials",
+      "prix": 34.9,
+      "description": "Se clipse au dos de l'iPhone, sans câble.",
+      "descriptionLongue": "Batterie magnétique compatible MagSafe : elle se fixe au dos de votre iPhone et le recharge sans fil. Peut aussi charger via son port USB-C.",
+      "images": [
+        "/images/produits/batterie-externe-magsafe-5000-1.svg",
+        "/images/produits/batterie-externe-magsafe-5000-2.svg",
+        "/images/produits/batterie-externe-magsafe-5000-3.svg"
+      ],
+      "compatibilite": [
+        "iPhone 12 et +"
+      ],
+      "caracteristiques": {
+        "Capacité": "5 000 mAh",
+        "Sans fil": "7,5 W",
+        "Filaire": "USB-C 20 W"
+      },
+      "options": [
+        {
+          "nom": "Couleur",
+          "valeurs": [
+            "Blanc",
+            "Violet",
+            "Noir"
+          ]
+        }
+      ],
+      "variantes": [
+        {
+          "id": "blanc",
+          "options": {
+            "Couleur": "Blanc"
+          },
+          "stock": 7,
+          "image": "/images/produits/batterie-externe-magsafe-5000-1.svg"
+        },
+        {
+          "id": "violet",
+          "options": {
+            "Couleur": "Violet"
+          },
+          "stock": 7,
+          "image": "/images/produits/batterie-externe-magsafe-5000-2.svg"
+        },
+        {
+          "id": "noir",
+          "options": {
+            "Couleur": "Noir"
+          },
+          "stock": 7,
+          "image": "/images/produits/batterie-externe-magsafe-5000-3.svg"
+        }
+      ],
+      "misEnAvant": false,
+      "actif": true
+    },
+    {
+      "id": "batterie-externe-20000",
+      "slug": "batterie-externe-20000",
+      "nom": "Batterie externe 20 000 mAh 65 W",
+      "categorie": "batteries-externes",
+      "marque": "GCS Essentials",
+      "prix": 54.9,
+      "prixBarre": 64.9,
+      "description": "Recharge aussi votre ordinateur portable.",
+      "descriptionLongue": "Grande capacité et 65 W en USB-C : de quoi recharger un ordinateur portable ou 4 fois un smartphone. Écran digital du niveau restant.",
+      "images": [
+        "/images/produits/batterie-externe-20000-1.svg",
+        "/images/produits/batterie-externe-20000-2.svg"
+      ],
+      "compatibilite": [
+        "Universel",
+        "Ordinateurs USB-C"
+      ],
+      "caracteristiques": {
+        "Capacité": "20 000 mAh",
+        "Sortie max.": "65 W",
+        "Écran": "Oui"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 3,
+      "misEnAvant": false,
+      "actif": true
+    },
+    {
+      "id": "ecouteurs-sans-fil-tws",
+      "slug": "ecouteurs-sans-fil-tws",
+      "nom": "Écouteurs sans fil Bluetooth 5.3",
+      "categorie": "ecouteurs",
+      "marque": "GCS Essentials",
+      "prix": 34.9,
+      "description": "Réduction de bruit, 30 h d'autonomie avec le boîtier.",
+      "descriptionLongue": "Écouteurs intra-auriculaires avec réduction de bruit environnante, commandes tactiles et boîtier de charge USB-C. Résistants à la transpiration (IPX4).",
+      "images": [
+        "/images/produits/ecouteurs-sans-fil-tws-1.svg",
+        "/images/produits/ecouteurs-sans-fil-tws-2.svg"
+      ],
+      "compatibilite": [
+        "Universel Bluetooth"
+      ],
+      "caracteristiques": {
+        "Bluetooth": "5.3",
+        "Autonomie": "6 h (30 h avec boîtier)",
+        "Étanchéité": "IPX4"
+      },
+      "options": [
+        {
+          "nom": "Couleur",
+          "valeurs": [
+            "Blanc",
+            "Noir"
+          ]
+        }
+      ],
+      "variantes": [
+        {
+          "id": "blanc",
+          "options": {
+            "Couleur": "Blanc"
+          },
+          "stock": 11,
+          "image": "/images/produits/ecouteurs-sans-fil-tws-1.svg"
+        },
+        {
+          "id": "noir",
+          "options": {
+            "Couleur": "Noir"
+          },
+          "stock": 11,
+          "image": "/images/produits/ecouteurs-sans-fil-tws-2.svg"
+        }
+      ],
+      "misEnAvant": true,
+      "actif": true
+    },
+    {
+      "id": "ecouteurs-filaires-usb-c",
+      "slug": "ecouteurs-filaires-usb-c",
+      "nom": "Écouteurs filaires USB-C",
+      "categorie": "ecouteurs",
+      "marque": "GCS Essentials",
+      "prix": 14.9,
+      "description": "Micro et télécommande, pour iPhone 15 et Android.",
+      "descriptionLongue": "Écouteurs filaires avec prise USB-C, micro intégré et télécommande pour gérer appels et musique.",
+      "images": [
+        "/images/produits/ecouteurs-filaires-usb-c-1.svg",
+        "/images/produits/ecouteurs-filaires-usb-c-2.svg"
+      ],
+      "compatibilite": [
+        "iPhone 15 et +",
+        "Samsung",
+        "Universel USB-C"
+      ],
+      "caracteristiques": {
+        "Connectique": "USB-C",
+        "Micro": "Oui",
+        "Longueur": "1,2 m"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 16,
+      "misEnAvant": false,
+      "actif": true
+    },
+    {
+      "id": "ecouteurs-filaires-lightning",
+      "slug": "ecouteurs-filaires-lightning",
+      "nom": "Écouteurs filaires Lightning",
+      "categorie": "ecouteurs",
+      "marque": "GCS Essentials",
+      "prix": 16.9,
+      "description": "Pour iPhone 7 à iPhone 14.",
+      "descriptionLongue": "Écouteurs filaires avec connecteur Lightning, micro et télécommande.",
+      "images": [
+        "/images/produits/ecouteurs-filaires-lightning-1.svg",
+        "/images/produits/ecouteurs-filaires-lightning-2.svg"
+      ],
+      "compatibilite": [
+        "iPhone 7 à iPhone 14"
+      ],
+      "caracteristiques": {
+        "Connectique": "Lightning",
+        "Micro": "Oui",
+        "Longueur": "1,2 m"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 0,
+      "misEnAvant": false,
+      "actif": true
+    },
+    {
+      "id": "casque-bluetooth",
+      "slug": "casque-bluetooth",
+      "nom": "Casque Bluetooth pliable",
+      "categorie": "ecouteurs",
+      "marque": "GCS Essentials",
+      "prix": 39.9,
+      "description": "Arceau confortable, 40 h d'autonomie, pliable.",
+      "descriptionLongue": "Casque circum-auriculaire sans fil, coussinets à mémoire de forme, jusqu'à 40 h d'écoute. Se plie pour se glisser dans un sac.",
+      "images": [
+        "/images/produits/casque-bluetooth-1.svg",
+        "/images/produits/casque-bluetooth-2.svg"
+      ],
+      "compatibilite": [
+        "Universel Bluetooth"
+      ],
+      "caracteristiques": {
+        "Bluetooth": "5.3",
+        "Autonomie": "40 h",
+        "Pliable": "Oui"
+      },
+      "options": [
+        {
+          "nom": "Couleur",
+          "valeurs": [
+            "Noir",
+            "Beige"
+          ]
+        }
+      ],
+      "variantes": [
+        {
+          "id": "noir",
+          "options": {
+            "Couleur": "Noir"
+          },
+          "stock": 5,
+          "image": "/images/produits/casque-bluetooth-1.svg"
+        },
+        {
+          "id": "beige",
+          "options": {
+            "Couleur": "Beige"
+          },
+          "stock": 5,
+          "image": "/images/produits/casque-bluetooth-2.svg"
+        }
+      ],
+      "misEnAvant": false,
+      "actif": true
+    }
+  ]
+}
