@@ -19,17 +19,17 @@ export const entreprise = {
   nomCommercial: "GCS",
   nomComplet: "Global Connect Services",
   raisonSociale: "Pronet Services Plus",
-  formeJuridique: "[À COMPLÉTER : forme juridique, ex. SAS, SARL, EI]",
-  capitalSocial: "[À COMPLÉTER : capital social, ex. 1 000 €]",
-  siret: "[À COMPLÉTER : n° SIRET (14 chiffres)]",
-  rcs: "[À COMPLÉTER : ex. RCS Montpellier 123 456 789]",
-  tvaIntracom: "[À COMPLÉTER : n° TVA intracommunautaire, ex. FR12 123456789]",
-  codeApe: "[À COMPLÉTER : code APE/NAF, ex. 9512Z]",
-  directeurPublication: "[À COMPLÉTER : Prénom NOM du directeur de la publication]",
+  formeJuridique: "SASU",
+  capitalSocial: "1 000 €",
+  siret: "938 754 488 00014",
+  rcs: "RCS Montpellier 938 754 488",
+  tvaIntracom: "FR08 938754488",
+  codeApe: "4742Z",
+  directeurPublication: "Zakarya BOUTOUB, Président",
 
   /* ---------- Coordonnées ---------- */
   adresse: {
-    rue: "[À COMPLÉTER : n° et rue]",
+    rue: "5 rue des Catalpas",
     codePostal: "34070",
     ville: "Montpellier",
     pays: "France",
@@ -86,8 +86,8 @@ export const entreprise = {
   assuranceRcPro: "[À COMPLÉTER : assureur RC Pro et zone couverte (facultatif, recommandé)]",
 
   /* ---------- Services complémentaires ---------- */
-  partenaireTransfertArgent: "[À COMPLÉTER : réseau partenaire de transfert d'argent, ex. Western Union, RIA…]",
-  partenairePointRelais: "[À COMPLÉTER : réseau(x) point relais, ex. Mondial Relay, Relais Colis…]",
+  partenaireTransfertArgent: "Ria",
+  partenairePointRelais: "Mondial Relay",
   zoneDomicile: "Montpellier et communes limitrophes", // zone de réparation à domicile
 };
 
