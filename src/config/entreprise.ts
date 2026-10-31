@@ -37,11 +37,11 @@ export const entreprise = {
     latitude: null as number | null,
     longitude: null as number | null,
   },
-  telephone: "[À COMPLÉTER : téléphone, ex. 04 00 00 00 00]",
+  telephone: "06 15 98 75 93",
   // Format international sans espace, utilisé pour les liens « Appeler »
-  telephoneLien: "[À COMPLÉTER : ex. +33400000000]",
-  email: "[À COMPLÉTER : e-mail de contact, ex. contact@gcs-montpellier.fr]",
-  emailDonneesPersonnelles: "[À COMPLÉTER : e-mail pour les demandes RGPD (peut être le même)]",
+  telephoneLien: "+33615987593",
+  email: "gcs.34070@gmail.com",
+  emailDonneesPersonnelles: "gcs.34070@gmail.com",
 
   /* ---------- Réseaux sociaux ---------- */
   snapchat: "gcs34070",
