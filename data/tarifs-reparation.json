@@ -67,12 +67,6 @@
       "description": "Chute dans l'eau ou liquide renversé : nettoyage en profondeur de la carte mère.",
       "duree": "24 à 48 h",
       "icone": "droplets"
-    },
-    "micro-soudure": {
-      "nom": "Micro-soudure / carte mère",
-      "description": "Panne de carte mère, puce audio, rétroéclairage, Face ID… Réparation au microscope.",
-      "duree": "Sur diagnostic",
-      "icone": "cpu"
     }
   },
   "marques": [
@@ -98,8 +92,7 @@
             "haut-parleur": 84,
             "ecouteur-interne": 84,
             "boutons": 84,
-            "desoxydation": 84,
-            "micro-soudure": null
+            "desoxydation": 84
           }
         },
         {
@@ -120,8 +113,7 @@
             "haut-parleur": 79,
             "ecouteur-interne": 79,
             "boutons": 79,
-            "desoxydation": 84,
-            "micro-soudure": null
+            "desoxydation": 84
           }
         },
         {
@@ -142,8 +134,7 @@
             "haut-parleur": 64,
             "ecouteur-interne": 64,
             "boutons": 64,
-            "desoxydation": 69,
-            "micro-soudure": null
+            "desoxydation": 69
           }
         },
         {
@@ -164,8 +155,7 @@
             "haut-parleur": 79,
             "ecouteur-interne": 79,
             "boutons": 79,
-            "desoxydation": 79,
-            "micro-soudure": null
+            "desoxydation": 79
           }
         },
         {
@@ -186,8 +176,7 @@
             "haut-parleur": 74,
             "ecouteur-interne": 74,
             "boutons": 74,
-            "desoxydation": 79,
-            "micro-soudure": null
+            "desoxydation": 79
           }
         },
         {
@@ -208,8 +197,7 @@
             "haut-parleur": 74,
             "ecouteur-interne": 74,
             "boutons": 74,
-            "desoxydation": 74,
-            "micro-soudure": null
+            "desoxydation": 74
           }
         },
         {
@@ -230,8 +218,7 @@
             "haut-parleur": 69,
             "ecouteur-interne": 69,
             "boutons": 69,
-            "desoxydation": 74,
-            "micro-soudure": null
+            "desoxydation": 74
           }
         },
         {
@@ -252,8 +239,7 @@
             "haut-parleur": 74,
             "ecouteur-interne": 74,
             "boutons": 74,
-            "desoxydation": 74,
-            "micro-soudure": null
+            "desoxydation": 74
           }
         },
         {
@@ -274,8 +260,7 @@
             "haut-parleur": 69,
             "ecouteur-interne": 69,
             "boutons": 69,
-            "desoxydation": 74,
-            "micro-soudure": null
+            "desoxydation": 74
           }
         },
         {
@@ -296,8 +281,7 @@
             "haut-parleur": 69,
             "ecouteur-interne": 69,
             "boutons": 69,
-            "desoxydation": 74,
-            "micro-soudure": null
+            "desoxydation": 74
           }
         },
         {
@@ -318,8 +302,7 @@
             "haut-parleur": 64,
             "ecouteur-interne": 64,
             "boutons": 64,
-            "desoxydation": 69,
-            "micro-soudure": null
+            "desoxydation": 69
           }
         },
         {
@@ -340,8 +323,7 @@
             "haut-parleur": 59,
             "ecouteur-interne": 59,
             "boutons": 59,
-            "desoxydation": 64,
-            "micro-soudure": null
+            "desoxydation": 64
           }
         },
         {
@@ -362,8 +344,7 @@
             "haut-parleur": 69,
             "ecouteur-interne": 69,
             "boutons": 69,
-            "desoxydation": 74,
-            "micro-soudure": null
+            "desoxydation": 74
           }
         },
         {
@@ -384,8 +365,7 @@
             "haut-parleur": 64,
             "ecouteur-interne": 64,
             "boutons": 64,
-            "desoxydation": 69,
-            "micro-soudure": null
+            "desoxydation": 69
           }
         },
         {
@@ -406,8 +386,7 @@
             "haut-parleur": 64,
             "ecouteur-interne": 64,
             "boutons": 64,
-            "desoxydation": 69,
-            "micro-soudure": null
+            "desoxydation": 69
           }
         },
         {
@@ -428,8 +407,7 @@
             "haut-parleur": 59,
             "ecouteur-interne": 59,
             "boutons": 59,
-            "desoxydation": 64,
-            "micro-soudure": null
+            "desoxydation": 64
           }
         },
         {
@@ -450,8 +428,7 @@
             "haut-parleur": 64,
             "ecouteur-interne": 64,
             "boutons": 64,
-            "desoxydation": 69,
-            "micro-soudure": null
+            "desoxydation": 69
           }
         },
         {
@@ -472,8 +449,7 @@
             "haut-parleur": 59,
             "ecouteur-interne": 59,
             "boutons": 59,
-            "desoxydation": 64,
-            "micro-soudure": null
+            "desoxydation": 64
           }
         },
         {
@@ -494,8 +470,7 @@
             "haut-parleur": 59,
             "ecouteur-interne": 59,
             "boutons": 59,
-            "desoxydation": 64,
-            "micro-soudure": null
+            "desoxydation": 64
           }
         },
         {
@@ -516,8 +491,7 @@
             "haut-parleur": 54,
             "ecouteur-interne": 54,
             "boutons": 54,
-            "desoxydation": 64,
-            "micro-soudure": null
+            "desoxydation": 64
           }
         },
         {
@@ -538,8 +512,7 @@
             "haut-parleur": 59,
             "ecouteur-interne": 59,
             "boutons": 59,
-            "desoxydation": 64,
-            "micro-soudure": null
+            "desoxydation": 64
           }
         },
         {
@@ -560,8 +533,7 @@
             "haut-parleur": 54,
             "ecouteur-interne": 54,
             "boutons": 54,
-            "desoxydation": 64,
-            "micro-soudure": null
+            "desoxydation": 64
           }
         },
         {
@@ -582,8 +554,7 @@
             "haut-parleur": 54,
             "ecouteur-interne": 54,
             "boutons": 54,
-            "desoxydation": 59,
-            "micro-soudure": null
+            "desoxydation": 59
           }
         },
         {
@@ -604,8 +575,7 @@
             "haut-parleur": 49,
             "ecouteur-interne": 49,
             "boutons": 49,
-            "desoxydation": 59,
-            "micro-soudure": null
+            "desoxydation": 59
           }
         },
         {
@@ -626,8 +596,7 @@
             "haut-parleur": 54,
             "ecouteur-interne": 54,
             "boutons": 54,
-            "desoxydation": 59,
-            "micro-soudure": null
+            "desoxydation": 59
           }
         },
         {
@@ -648,8 +617,7 @@
             "haut-parleur": 49,
             "ecouteur-interne": 49,
             "boutons": 49,
-            "desoxydation": 59,
-            "micro-soudure": null
+            "desoxydation": 59
           }
         },
         {
@@ -670,8 +638,7 @@
             "haut-parleur": 49,
             "ecouteur-interne": 49,
             "boutons": 49,
-            "desoxydation": 59,
-            "micro-soudure": null
+            "desoxydation": 59
           }
         },
         {
@@ -692,8 +659,7 @@
             "haut-parleur": 49,
             "ecouteur-interne": 49,
             "boutons": 49,
-            "desoxydation": 54,
-            "micro-soudure": null
+            "desoxydation": 54
           }
         },
         {
@@ -714,8 +680,7 @@
             "haut-parleur": 49,
             "ecouteur-interne": 49,
             "boutons": 49,
-            "desoxydation": 59,
-            "micro-soudure": null
+            "desoxydation": 59
           }
         },
         {
@@ -736,8 +701,7 @@
             "haut-parleur": 49,
             "ecouteur-interne": 49,
             "boutons": 49,
-            "desoxydation": 54,
-            "micro-soudure": null
+            "desoxydation": 54
           }
         },
         {
@@ -758,8 +722,7 @@
             "haut-parleur": 44,
             "ecouteur-interne": 44,
             "boutons": 44,
-            "desoxydation": 54,
-            "micro-soudure": null
+            "desoxydation": 54
           }
         },
         {
@@ -780,8 +743,7 @@
             "haut-parleur": 49,
             "ecouteur-interne": 49,
             "boutons": 49,
-            "desoxydation": 54,
-            "micro-soudure": null
+            "desoxydation": 54
           }
         },
         {
@@ -802,8 +764,7 @@
             "haut-parleur": 44,
             "ecouteur-interne": 44,
             "boutons": 44,
-            "desoxydation": 54,
-            "micro-soudure": null
+            "desoxydation": 54
           }
         },
         {
@@ -824,8 +785,7 @@
             "haut-parleur": 44,
             "ecouteur-interne": 44,
             "boutons": 44,
-            "desoxydation": 54,
-            "micro-soudure": null
+            "desoxydation": 54
           }
         },
         {
@@ -846,8 +806,7 @@
             "haut-parleur": 44,
             "ecouteur-interne": 44,
             "boutons": 44,
-            "desoxydation": 54,
-            "micro-soudure": null
+            "desoxydation": 54
           }
         },
         {
@@ -868,8 +827,7 @@
             "haut-parleur": 39,
             "ecouteur-interne": 39,
             "boutons": 39,
-            "desoxydation": 49,
-            "micro-soudure": null
+            "desoxydation": 49
           }
         },
         {
@@ -890,8 +848,7 @@
             "haut-parleur": 39,
             "ecouteur-interne": 39,
             "boutons": 39,
-            "desoxydation": 49,
-            "micro-soudure": null
+            "desoxydation": 49
           }
         },
         {
@@ -912,8 +869,7 @@
             "haut-parleur": 39,
             "ecouteur-interne": 39,
             "boutons": 39,
-            "desoxydation": 49,
-            "micro-soudure": null
+            "desoxydation": 49
           }
         },
         {
@@ -934,8 +890,7 @@
             "haut-parleur": 39,
             "ecouteur-interne": 39,
             "boutons": 39,
-            "desoxydation": 49,
-            "micro-soudure": null
+            "desoxydation": 49
           }
         }
       ]

@@ -1,18 +1,18 @@
 import Link from "next/link";
 import {
-  ArrowRight, BadgeCheck, Clock, Gift, ShieldCheck, Smartphone, Battery, Cpu, Droplets, Unlock, Database,
-  Layers, Home as HomeIcon, Stethoscope, RefreshCcw, Banknote, Package, CreditCard, FileText, Headphones,
+  ArrowRight, BadgeCheck, Clock, ShieldCheck, Smartphone, Battery, Droplets, Unlock, Database,
+  Home as HomeIcon, Stethoscope, Gamepad2, Laptop, Store, RefreshCcw, Code2,
 } from "lucide-react";
 import { VisuelHero } from "@/components/accueil/VisuelHero";
-import { BentoWeb } from "@/components/accueil/BentoWeb";
 import { Simulateur } from "@/components/reparation/Simulateur";
 import { CarteProduit } from "@/components/boutique/CarteProduit";
+import { IconeService } from "@/components/services/IconeService";
 import { Accordeon } from "@/components/ui/Accordeon";
 import { EnTeteSection } from "@/components/ui/Section";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { StatutOuverture } from "@/components/ui/StatutOuverture";
 import { Val } from "@/components/ui/Val";
-import { boutique, entreprise, offresWeb } from "@/config/entreprise";
+import { boutique, entreprise, prixVitrine, servicesProximite } from "@/config/entreprise";
 import { getTarifs } from "@/lib/tarifs";
 import { getCatalogue } from "@/lib/produits";
 import { faqJsonLd, meta } from "@/lib/seo";
@@ -22,38 +22,29 @@ import { horairesSemaine, plagesTexte } from "@/lib/horaires";
 export const dynamic = "force-dynamic";
 
 export const metadata = meta({
-  titre: "Réparation de téléphone & création de sites web à Montpellier",
+  titre: "Réparation de téléphone, accessoires et smartphones reconditionnés à Montpellier",
   description:
-    "GCS à Montpellier : réparation de smartphones en 30 min (écran, batterie, micro-soudure, désoxydation), diagnostic gratuit, et création de sites web vitrines et e-commerce pour les professionnels.",
+    "GCS à Montpellier : réparation de smartphones, consoles et PC dès 30 min, diagnostic gratuit, accessoires, smartphones reconditionnés, et services du quotidien (carte grise, recharge mobile, billets, transfert d'argent, point relais).",
   chemin: "/",
 });
 
 const faq = [
-  { q: "Combien de temps dure la réparation d'un iPhone ?", r: "La plupart des réparations (écran, batterie, connecteur) sont réalisées en 20 à 45 minutes, pendant que vous patientez ou faites une course. Les interventions plus techniques (micro-soudure, désoxydation) demandent 24 à 48 h." },
+  { q: "Combien de temps dure la réparation d'un iPhone ?", r: "La plupart des réparations (écran, batterie, connecteur) sont réalisées en 20 à 45 minutes, pendant que vous patientez ou faites une course. Les interventions plus longues (désoxydation, consoles, PC) demandent 24 à 48 h." },
   { q: "Le diagnostic est-il vraiment gratuit ?", r: "Oui. Nous examinons votre appareil gratuitement et sans engagement, puis nous vous annonçons un prix ferme avant toute intervention." },
-  { q: "Combien coûte la création d'un site web ?", r: `Un site vitrine démarre à partir de ${prixCourt(offresWeb[0].prixDepuis ?? 0)} et une boutique en ligne à partir de ${prixCourt(offresWeb[1].prixDepuis ?? 0)}. Chaque projet fait l'objet d'un devis gratuit et détaillé, sans surprise.` },
-  { q: "Je n'y connais rien au web, est-ce un problème ?", r: "Pas du tout : nous nous occupons de tout (nom de domaine, hébergement, textes, photos, référencement) et vous formons à la mise à jour de votre site. Vous gardez un interlocuteur unique, à Montpellier." },
+  { q: "Vos téléphones reconditionnés sont-ils garantis ?", r: `Oui : chaque téléphone est testé point par point, nettoyé et garanti ${boutique.garantieReconditionneMois} mois, en plus de la garantie légale de conformité.` },
+  { q: "Pouvez-vous faire ma carte grise ?", r: "Oui, en boutique : changement de titulaire, changement d'adresse, duplicata, déclaration de cession… Passez avec vos documents, on vous dit tout de suite ce qu'il faut et combien ça coûte." },
   { q: "Mes données sont-elles en sécurité pendant la réparation ?", r: "Nous n'accédons à vos données que si c'est indispensable et avec votre accord. Nous vous conseillons toutefois de faire une sauvegarde avant toute réparation ; nous pouvons aussi la réaliser pour vous." },
 ];
 
 const servicesRep = [
   { icon: Smartphone, nom: "Écran" },
   { icon: Battery, nom: "Batterie" },
-  { icon: Cpu, nom: "Micro-soudure" },
+  { icon: Gamepad2, nom: "Consoles" },
+  { icon: Laptop, nom: "PC & tablettes" },
   { icon: Droplets, nom: "Désoxydation" },
   { icon: Unlock, nom: "Déblocage opérateur" },
-  { icon: Database, nom: "Récupération de données" },
-  { icon: Layers, nom: "Films hydrogel" },
+  { icon: Database, nom: "Transfert de données" },
   { icon: HomeIcon, nom: "Réparation à domicile" },
-];
-
-const autres = [
-  { icon: RefreshCcw, nom: "Rachat & vente de reconditionnés", href: "/services#reconditionnes" },
-  { icon: Headphones, nom: "Accessoires", href: "/boutique" },
-  { icon: Banknote, nom: "Transfert d'argent", href: "/services#transfert-argent" },
-  { icon: Package, nom: "Point relais colis", href: "/services#point-relais" },
-  { icon: CreditCard, nom: "Cartes PCS", href: "/services#cartes-pcs" },
-  { icon: FileText, nom: "Aide administrative", href: "/services#aide-administrative" },
 ];
 
 export default async function Accueil() {
@@ -72,22 +63,22 @@ export default async function Accueil() {
         <div className="absolute -right-20 bottom-0 size-[22rem] rounded-full bg-cyan/20 blur-[100px]" aria-hidden />
         <div className="container-x relative grid items-center gap-14 pb-24 pt-14 sm:pt-20 lg:grid-cols-[1.1fr_1fr] lg:pb-32 lg:pt-24">
           <div className="animate-fade-up">
-            <p className="eyebrow text-cyan">Montpellier · Réparation & création web</p>
+            <p className="eyebrow text-cyan">Montpellier · Réparation · Accessoires · Téléphones</p>
             <h1 className="mt-6 text-[2.6rem] font-semibold leading-[1.04] sm:text-6xl lg:text-[4.25rem]">
               Votre téléphone réparé.
               <br />
-              <span className="text-gradient">Votre entreprise en ligne.</span>
+              <span className="text-gradient">Et tout pour le garder.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-white/75 sm:text-xl">
-              GCS répare votre smartphone en 30 minutes et crée des sites web qui font venir des clients.
-              Un seul interlocuteur, à deux pas de chez vous.
+              Réparation de smartphones, consoles et PC, accessoires, téléphones reconditionnés garantis.
+              Et en plus : carte grise, recharge, billets, transfert d&apos;argent. Tout au même endroit.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Link href="/creation-site-web-montpellier#devis" className="btn-accent">
-                Demander un devis site web <ArrowRight className="size-5" aria-hidden />
+              <Link href="/reparation-telephone-montpellier#simulateur" className="btn-accent">
+                Estimer ma réparation <ArrowRight className="size-5" aria-hidden />
               </Link>
-              <Link href="/reparation-telephone-montpellier#simulateur" className="btn-ghost-dark">
-                Estimer ma réparation
+              <Link href="/boutique" className="btn-ghost-dark">
+                Voir la boutique
               </Link>
             </div>
             <ul className="mt-10 grid grid-cols-2 gap-x-6 gap-y-3 text-sm text-white/80 sm:flex sm:flex-wrap">
@@ -95,47 +86,13 @@ export default async function Accueil() {
                 { i: Stethoscope, t: "Diagnostic gratuit" },
                 { i: Clock, t: "Réparation dès 30 min" },
                 { i: ShieldCheck, t: `Garantie ${boutique.garantieReparationMois} mois` },
-                { i: Gift, t: "Devis web gratuit sous 48 h" },
+                { i: Store, t: "Retrait gratuit en boutique" },
               ].map(({ i: I, t }) => (
                 <li key={t} className="flex items-center gap-2"><I className="size-4 text-cyan" aria-hidden /> {t}</li>
               ))}
             </ul>
           </div>
           <VisuelHero />
-        </div>
-      </section>
-
-      {/* ============ CRÉATION WEB (activité mise en avant) ============ */}
-      <section className="relative py-20 sm:py-28" aria-labelledby="titre-web">
-        <div className="container-x">
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-            <EnTeteSection
-              id="titre-web"
-              surtitre="Création de sites web à Montpellier"
-              titre={<>Votre site web professionnel, <span className="text-brand">clé en main.</span></>}
-              texte="Artisans, commerçants, restaurateurs, indépendants : nous concevons des sites rapides, élégants et bien référencés, qui travaillent pour vous 24 h/24."
-            />
-            <Link href="/creation-site-web-montpellier" className="btn-ghost shrink-0">
-              Découvrir nos offres web <ArrowRight className="size-4" aria-hidden />
-            </Link>
-          </div>
-          <div className="mt-12">
-            <BentoWeb />
-          </div>
-          <div className="mt-6 grid gap-4 sm:grid-cols-3">
-            {offresWeb.map((o) => (
-              <Link key={o.id} href="/creation-site-web-montpellier#offres" className={`flex items-center justify-between rounded-2xl px-5 py-4 transition-colors ${o.misEnAvant ? "bg-ink text-white hover:bg-ink-3" : "bg-white ring-1 ring-line hover:ring-ink"}`}>
-                <span>
-                  <span className="block font-semibold">{o.nom}</span>
-                  <span className={`text-sm ${o.misEnAvant ? "text-white/70" : "text-muted"}`}>{o.delai}</span>
-                </span>
-                <span className="text-right">
-                  <span className={`block text-xs ${o.misEnAvant ? "text-white/60" : "text-muted"}`}>{o.prixDepuis ? "à partir de" : ""}</span>
-                  <span className="font-display text-xl font-bold">{o.prixDepuis ? prixCourt(o.prixDepuis) : "Sur devis"}</span>
-                </span>
-              </Link>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -147,9 +104,9 @@ export default async function Accueil() {
             <EnTeteSection
               id="titre-rep"
               sombre
-              surtitre="Réparation de smartphones"
+              surtitre="Réparation smartphones, consoles & PC"
               titre="Écran cassé ? Batterie à plat ? On s'en occupe aujourd'hui."
-              texte="Pièces de qualité, techniciens équipés pour la micro-soudure, prix affichés à l'avance. Avec ou sans rendez-vous."
+              texte="Pièces de qualité, diagnostic gratuit, prix annoncé avant de toucher à votre appareil. Avec ou sans rendez-vous."
             />
             <ul className="mt-8 grid grid-cols-2 gap-3">
               {servicesRep.map(({ icon: I, nom }) => (
@@ -166,15 +123,82 @@ export default async function Accueil() {
         </div>
       </section>
 
+      {/* ============ BOUTIQUE ============ */}
+      {vedettes.length > 0 && (
+        <section className="py-20 sm:py-24" aria-labelledby="titre-boutique">
+          <div className="container-x">
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+              <EnTeteSection id="titre-boutique" surtitre="Boutique accessoires" titre="Coques, protections, chargeurs : tout pour votre téléphone" texte={`Commandez en ligne, faites-vous livrer ou retirez gratuitement en boutique.${boutique.livraison.gratuiteDes ? ` Livraison offerte dès ${prixCourt(boutique.livraison.gratuiteDes)}.` : ""}`} />
+              <Link href="/boutique" className="btn-ghost shrink-0">Voir toute la boutique <ArrowRight className="size-4" aria-hidden /></Link>
+            </div>
+            <div className="mt-10 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
+              {vedettes.map((p) => <CarteProduit key={p.id} produit={p} nomCategorie={nomCat[p.categorie]} />)}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ============ TÉLÉPHONES RECONDITIONNÉS ============ */}
+      <section className="pb-20 sm:pb-24" aria-labelledby="titre-reco">
+        <div className="container-x">
+          <div className="grid gap-8 overflow-hidden rounded-[2rem] bg-ink p-8 text-white sm:p-12 lg:grid-cols-[1.3fr_1fr] lg:items-center">
+            <div>
+              <p className="eyebrow text-cyan">Téléphones</p>
+              <h2 id="titre-reco" className="mt-4 text-3xl font-semibold sm:text-4xl">
+                Smartphones reconditionnés{prixVitrine.reconditionnesDes != null && <><br /><span className="text-gradient">dès {prixCourt(prixVitrine.reconditionnesDes)}</span></>}
+              </h2>
+              <p className="mt-4 max-w-xl text-white/75">Testés point par point, nettoyés, garantis {boutique.garantieReconditionneMois} mois. On rachète aussi votre ancien téléphone, payé tout de suite.</p>
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                <Link href="/services#reconditionnes" className="btn-accent">Voir les téléphones <ArrowRight className="size-5" aria-hidden /></Link>
+                <Link href="/services#estimation" className="btn-ghost-dark">Faire estimer mon téléphone</Link>
+              </div>
+            </div>
+            <ul className="grid gap-3 text-sm">
+              {[
+                { i: RefreshCcw, t: "Rachat de votre ancien téléphone", d: "Estimation gratuite, paiement immédiat" },
+                { i: ShieldCheck, t: `Garantie ${boutique.garantieReconditionneMois} mois`, d: "En plus de la garantie légale de conformité" },
+                ...(prixVitrine.simPrepayee != null ? [{ i: Smartphone, t: `Cartes SIM prépayées dès ${prixCourt(prixVitrine.simPrepayee)}`, d: "Orange, Free, SFR, jusqu'à 200 Go" }] : []),
+              ].map(({ i: I, t, d }) => (
+                <li key={t} className="flex gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <I className="mt-0.5 size-5 shrink-0 text-cyan" aria-hidden />
+                  <span><span className="block font-semibold">{t}</span><span className="text-white/65">{d}</span></span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ SERVICES DU QUOTIDIEN ============ */}
+      <section className="py-20 sm:py-24" aria-labelledby="titre-autres">
+        <div className="container-x">
+          <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+            <EnTeteSection id="titre-autres" surtitre="Nouveau en boutique" titre="Carte grise, recharge, billets : vos démarches au même endroit" />
+            <Link href="/services" className="btn-ghost shrink-0">Tous les services <ArrowRight className="size-4" aria-hidden /></Link>
+          </div>
+          <ul className="mt-10 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+            {servicesProximite.map((sv) => (
+              <li key={sv.id}>
+                <Link href={`/services#${sv.id}`} className="group relative flex h-full flex-col gap-3 rounded-2xl border border-line bg-white p-4 transition-colors hover:border-ink sm:p-5">
+                  {sv.nouveau && <span className="absolute right-3 top-3 rounded-full bg-ink px-2 py-0.5 text-[0.65rem] font-bold uppercase tracking-wider text-cyan">Nouveau</span>}
+                  <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-soft text-brand"><IconeService icone={sv.icone} className="size-5" /></span>
+                  <span className="text-sm font-semibold sm:text-base">{sv.nom}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       {/* ============ ENGAGEMENTS ============ */}
-      <section className="py-20 sm:py-24" aria-labelledby="titre-engagements">
+      <section className="bg-white py-20 sm:py-24" aria-labelledby="titre-engagements">
         <div className="container-x">
           <EnTeteSection id="titre-engagements" centre surtitre="Pourquoi GCS" titre="Des engagements simples, tenus à chaque fois." />
           <ol className="mt-14 grid gap-5 md:grid-cols-3">
             {[
               { n: "01", t: "Un prix annoncé avant d'intervenir", d: "Diagnostic gratuit, devis clair. Vous décidez en connaissance de cause, sans frais cachés." },
-              { n: "02", t: "Rapide, sans sacrifier la qualité", d: "Pièces sélectionnées et testées, réparations courantes en moins d'une heure, sites livrés dans les délais annoncés." },
-              { n: "03", t: "Garanti et accompagné", d: `Réparations garanties ${boutique.garantieReparationMois} mois, sites maintenus et suivis. Un interlocuteur que vous connaissez, joignable en boutique ou sur Snapchat.` },
+              { n: "02", t: "Rapide, sans sacrifier la qualité", d: "Pièces sélectionnées et testées, réparations courantes en moins d'une heure." },
+              { n: "03", t: "Garanti et accompagné", d: `Réparations garanties ${boutique.garantieReparationMois} mois, téléphones reconditionnés garantis ${boutique.garantieReconditionneMois} mois. Une équipe que vous connaissez, joignable en boutique ou sur Snapchat.` },
             ].map((e) => (
               <li key={e.n} className="card p-7">
                 <span className="font-display text-4xl font-bold text-brand/25">{e.n}</span>
@@ -186,43 +210,24 @@ export default async function Accueil() {
         </div>
       </section>
 
-      {/* ============ BOUTIQUE ============ */}
-      {vedettes.length > 0 && (
-        <section className="bg-white py-20 sm:py-24" aria-labelledby="titre-boutique">
-          <div className="container-x">
-            <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-              <EnTeteSection id="titre-boutique" surtitre="Boutique en ligne" titre="Les accessoires indispensables" texte={`Commandez en ligne, faites-vous livrer ou retirez gratuitement en boutique.${boutique.livraison.gratuiteDes ? ` Livraison offerte dès ${prixCourt(boutique.livraison.gratuiteDes)}.` : ""}`} />
-              <Link href="/boutique" className="btn-ghost shrink-0">Voir toute la boutique <ArrowRight className="size-4" aria-hidden /></Link>
-            </div>
-            <div className="mt-10 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
-              {vedettes.map((p) => <CarteProduit key={p.id} produit={p} nomCategorie={nomCat[p.categorie]} />)}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* ============ AUTRES SERVICES ============ */}
-      <section className="py-20 sm:py-24" aria-labelledby="titre-autres">
-        <div className="container-x">
-          <EnTeteSection id="titre-autres" surtitre="Et aussi, en boutique" titre="Tous vos services de proximité au même endroit" />
-          <ul className="mt-10 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3">
-            {autres.map(({ icon: I, nom, href }) => (
-              <li key={nom}>
-                <Link href={href} className="group flex h-full items-center gap-4 rounded-2xl border border-line bg-white p-4 transition-colors hover:border-ink sm:p-5">
-                  <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-accent-soft text-accent-strong"><I className="size-5" aria-hidden /></span>
-                  <span className="text-sm font-semibold sm:text-base">{nom}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
       {/* ============ FAQ ============ */}
       <section className="bg-white py-20 sm:py-24" aria-labelledby="titre-faq">
         <div className="container-x grid gap-10 lg:grid-cols-[1fr_1.4fr]">
           <EnTeteSection id="titre-faq" surtitre="Questions fréquentes" titre="Vous vous posez une question ?" texte={<>Pas de réponse ici ? <Link href="/contact" className="font-semibold text-brand underline underline-offset-2">Contactez-nous</Link> ou écrivez-nous sur Snapchat ({entreprise.snapchat}).</>} />
           <Accordeon items={faq} />
+        </div>
+      </section>
+
+      {/* ============ SITES WEB (discret) ============ */}
+      <section className="pb-4">
+        <div className="container-x">
+          <Link href="/creation-site-web-montpellier" className="flex flex-col gap-3 rounded-2xl border border-line bg-white p-5 transition-colors hover:border-ink sm:flex-row sm:items-center sm:justify-between">
+            <span className="flex items-center gap-3">
+              <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-brand-soft text-brand"><Code2 className="size-5" aria-hidden /></span>
+              <span><span className="block font-semibold">Vous êtes un professionnel ?</span><span className="text-sm text-muted">On crée aussi des sites web pour les commerces et artisans de Montpellier.</span></span>
+            </span>
+            <span className="inline-flex items-center gap-1 text-sm font-semibold text-brand">En savoir plus <ArrowRight className="size-4" aria-hidden /></span>
+          </Link>
         </div>
       </section>
 
@@ -232,11 +237,11 @@ export default async function Accueil() {
           <div className="relative grid gap-10 overflow-hidden rounded-[2rem] bg-gradient-to-br from-brand to-brand-strong p-8 text-white sm:p-12 lg:grid-cols-[1.4fr_1fr] lg:items-center">
             <div className="bg-grid absolute inset-0 opacity-60 [mask-image:linear-gradient(to_left,black,transparent)]" aria-hidden />
             <div className="relative">
-              <h2 className="text-3xl font-semibold sm:text-4xl">Prêt à lancer votre site web ?</h2>
-              <p className="mt-3 max-w-xl text-lg text-white/85">Parlez-nous de votre projet : devis gratuit et personnalisé sous 48 h, sans engagement.</p>
+              <h2 className="text-3xl font-semibold sm:text-4xl">Un téléphone en panne ? Passez nous voir.</h2>
+              <p className="mt-3 max-w-xl text-lg text-white/85">Diagnostic gratuit, avec ou sans rendez-vous. Le prix vous est annoncé avant toute intervention.</p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-                <Link href="/creation-site-web-montpellier#devis" className="btn bg-white text-ink hover:bg-accent">Demander mon devis gratuit</Link>
-                <Link href="/contact" className="btn-ghost-dark">Nous contacter</Link>
+                <Link href="/reparation-telephone-montpellier#simulateur" className="btn bg-white text-ink hover:bg-accent">Estimer ma réparation</Link>
+                <a href={`tel:${entreprise.telephoneLien}`} className="btn-ghost-dark">Appeler la boutique</a>
               </div>
             </div>
             <div className="relative rounded-2xl bg-ink/30 p-6 backdrop-blur">

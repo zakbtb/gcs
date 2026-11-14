@@ -1,17 +1,24 @@
 import Link from "next/link";
-import { RefreshCcw, Headphones, Banknote, Package, CreditCard, FileText, Check, ArrowRight } from "lucide-react";
+import { RefreshCcw, Headphones, Check, ArrowRight } from "lucide-react";
+import { IconeService } from "@/components/services/IconeService";
 import { HeroPage, EnTeteSection } from "@/components/ui/Section";
 import { FormulaireDemande } from "@/components/formulaires/FormulaireDemande";
-import { Val } from "@/components/ui/Val";
-import { boutique, entreprise } from "@/config/entreprise";
+import { boutique, prixVitrine, servicesProximite, type ServiceProximite } from "@/config/entreprise";
+import { prixCourt } from "@/lib/format";
 import { meta } from "@/lib/seo";
 
 export const metadata = meta({
-  titre: "Téléphones reconditionnés, rachat, transfert d'argent, point relais",
+  titre: "Téléphones reconditionnés, carte grise, recharge, billets, transfert d'argent",
   description:
-    "À Montpellier, GCS rachète et vend des téléphones reconditionnés garantis, propose accessoires, transfert d'argent, point relais colis, cartes PCS et aide administrative.",
+    "À Montpellier, GCS vend et rachète des téléphones reconditionnés garantis, et s'occupe de vos démarches : carte grise, recharge mobile, transfert de crédit, billets d'avion, bus et train, hôtels, location de voiture, transfert d'argent, point relais.",
   chemin: "/services",
 });
+
+const GROUPES: { id: ServiceProximite["groupe"]; surtitre: string; titre: string }[] = [
+  { id: "demarches", surtitre: "Démarches & téléphonie", titre: "Carte grise, recharge, crédit : c'est fait en boutique" },
+  { id: "voyages", surtitre: "Voyages & billets", titre: "Vols, hôtels, voiture, bus et train, réservés avec vous" },
+  { id: "quotidien", surtitre: "Au quotidien", titre: "Argent, colis, cartes prépayées, papiers" },
+];
 
 export default function PageServices() {
   const blocs = [
@@ -19,7 +26,7 @@ export default function PageServices() {
       id: "reconditionnes",
       icon: RefreshCcw,
       titre: "Rachat & vente de téléphones reconditionnés",
-      texte: "Vendez votre ancien smartphone au meilleur prix, payé immédiatement, ou repartez avec un téléphone reconditionné testé, nettoyé et garanti.",
+      texte: `Vendez votre ancien smartphone au meilleur prix, payé immédiatement, ou repartez avec un téléphone reconditionné testé, nettoyé et garanti${prixVitrine.reconditionnesDes != null ? `, dès ${prixCourt(prixVitrine.reconditionnesDes)}` : ""}.`,
       points: [
         "Estimation gratuite en boutique ou en ligne",
         "Paiement immédiat (pièce d'identité obligatoire)",
@@ -34,46 +41,23 @@ export default function PageServices() {
       icon: Headphones,
       titre: "Accessoires",
       texte: "Coques, verres trempés, chargeurs, câbles, écouteurs, batteries externes : des accessoires sélectionnés pour leur qualité, disponibles en boutique et en ligne.",
-      points: ["Pose de protection d'écran offerte", "Films hydrogel découpés sur mesure", "Retrait gratuit en boutique"],
+      points: [
+        ...(prixVitrine.coquesDes != null ? [`Coques dès ${prixCourt(prixVitrine.coquesDes)}`] : []),
+        ...(prixVitrine.hydrogel != null ? [`Film hydrogel découpé sur mesure et posé : ${prixCourt(prixVitrine.hydrogel)}${prixVitrine.hydrogelAntiEspion != null ? ` (anti-espion ${prixCourt(prixVitrine.hydrogelAntiEspion)})` : ""}`] : []),
+        ...(prixVitrine.batteriesExternesDes != null ? [`Batteries externes dès ${prixCourt(prixVitrine.batteriesExternesDes)}`] : []),
+        "Retrait gratuit en boutique",
+      ],
       lien: { href: "/boutique", nom: "Voir la boutique en ligne" },
-    },
-    {
-      id: "transfert-argent",
-      icon: Banknote,
-      titre: "Transfert d'argent",
-      texte: "Envoyez et recevez de l'argent en France et à l'international, rapidement et en toute sécurité, en tant qu'agent d'un établissement agréé.",
-      points: ["Envoi vers de nombreux pays", "Pièce d'identité en cours de validité obligatoire", <>Réseau partenaire : <Val v={entreprise.partenaireTransfertArgent} /></>],
-    },
-    {
-      id: "point-relais",
-      icon: Package,
-      titre: "Point relais colis",
-      texte: "Faites-vous livrer vos colis en boutique et récupérez-les quand vous le souhaitez, pendant nos horaires d'ouverture. Dépôt de colis possible également.",
-      points: ["Retrait sur présentation du code et d'une pièce d'identité", "Dépôt de vos envois et retours", <>Réseau(x) : <Val v={entreprise.partenairePointRelais} /></>],
-    },
-    {
-      id: "cartes-pcs",
-      icon: CreditCard,
-      titre: "Cartes PCS",
-      texte: "Achat et rechargement de cartes prépayées PCS Mastercard : payez en magasin et en ligne sans compte bancaire.",
-      points: ["Vente de cartes et recharges", "Pièce d'identité requise selon le montant", "Conseils pour l'activation"],
-    },
-    {
-      id: "aide-administrative",
-      icon: FileText,
-      titre: "Aide administrative",
-      texte: "Démarches en ligne, création de comptes, impressions, scans, envoi de documents : nous vous accompagnons dans vos formalités numériques du quotidien.",
-      points: ["Accompagnement aux démarches en ligne", "Impression, scan et photocopie", "Création d'adresse e-mail et de comptes"],
     },
   ];
 
   return (
     <>
       <HeroPage
-        ariane={[{ nom: "Accueil", href: "/" }, { nom: "Autres services" }]}
-        surtitre="Services de proximité · Montpellier"
+        ariane={[{ nom: "Accueil", href: "/" }, { nom: "Téléphones & services" }]}
+        surtitre="Téléphones & services · Montpellier"
         titre="Bien plus qu'un réparateur : votre point services du quartier"
-        texte="Téléphones reconditionnés, rachat, accessoires, transfert d'argent, colis, cartes prépayées, démarches : passez nous voir, on s'occupe de vous."
+        texte="Téléphones reconditionnés, carte grise, recharge, billets, voyages, transfert d'argent, colis : passez nous voir, on s'occupe de vous."
       />
       <section className="py-16 sm:py-24">
         <div className="container-x space-y-6">
@@ -100,6 +84,29 @@ export default function PageServices() {
           ))}
         </div>
       </section>
+
+      {GROUPES.map((g) => (
+        <section key={g.id} className="pb-16 sm:pb-20" aria-labelledby={`t-${g.id}`}>
+          <div className="container-x">
+            <EnTeteSection id={`t-${g.id}`} surtitre={g.surtitre} titre={g.titre} />
+            <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {servicesProximite.filter((sv) => sv.groupe === g.id).map((sv) => (
+                <article key={sv.id} id={sv.id} className="relative scroll-mt-24 rounded-3xl border border-line bg-white p-6 sm:p-7">
+                  {sv.nouveau && <span className="absolute right-5 top-5 rounded-full bg-ink px-2.5 py-1 text-[0.65rem] font-bold uppercase tracking-wider text-cyan">Nouveau</span>}
+                  <span className="grid size-12 place-items-center rounded-2xl bg-brand-soft text-brand"><IconeService icone={sv.icone} className="size-6" /></span>
+                  <h3 className="mt-5 text-xl font-semibold">{sv.nom}</h3>
+                  <p className="mt-2 text-muted">{sv.texte}</p>
+                  <ul className="mt-4 space-y-2 text-sm">
+                    {sv.points.map((pt) => (
+                      <li key={pt} className="flex gap-2.5"><Check className="mt-0.5 size-4 shrink-0 text-success" aria-hidden /> <span>{pt}</span></li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      ))}
 
       <section id="estimation" className="scroll-mt-20 bg-white py-20 sm:py-24" aria-labelledby="t-rachat">
         <div className="container-x grid gap-10 lg:grid-cols-[1fr_1.3fr]">

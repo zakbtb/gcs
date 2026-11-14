@@ -59,7 +59,7 @@ export default function ConditionsReparation() {
       <h2 id="donnees">5. Données du Client</h2>
       <ul>
         <li>Le Client reste seul responsable de ses données. Il lui appartient d&apos;effectuer une <strong>sauvegarde complète</strong> avant de confier son appareil (GCS peut la réaliser sur demande, comme prestation distincte).</li>
-        <li>Certaines interventions (micro-soudure, désoxydation, carte mère, remise à zéro nécessaire) peuvent entraîner une perte de données. GCS ne saurait être tenu responsable de cette perte, sauf faute prouvée de sa part.</li>
+        <li>Certaines interventions (désoxydation, carte mère, remise à zéro nécessaire) peuvent entraîner une perte de données. GCS ne saurait être tenu responsable de cette perte, sauf faute prouvée de sa part.</li>
         <li>Le code de déverrouillage n&apos;est demandé que lorsqu&apos;il est indispensable au test de l&apos;appareil. GCS s&apos;engage à ne consulter, copier ni conserver aucune donnée personnelle du Client au-delà de ce qui est strictement nécessaire à la prestation (voir <a href="/confidentialite">politique de confidentialité</a>).</li>
         <li>Pour les prestations de transfert ou de récupération de données, GCS est tenu à une obligation de moyens ; la récupération dépend de l&apos;état du support.</li>
       </ul>

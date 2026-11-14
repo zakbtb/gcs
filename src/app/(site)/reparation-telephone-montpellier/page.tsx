@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {
-  Smartphone, Battery, Cpu, Droplets, Unlock, Stethoscope, Database, Layers, Home as HomeIcon,
+  Smartphone, Battery, Gamepad2, Laptop, Droplets, Unlock, Stethoscope, Database, Layers, Home as HomeIcon,
   ShieldCheck, Clock, BadgeEuro, PackageCheck, ArrowRight,
 } from "lucide-react";
 import { HeroPage, EnTeteSection } from "@/components/ui/Section";
@@ -17,14 +17,15 @@ export const dynamic = "force-dynamic";
 export const metadata = meta({
   titre: "Réparation téléphone Montpellier – iPhone, écran, batterie en 30 min",
   description:
-    "Réparation de téléphone à Montpellier : écran, batterie, caméra, connecteur, micro-soudure, désoxydation. Prix affichés en ligne, diagnostic gratuit, réparation iPhone en 30 min, garantie.",
+    "Réparation de téléphone à Montpellier : écran, batterie, caméra, connecteur, désoxydation, consoles et PC. Prix affichés en ligne, diagnostic gratuit, réparation iPhone en 30 min, garantie.",
   chemin: "/reparation-telephone-montpellier",
 });
 
 const services = [
   { icon: Smartphone, t: "Remplacement d'écran", d: "Vitre fissurée, tactile défaillant, écran noir : remplacement en 30 à 45 minutes, au choix en qualité compatible ou origine." },
   { icon: Battery, t: "Changement de batterie", d: "Autonomie en chute libre ou batterie gonflée ? Une batterie neuve et votre iPhone retrouve sa journée complète." },
-  { icon: Cpu, t: "Micro-soudure", d: "Réparation de carte mère au microscope : puce de charge, audio, rétroéclairage, connecteurs… là où d'autres abandonnent." },
+  { icon: Gamepad2, t: "Réparation de consoles", d: "PS5, PS4, Xbox, Switch : manette qui dérive, port HDMI, surchauffe, lecteur. Diagnostic gratuit et devis avant intervention." },
+  { icon: Laptop, t: "PC & tablettes", d: "Écran, batterie, clavier, lenteurs, nettoyage : on remet votre ordinateur ou votre tablette en forme." },
   { icon: Droplets, t: "Désoxydation", d: "Chute dans l'eau, café renversé : éteignez votre téléphone, ne le chargez pas et apportez-le vite. Nettoyage aux ultrasons." },
   { icon: Unlock, t: "Déblocage opérateur", d: "Libérez votre téléphone pour l'utiliser avec n'importe quelle carte SIM, dans le respect des conditions de l'opérateur." },
   { icon: Stethoscope, t: "Diagnostic gratuit", d: "Vous ne savez pas d'où vient la panne ? Nous testons votre appareil gratuitement et vous annonçons un prix ferme." },

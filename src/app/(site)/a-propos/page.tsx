@@ -59,7 +59,7 @@ export default function APropos() {
         <div className="container-x grid gap-8 lg:grid-cols-2">
           <div className="rounded-3xl bg-surface p-8">
             <h2 className="text-2xl font-semibold">Côté réparation</h2>
-            <p className="mt-3 text-muted">Écrans, batteries, connecteurs, micro-soudure sur carte mère, désoxydation, récupération de données : un atelier équipé pour traiter la grande majorité des pannes sur place.</p>
+            <p className="mt-3 text-muted">Écrans, batteries, connecteurs, désoxydation, récupération de données : un atelier équipé pour traiter la grande majorité des pannes sur place.</p>
             <Link href="/reparation-telephone-montpellier" className="btn-dark mt-6">Nos réparations</Link>
           </div>
           <div className="rounded-3xl bg-ink p-8 text-white">

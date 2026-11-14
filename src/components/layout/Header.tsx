@@ -10,10 +10,10 @@ import { usePanier } from "@/components/panier/PanierProvider";
 import { entreprise } from "@/config/entreprise";
 
 export const NAVIGATION = [
-  { href: "/creation-site-web-montpellier", nom: "Création de sites web", vedette: true },
-  { href: "/reparation-telephone-montpellier", nom: "Réparation" },
+  { href: "/reparation-telephone-montpellier", nom: "Réparation", vedette: true },
   { href: "/boutique", nom: "Boutique" },
-  { href: "/services", nom: "Autres services" },
+  { href: "/services", nom: "Téléphones & services" },
+  { href: "/creation-site-web-montpellier", nom: "Sites web" },
   { href: "/a-propos", nom: "À propos" },
   { href: "/contact", nom: "Contact" },
 ];
@@ -87,8 +87,8 @@ export function Header() {
                 </span>
               )}
             </Link>
-            <Link href="/creation-site-web-montpellier#devis" className="btn-accent btn-sm hidden sm:inline-flex">
-              Devis site web
+            <Link href="/reparation-telephone-montpellier#simulateur" className="btn-accent btn-sm hidden sm:inline-flex">
+              Estimer ma réparation
             </Link>
             <button
               className="grid size-11 place-items-center rounded-full hover:bg-surface lg:hidden"
@@ -149,8 +149,8 @@ export function Header() {
           </nav>
           <div className="space-y-3 border-t border-line p-4">
             <StatutOuverture className="text-sm text-muted" />
-            <Link href="/creation-site-web-montpellier#devis" className="btn-accent w-full">Demander un devis site web</Link>
-            <Link href="/reparation-telephone-montpellier#simulateur" className="btn-ghost w-full">Estimer ma réparation</Link>
+            <Link href="/reparation-telephone-montpellier#simulateur" className="btn-accent w-full">Estimer ma réparation</Link>
+            <Link href="/boutique" className="btn-ghost w-full">Voir la boutique</Link>
           </div>
         </div>
       </div>

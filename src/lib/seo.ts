@@ -45,7 +45,7 @@ export function localBusinessJsonLd() {
     name: `${entreprise.nomCommercial} – ${entreprise.nomComplet}`,
     legalName: entreprise.raisonSociale,
     description:
-      "Réparation de smartphones (iPhone, Samsung…) et création de sites web à Montpellier. Écran, batterie, micro-soudure, désoxydation, sites vitrines et e-commerce.",
+      "Réparation de smartphones (iPhone, Samsung…), consoles et PC à Montpellier. Accessoires, téléphones reconditionnés, carte grise, recharge mobile, billets, transfert d'argent, point relais.",
     url: entreprise.siteUrl,
     telephone: val(entreprise.telephoneLien),
     email: val(entreprise.email),

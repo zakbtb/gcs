@@ -8,21 +8,22 @@ import { BoutonCookies } from "./BoutonCookies";
 
 const colonnes = [
   {
-    titre: "Création web",
+    titre: "Réparation & boutique",
     liens: [
-      { href: "/creation-site-web-montpellier", nom: "Création de sites web" },
-      { href: "/creation-site-web-montpellier#offres", nom: "Site vitrine & e-commerce" },
-      { href: "/creation-site-web-montpellier#services", nom: "Refonte, maintenance & SEO" },
-      { href: "/creation-site-web-montpellier#devis", nom: "Demander un devis" },
+      { href: "/reparation-telephone-montpellier", nom: "Réparation smartphone, console, PC" },
+      { href: "/reparation-telephone-montpellier#simulateur", nom: "Simulateur de prix" },
+      { href: "/boutique", nom: "Boutique accessoires" },
+      { href: "/services#reconditionnes", nom: "Téléphones reconditionnés" },
     ],
   },
   {
-    titre: "Réparation & boutique",
+    titre: "Services",
     liens: [
-      { href: "/reparation-telephone-montpellier", nom: "Réparation smartphone" },
-      { href: "/reparation-telephone-montpellier#simulateur", nom: "Simulateur de prix" },
-      { href: "/boutique", nom: "Boutique accessoires" },
-      { href: "/services", nom: "Reconditionnés & autres services" },
+      { href: "/services#carte-grise", nom: "Carte grise" },
+      { href: "/services#recharge-mobile", nom: "Recharge mobile" },
+      { href: "/services#billets-avion", nom: "Voyages & billets" },
+      { href: "/services#transfert-argent", nom: "Transfert d'argent" },
+      { href: "/creation-site-web-montpellier", nom: "Création de sites web" },
     ],
   },
   {
@@ -47,8 +48,8 @@ export function Footer() {
         <div className="space-y-5">
           <Logo dark />
           <p className="max-w-sm text-sm leading-relaxed">
-            Réparation de smartphones et création de sites web à Montpellier. Un seul interlocuteur pour votre téléphone
-            et votre présence en ligne.
+            Réparation de smartphones, consoles et PC, accessoires et téléphones reconditionnés à Montpellier. Et vos
+            démarches du quotidien : carte grise, recharge, billets, transfert d&apos;argent.
           </p>
           <ul className="space-y-3 text-sm">
             <li className="flex gap-3">

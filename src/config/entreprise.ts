@@ -191,3 +191,106 @@ export const forfaitMaintenance = {
     "Suivi de la visibilité Google",
   ],
 };
+
+/* ============================================================================
+ *  PRIX AFFICHÉS EN VITRINE (donnés par GCS, novembre 2026)
+ *  Mettre null pour masquer un prix.
+ * ========================================================================== */
+export const prixVitrine = {
+  reconditionnesDes: 80 as number | null, // smartphones reconditionnés, « dès »
+  simPrepayee: 10 as number | null, // cartes SIM prépayées 200 Go
+  coquesDes: 10 as number | null,
+  hydrogel: 15 as number | null, // film hydrogel transparent posé
+  hydrogelAntiEspion: 20 as number | null,
+  batteriesExternesDes: 15 as number | null,
+};
+
+/* ============================================================================
+ *  SERVICES DU QUOTIDIEN (page /services et accueil)
+ *  nouveau: true affiche une pastille « Nouveau ».
+ *  Les tarifs de carte grise ne sont volontairement pas affichés (annoncés en boutique).
+ * ========================================================================== */
+export type ServiceProximite = {
+  id: string;
+  icone: "carte-grise" | "recharge" | "credit" | "avion" | "hotel" | "voiture" | "bus" | "argent" | "colis" | "pcs" | "admin" | "sim";
+  nom: string;
+  texte: string;
+  points: string[];
+  nouveau?: boolean;
+  groupe: "demarches" | "voyages" | "quotidien";
+};
+
+export const servicesProximite: ServiceProximite[] = [
+  {
+    id: "carte-grise", icone: "carte-grise", groupe: "demarches", nouveau: true,
+    nom: "Carte grise",
+    texte: "Vos démarches de carte grise faites en boutique, avec vous, sans passer des heures sur internet. Tarif annoncé avant de commencer.",
+    points: ["Changement de titulaire", "Changement d'adresse", "Duplicata", "Déclaration de cession", "Déclaration d'achat (professionnels)", "Immatriculation WW"],
+  },
+  {
+    id: "recharge-mobile", icone: "recharge", groupe: "demarches", nouveau: true,
+    nom: "Recharge mobile",
+    texte: "Rechargez votre forfait ou votre carte prépayée en quelques secondes, en boutique.",
+    points: ["SFR, Orange, Free, La Poste Mobile", "Lebara, Lyca, Syma, Libon", "Talk Home, White Calling"],
+  },
+  {
+    id: "transfert-credit", icone: "credit", groupe: "demarches", nouveau: true,
+    nom: "Transfert de crédit",
+    texte: "Envoyez du crédit téléphone à vos proches, en France et à l'étranger.",
+    points: ["Crédit reçu en quelques instants", "Vers de nombreux pays et opérateurs"],
+  },
+  {
+    id: "cartes-sim", icone: "sim", groupe: "demarches",
+    nom: "Cartes SIM prépayées",
+    texte: "Repartez avec une carte SIM prépayée prête à l'emploi : Orange, Free, SFR.",
+    points: ["Packs avec beaucoup de data (jusqu'à 200 Go)", "Activation sur place avec vous"],
+  },
+  {
+    id: "billets-avion", icone: "avion", groupe: "voyages", nouveau: true,
+    nom: "Billets d'avion",
+    texte: "On cherche et on réserve votre vol avec vous, en boutique.",
+    points: ["Comparaison des vols et des horaires", "Paiement et billet sur place"],
+  },
+  {
+    id: "hotels", icone: "hotel", groupe: "voyages", nouveau: true,
+    nom: "Hôtels & séjours",
+    texte: "On réserve votre hôtel ou votre séjour avec vous.",
+    points: ["Pour les vacances ou le travail", "Réservation confirmée sur place"],
+  },
+  {
+    id: "location-voiture", icone: "voiture", groupe: "voyages", nouveau: true,
+    nom: "Location de voiture",
+    texte: "Une voiture pour les vacances ou le travail, réservée en boutique.",
+    points: ["Comparaison des offres", "Réservation sur place"],
+  },
+  {
+    id: "bus-train", icone: "bus", groupe: "voyages", nouveau: true,
+    nom: "Billets de bus & train",
+    texte: "Vos billets de bus et de train, imprimés ou envoyés sur votre téléphone.",
+    points: ["BlaBlaCar Bus", "RegioJet", "CFF (trains suisses)"],
+  },
+  {
+    id: "transfert-argent", icone: "argent", groupe: "quotidien",
+    nom: "Transfert d'argent",
+    texte: "Envoyez et recevez de l'argent en France et à l'international, en tant qu'agent d'un établissement agréé.",
+    points: ["Envoi vers de nombreux pays", "Pièce d'identité en cours de validité obligatoire", `Réseau : ${entreprise.partenaireTransfertArgent}`],
+  },
+  {
+    id: "point-relais", icone: "colis", groupe: "quotidien",
+    nom: "Point relais colis",
+    texte: "Récupérez et déposez vos colis en boutique, pendant nos horaires d'ouverture.",
+    points: ["Retrait avec le code et une pièce d'identité", "Dépôt de vos envois et retours", `Réseau : ${entreprise.partenairePointRelais}`],
+  },
+  {
+    id: "cartes-pcs", icone: "pcs", groupe: "quotidien",
+    nom: "Cartes PCS",
+    texte: "Achat et rechargement de cartes prépayées PCS Mastercard, pour payer sans compte bancaire.",
+    points: ["Vente de cartes et recharges", "Pièce d'identité requise selon le montant"],
+  },
+  {
+    id: "aide-administrative", icone: "admin", groupe: "quotidien",
+    nom: "Aide administrative",
+    texte: "Démarches en ligne, impressions, scans, envoi de documents : on vous accompagne.",
+    points: ["Accompagnement aux démarches en ligne", "Impression, scan et photocopie", "Création d'adresse e-mail et de comptes"],
+  },
+];
