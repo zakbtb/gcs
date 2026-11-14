@@ -9,7 +9,11 @@ import crypto from "node:crypto";
  * - écriture atomique (fichier temporaire + renommage) ;
  * - verrou en mémoire pour sérialiser les écritures concurrentes d'un même fichier.
  */
-export const DATA_DIR = process.env.DATA_DIR || path.join(/*turbopackIgnore: true*/ process.cwd(), "data");
+const DATA_INITIAL = path.join(/*turbopackIgnore: true*/ process.cwd(), "data");
+
+// Sur Vercel, seul /tmp est inscriptible : les données y sont copiées à la première écriture
+// (elles ne survivent pas aux redémarrages ; une vraie base de données sera nécessaire pour la boutique).
+export const DATA_DIR = process.env.DATA_DIR || (process.env.VERCEL ? "/tmp/gcs-data" : DATA_INITIAL);
 
 const verrous = new Map<string, Promise<unknown>>();
 
@@ -22,8 +26,15 @@ export async function lireJson<T>(fichier: string, defaut: T): Promise<T> {
     const brut = await fs.readFile(/*turbopackIgnore: true*/ cheminData(fichier), "utf8");
     return JSON.parse(brut) as T;
   } catch (e) {
-    if ((e as NodeJS.ErrnoException).code === "ENOENT") return defaut;
-    throw e;
+    if ((e as NodeJS.ErrnoException).code !== "ENOENT") throw e;
+    if (DATA_DIR === DATA_INITIAL) return defaut;
+    // Fichier pas encore copié dans DATA_DIR : on lit la version livrée avec le site
+    try {
+      const brut = await fs.readFile(/*turbopackIgnore: true*/ path.join(DATA_INITIAL, fichier), "utf8");
+      return JSON.parse(brut) as T;
+    } catch {
+      return defaut;
+    }
   }
 }
 

@@ -69,10 +69,10 @@ export const entreprise = {
 
   /* ---------- Hébergeur du site (obligatoire dans les mentions légales) ---------- */
   hebergeur: {
-    nom: "[À COMPLÉTER : nom de l'hébergeur, ex. Vercel Inc. / OVH SAS / Hostinger]",
-    adresse: "[À COMPLÉTER : adresse postale de l'hébergeur]",
-    telephone: "[À COMPLÉTER : téléphone de l'hébergeur]",
-    site: "[À COMPLÉTER : site web de l'hébergeur]",
+    nom: "Vercel Inc.",
+    adresse: "440 N Barranca Ave #4133, Covina, CA 91723, États-Unis",
+    telephone: "Formulaire de contact : vercel.com/contact",
+    site: "https://vercel.com",
   },
 
   /* ---------- Médiateur de la consommation (obligatoire pour la vente aux particuliers) ---------- */

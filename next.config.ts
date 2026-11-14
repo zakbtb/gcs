@@ -11,6 +11,8 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Embarque les fichiers data/*.json (produits, tarifs) avec les fonctions serveur sur Vercel
+  outputFileTracingIncludes: { "/**": ["./data/*.json"] },
   turbopack: {
     rules: {
       "*.css": {
