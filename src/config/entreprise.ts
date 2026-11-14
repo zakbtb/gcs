@@ -51,7 +51,11 @@ export const entreprise = {
 
   /* ---------- Site ---------- */
   // Adresse définitive du site (sans / final). Sert au SEO, au sitemap et aux e-mails.
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://www.gcs-montpellier.fr",
+  // L'adresse provisoire Hostinger (*.hostingersite.com) n'est jamais utilisée comme adresse officielle.
+  siteUrl:
+    process.env.NEXT_PUBLIC_SITE_URL && !process.env.NEXT_PUBLIC_SITE_URL.includes("hostingersite.com")
+      ? process.env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "")
+      : "https://gcs34.fr",
 
   /* ---------- Horaires ----------
    * jour : 0 = dimanche, 1 = lundi … 6 = samedi

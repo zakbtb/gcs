@@ -15,7 +15,11 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: { "/**": ["./data/*.json"] },
   // Page cachée de l'équipe : générateur de posts + charte GCS (non indexée par Google)
   async rewrites() {
-    return [{ source: "/outils/posts", destination: "/outils/posts/index.html" }];
+    return [
+      { source: "/outils/posts", destination: "/outils/posts/index.html" },
+      // Adresse « about » attendue par les robots et agents : même page que /a-propos
+      { source: "/about", destination: "/a-propos" },
+    ];
   },
   async headers() {
     return [

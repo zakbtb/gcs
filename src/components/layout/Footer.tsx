@@ -12,7 +12,7 @@ const colonnes = [
     liens: [
       { href: "/reparation-telephone-montpellier", nom: "Réparation smartphone, console, PC" },
       { href: "/reparation-telephone-montpellier#simulateur", nom: "Simulateur de prix" },
-      { href: "/boutique", nom: "Boutique accessoires" },
+      { href: "/boutique", nom: "Boutique" },
       { href: "/telephones-reconditionnes", nom: "iPhone reconditionnés" },
     ],
   },
@@ -29,6 +29,8 @@ const colonnes = [
   {
     titre: "Informations légales",
     liens: [
+      { href: "/about", nom: "À propos" },
+      { href: "/contact", nom: "Contact" },
       { href: "/mentions-legales", nom: "Mentions légales" },
       { href: "/confidentialite", nom: "Politique de confidentialité" },
       { href: "/cookies", nom: "Politique cookies" },
