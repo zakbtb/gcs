@@ -46,7 +46,7 @@ export function PaiementStripe(props: Props) {
         locale: "fr",
         appearance: {
           theme: "stripe",
-          variables: { colorPrimary: "#3355ff", colorText: "#0b1020", borderRadius: "12px", fontFamily: "Rubik, system-ui, sans-serif" },
+          variables: { colorPrimary: "#5b2ee6", colorText: "#160c33", borderRadius: "12px", fontFamily: "Jost, system-ui, sans-serif" },
         },
       }}
     >

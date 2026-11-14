@@ -23,7 +23,7 @@ export function Carte({ adresse }: { adresse: string }) {
     );
   }
   return (
-    <div className="grid h-80 place-items-center rounded-3xl border border-dashed border-line bg-[radial-gradient(circle_at_30%_30%,#e8edff,transparent_60%),radial-gradient(circle_at_80%_70%,#fff1e6,transparent_55%)] p-6 text-center sm:h-96">
+    <div className="grid h-80 place-items-center rounded-3xl border border-dashed border-line bg-[radial-gradient(circle_at_30%_30%,#e3dbff,transparent_60%),radial-gradient(circle_at_80%_70%,#fff1e6,transparent_55%)] p-6 text-center sm:h-96">
       <div className="max-w-sm">
         <span className="mx-auto grid size-12 place-items-center rounded-2xl bg-white shadow-card"><MapPin className="size-6 text-brand" aria-hidden /></span>
         <p className="mt-4 font-semibold">La carte Google Maps est désactivée</p>

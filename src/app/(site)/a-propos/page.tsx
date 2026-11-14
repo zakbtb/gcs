@@ -71,7 +71,7 @@ export default function APropos() {
       </section>
       <section className="py-20">
         <div className="container-x text-center">
-          <Star className="mx-auto size-8 text-accent" aria-hidden />
+          <Star className="mx-auto size-8 text-brand" aria-hidden />
           <h2 className="mt-4 text-3xl font-semibold">Vous êtes client ? Votre avis compte</h2>
           <p className="mx-auto mt-3 max-w-xl text-muted">Partagez votre expérience sur Google : cela aide d&apos;autres Montpelliérains à nous trouver et nous permet de progresser.</p>
           {entreprise.googleAvis ? (

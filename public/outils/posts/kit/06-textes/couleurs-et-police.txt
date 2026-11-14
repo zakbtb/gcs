@@ -1,0 +1,10 @@
+GCS · Couleurs
+
+Violet : #5B2EE6  ·  RVB 91 46 230
+Violet foncé : #4520C2  ·  RVB 69 32 194
+Citron : #D8FF3E  ·  RVB 216 255 62
+Encre : #160C33  ·  RVB 22 12 51
+Blanc lavande : #F7F5FF  ·  RVB 247 245 255
+Lavande : #E3DBFF  ·  RVB 227 219 255
+
+Police : Jost (licence libre SIL OFL), graisses 400 à 800.

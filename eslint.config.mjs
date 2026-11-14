@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Page autonome du générateur de posts (scripts déjà compilés)
+    "public/outils/**",
   ]),
 ]);
 

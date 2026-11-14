@@ -21,8 +21,15 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  // Page cachée de l'équipe : générateur de posts + charte GCS (non indexée par Google)
+  async rewrites() {
+    return [{ source: "/outils/posts", destination: "/outils/posts/index.html" }];
+  },
   async headers() {
-    return [{ source: "/:path*", headers: securityHeaders }];
+    return [
+      { source: "/:path*", headers: securityHeaders },
+      { source: "/outils/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] },
+    ];
   },
 };
 
