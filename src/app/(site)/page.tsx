@@ -149,7 +149,7 @@ export default async function Accueil() {
               </h2>
               <p className="mt-4 max-w-xl text-white/75">Testés point par point, nettoyés, garantis {boutique.garantieReconditionneMois} mois. On rachète aussi votre ancien téléphone, payé tout de suite.</p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-                <Link href="/services#reconditionnes" className="btn-accent">Voir les téléphones <ArrowRight className="size-5" aria-hidden /></Link>
+                <Link href="/telephones-reconditionnes" className="btn-accent">Voir les téléphones <ArrowRight className="size-5" aria-hidden /></Link>
                 <Link href="/services#estimation" className="btn-ghost-dark">Faire estimer mon téléphone</Link>
               </div>
             </div>

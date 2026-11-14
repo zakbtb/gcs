@@ -12,7 +12,8 @@ import { entreprise } from "@/config/entreprise";
 export const NAVIGATION = [
   { href: "/reparation-telephone-montpellier", nom: "Réparation", vedette: true },
   { href: "/boutique", nom: "Boutique" },
-  { href: "/services", nom: "Téléphones & services" },
+  { href: "/telephones-reconditionnes", nom: "iPhone reconditionnés" },
+  { href: "/services", nom: "Services" },
   { href: "/creation-site-web-montpellier", nom: "Sites web" },
   { href: "/a-propos", nom: "À propos" },
   { href: "/contact", nom: "Contact" },

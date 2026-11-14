@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { Check, Minus, Plus, ShoppingBag, Truck, Store, AlertCircle } from "lucide-react";
+import { Check, Minus, Plus, ShoppingBag, Truck, Store, AlertCircle, Phone, MessageCircle, Info, ShieldCheck } from "lucide-react";
+import { entreprise } from "@/config/entreprise";
 import type { Produit } from "@/lib/types";
 import { prix } from "@/lib/format";
 import { usePanier } from "@/components/panier/PanierProvider";
@@ -69,7 +70,7 @@ export function AchatProduit({ produit, livraisonTexte }: { produit: Produit; li
       <div className="lg:sticky lg:top-24 lg:self-start">
         <div className="relative aspect-square overflow-hidden rounded-3xl border border-line bg-white">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={produit.images[imageIdx]} alt={`${produit.nom} – vue ${imageIdx + 1}`} width={800} height={800} className="size-full object-cover" />
+          <img src={produit.images[imageIdx]} alt={`${produit.nom} – vue ${imageIdx + 1}`} width={800} height={800} className={`size-full ${produit.appareil ? "object-contain p-8" : "object-cover"}`} />
         </div>
         {produit.images.length > 1 && (
           <ul className="mt-3 grid grid-cols-4 gap-3" aria-label="Choisir une image">
@@ -128,9 +129,32 @@ export function AchatProduit({ produit, livraisonTexte }: { produit: Produit; li
           </fieldset>
         ))}
 
+        {produit.appareil && (
+          <dl className="mt-6 grid grid-cols-2 gap-2 text-sm sm:grid-cols-4">
+            {[
+              ["État", produit.appareil.etat],
+              ["Grade", produit.appareil.grade || "–"],
+              ["Capacité", produit.appareil.capacite],
+              ["Couleur", produit.appareil.couleur || "–"],
+            ].map(([k, v]) => (
+              <div key={k} className="rounded-2xl bg-white px-3 py-2.5 ring-1 ring-line">
+                <dt className="text-xs text-muted">{k}</dt>
+                <dd className="font-semibold">{v}</dd>
+              </div>
+            ))}
+          </dl>
+        )}
+        {produit.appareil?.infoClient && (
+          <p className="mt-3 flex gap-2 rounded-2xl bg-brand-soft px-4 py-3 text-sm text-brand-strong">
+            <Info className="mt-0.5 size-4 shrink-0" aria-hidden /> {produit.appareil.infoClient}.
+          </p>
+        )}
+
         {/* Stock */}
         <p className="mt-7 flex items-center gap-2 text-sm font-semibold" aria-live="polite">
-          {stock === 0 ? (
+          {produit.surCommande ? (
+            <><span className="size-2.5 rounded-full bg-brand" aria-hidden /> <span className="text-brand-strong">Commandé sur demande · disponible sous 2 à 4 jours ouvrés</span></>
+          ) : stock === 0 ? (
             <><span className="size-2.5 rounded-full bg-danger" aria-hidden /> <span className="text-danger">Rupture de stock{aVariantes ? " pour cette combinaison" : ""}</span></>
           ) : stock <= 3 ? (
             <><span className="size-2.5 rounded-full bg-accent" aria-hidden /> <span className="text-accent-strong">Plus que {stock} en stock</span></>
@@ -184,10 +208,30 @@ export function AchatProduit({ produit, livraisonTexte }: { produit: Produit; li
           )}
         </div>
 
+        {produit.surCommande && (
+          <div className="mt-4 grid gap-2 sm:grid-cols-2">
+            <a href={`tel:${entreprise.telephoneLien}`} className="btn-ghost">
+              <Phone className="size-5" aria-hidden /> Réserver par téléphone
+            </a>
+            <a
+              href={`https://wa.me/${entreprise.telephoneLien.replace("+", "")}?text=${encodeURIComponent(`Bonjour, je souhaite réserver : ${produit.nom} (réf. ${produit.appareil?.reference ?? produit.id}).`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost"
+            >
+              <MessageCircle className="size-5" aria-hidden /> Réserver sur WhatsApp
+            </a>
+          </div>
+        )}
+
         <ul className="mt-8 space-y-3 rounded-3xl bg-white p-5 text-sm ring-1 ring-line">
           <li className="flex gap-3"><Truck className="size-5 shrink-0 text-brand" aria-hidden /> {livraisonTexte}</li>
-          <li className="flex gap-3"><Store className="size-5 shrink-0 text-brand" aria-hidden /> Retrait gratuit en boutique à Montpellier sous 24 h ouvrées</li>
-          <li className="flex gap-3"><Check className="size-5 shrink-0 text-brand" aria-hidden /> Garantie légale de conformité 2 ans · Rétractation 14 jours</li>
+          <li className="flex gap-3"><Store className="size-5 shrink-0 text-brand" aria-hidden /> Retrait gratuit en boutique à Montpellier sous {produit.surCommande ? "2 à 4 jours ouvrés" : "24 h ouvrées"}</li>
+          {produit.appareil ? (
+            <li className="flex gap-3"><ShieldCheck className="size-5 shrink-0 text-brand" aria-hidden /> Garantie 12 mois · Rétractation 14 jours pour un achat en ligne</li>
+          ) : (
+            <li className="flex gap-3"><Check className="size-5 shrink-0 text-brand" aria-hidden /> Garantie légale de conformité 2 ans · Rétractation 14 jours</li>
+          )}
         </ul>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Link from "next/link";
 import { Truck, Store, ShieldCheck, RotateCcw } from "lucide-react";
 import { HeroPage } from "@/components/ui/Section";
 import { Catalogue } from "@/components/boutique/Catalogue";
@@ -18,7 +19,9 @@ export const metadata = meta({
 
 export default async function Boutique() {
   const { produits, categories } = await getCatalogue();
-  const actifs = produits.filter((p) => p.actif);
+  // Les téléphones et tablettes ont leur propre page (/telephones-reconditionnes)
+  const actifs = produits.filter((p) => p.actif && !p.appareil);
+  const cats = categories.filter((c) => actifs.some((p) => p.categorie === c.id));
   return (
     <>
       <HeroPage
@@ -43,7 +46,14 @@ export default async function Boutique() {
       <section className="py-10 sm:py-14">
         <div className="container-x">
           <Suspense fallback={<p className="text-muted">Chargement du catalogue…</p>}>
-            <Catalogue produits={actifs} categories={categories} />
+            <Link href="/telephones-reconditionnes" className="mb-8 flex flex-col gap-3 rounded-3xl bg-ink p-5 text-white sm:flex-row sm:items-center sm:justify-between sm:p-6">
+            <span>
+              <span className="block font-display text-xl font-semibold">Vous cherchez un téléphone ?</span>
+              <span className="text-white/75">iPhone reconditionnés garantis 12 mois, retrait à Montpellier.</span>
+            </span>
+            <span className="btn-accent shrink-0">Voir les iPhone</span>
+          </Link>
+          <Catalogue produits={actifs} categories={cats} />
           </Suspense>
         </div>
       </section>

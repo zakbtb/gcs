@@ -19,7 +19,7 @@ export function CarteProduit({ produit, nomCategorie }: { produit: Produit; nomC
           width={800}
           height={800}
           loading="lazy"
-          className="size-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+          className={`size-full transition-transform duration-500 group-hover:scale-[1.03] ${produit.appareil ? "bg-white object-contain p-4" : "object-cover"}`}
         />
         <div className="absolute left-3 top-3 flex flex-wrap gap-1.5">
           {produit.prixBarre && (
@@ -27,8 +27,13 @@ export function CarteProduit({ produit, nomCategorie }: { produit: Produit; nomC
               -{Math.round((1 - produit.prix / produit.prixBarre) * 100)} %
             </span>
           )}
-          {stock === 0 && <span className="rounded-full bg-ink px-2.5 py-1 text-xs font-semibold text-white">Rupture</span>}
-          {stock > 0 && stock <= 3 && <span className="rounded-full bg-white px-2.5 py-1 text-xs font-semibold text-accent-strong">Plus que {stock}</span>}
+          {produit.appareil && (
+            <span className="rounded-full bg-ink px-2.5 py-1 text-xs font-semibold text-white">
+              {produit.appareil.etat}{produit.appareil.grade && produit.appareil.grade.length === 1 ? ` · ${produit.appareil.grade}` : ""}
+            </span>
+          )}
+          {!produit.surCommande && stock === 0 && <span className="rounded-full bg-ink px-2.5 py-1 text-xs font-semibold text-white">Rupture</span>}
+          {!produit.surCommande && stock > 0 && stock <= 3 && <span className="rounded-full bg-white px-2.5 py-1 text-xs font-semibold text-accent-strong">Plus que {stock}</span>}
         </div>
       </div>
       <div className="flex flex-1 flex-col p-4">
@@ -45,6 +50,7 @@ export function CarteProduit({ produit, nomCategorie }: { produit: Produit; nomC
             {produit.prixBarre && <span className="ml-2 text-sm text-subtle line-through">{prix(produit.prixBarre)}</span>}
           </p>
           {nbCouleurs > 1 && <p className="text-xs text-muted">{nbCouleurs} coloris</p>}
+          {produit.surCommande && <p className="text-right text-xs text-muted">Sous 2 à 4 jours</p>}
         </div>
       </div>
     </article>

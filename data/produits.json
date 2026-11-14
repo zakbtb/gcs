@@ -2,6 +2,16 @@
   "_aide": "Catalogue de la boutique. Vous pouvez modifier ce fichier directement OU utiliser l'espace admin (/admin). Prix TTC en euros. 'stock' : quantité disponible (si le produit a des 'variantes', c'est le stock de chaque variante qui compte). 'actif': false masque le produit.",
   "categories": [
     {
+      "id": "smartphones-reconditionnes",
+      "nom": "Smartphones reconditionnés",
+      "description": "iPhone reconditionnés et d'occasion testés, garantis 12 mois."
+    },
+    {
+      "id": "tablettes",
+      "nom": "Tablettes",
+      "description": "iPad reconditionnés et d'occasion testés, garantis 12 mois."
+    },
+    {
       "id": "chargeurs",
       "nom": "Chargeurs",
       "description": "Chargeurs secteur, voiture et sans fil."
@@ -33,6 +43,2667 @@
     }
   ],
   "produits": [
+    {
+      "id": "gcs-008",
+      "slug": "iphone-16-pro-max-256-go-titane-naturel-reconditionne-grade-a-gcs-008",
+      "nom": "iPhone 16 Pro Max 256 Go Titane Naturel – Reconditionné Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 889.0,
+      "description": "Reconditionné grade A · 256 Go · Titane Naturel",
+      "descriptionLongue": "iPhone 16 Pro Max 256 Go Titane Naturel – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-008.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "A",
+        "Capacité": "256 Go",
+        "Couleur": "Titane Naturel",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-008",
+        "modele": "iPhone 16 Pro Max",
+        "capacite": "256 Go",
+        "couleur": "Titane Naturel",
+        "etat": "Reconditionné",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-009",
+      "slug": "iphone-17-256-go-sauge-reconditionne-grade-a-gcs-009",
+      "nom": "iPhone 17 256 Go Sauge – Reconditionné Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 879.0,
+      "description": "Reconditionné grade A · 256 Go · Sauge",
+      "descriptionLongue": "iPhone 17 256 Go Sauge – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-009.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "A",
+        "Capacité": "256 Go",
+        "Couleur": "Sauge",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-009",
+        "modele": "iPhone 17",
+        "capacite": "256 Go",
+        "couleur": "Sauge",
+        "etat": "Reconditionné",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-010",
+      "slug": "iphone-17-256-go-noir-reconditionne-grade-a-gcs-010",
+      "nom": "iPhone 17 256 Go Noir – Reconditionné Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 879.0,
+      "description": "Reconditionné grade A · 256 Go · Noir",
+      "descriptionLongue": "iPhone 17 256 Go Noir – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-010.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "A",
+        "Capacité": "256 Go",
+        "Couleur": "Noir",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-010",
+        "modele": "iPhone 17",
+        "capacite": "256 Go",
+        "couleur": "Noir",
+        "etat": "Reconditionné",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-011",
+      "slug": "iphone-16-pro-256-go-fonctionnel-grade-a-b-ou-c-gcs-011",
+      "nom": "iPhone 16 Pro 256 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 879.0,
+      "description": "Fonctionnel · 256 Go",
+      "descriptionLongue": "iPhone 16 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-011.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "256 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-011",
+        "modele": "iPhone 16 Pro",
+        "capacite": "256 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-012",
+      "slug": "iphone-16-pro-max-256-go-blanc-reconditionne-grade-a-gcs-012",
+      "nom": "iPhone 16 Pro Max 256 Go Blanc – Reconditionné Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 869.0,
+      "description": "Reconditionné grade A · 256 Go · Blanc",
+      "descriptionLongue": "iPhone 16 Pro Max 256 Go Blanc – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-012.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "A",
+        "Capacité": "256 Go",
+        "Couleur": "Blanc",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-012",
+        "modele": "iPhone 16 Pro Max",
+        "capacite": "256 Go",
+        "couleur": "Blanc",
+        "etat": "Reconditionné",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-013",
+      "slug": "iphone-17-256-go-lavande-reconditionne-grade-a-gcs-013",
+      "nom": "iPhone 17 256 Go Lavande – Reconditionné Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 859.0,
+      "description": "Reconditionné grade A · 256 Go · Lavande",
+      "descriptionLongue": "iPhone 17 256 Go Lavande – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-013.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "A",
+        "Capacité": "256 Go",
+        "Couleur": "Lavande",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-013",
+        "modele": "iPhone 17",
+        "capacite": "256 Go",
+        "couleur": "Lavande",
+        "etat": "Reconditionné",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-014",
+      "slug": "iphone-16-pro-max-256-go-fonctionnel-grade-a-b-ou-c-gcs-014",
+      "nom": "iPhone 16 Pro Max 256 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 849.0,
+      "description": "Fonctionnel · 256 Go",
+      "descriptionLongue": "iPhone 16 Pro Max 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-014.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "256 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-014",
+        "modele": "iPhone 16 Pro Max",
+        "capacite": "256 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-015",
+      "slug": "iphone-16-pro-max-256-go-titane-sable-reconditionne-grade-a-gcs-015",
+      "nom": "iPhone 16 Pro Max 256 Go Titane Sable – Reconditionné Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 849.0,
+      "description": "Reconditionné grade A · 256 Go · Titane Sable",
+      "descriptionLongue": "iPhone 16 Pro Max 256 Go Titane Sable – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-015.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "A",
+        "Capacité": "256 Go",
+        "Couleur": "Titane Sable",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-015",
+        "modele": "iPhone 16 Pro Max",
+        "capacite": "256 Go",
+        "couleur": "Titane Sable",
+        "etat": "Reconditionné",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-016",
+      "slug": "iphone-17-256-go-fonctionnel-grade-a-b-ou-c-gcs-016",
+      "nom": "iPhone 17 256 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 849.0,
+      "description": "Fonctionnel · 256 Go",
+      "descriptionLongue": "iPhone 17 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-016.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "256 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-016",
+        "modele": "iPhone 17",
+        "capacite": "256 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-017",
+      "slug": "iphone-17-256-go-bleu-reconditionne-grade-a-gcs-017",
+      "nom": "iPhone 17 256 Go Bleu – Reconditionné Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 839.0,
+      "description": "Reconditionné grade A · 256 Go · Bleu",
+      "descriptionLongue": "iPhone 17 256 Go Bleu – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-017.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "A",
+        "Capacité": "256 Go",
+        "Couleur": "Bleu",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-017",
+        "modele": "iPhone 17",
+        "capacite": "256 Go",
+        "couleur": "Bleu",
+        "etat": "Reconditionné",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-018",
+      "slug": "iphone-16-pro-128-go-fonctionnel-grade-a-b-ou-c-gcs-018",
+      "nom": "iPhone 16 Pro 128 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 769.0,
+      "description": "Fonctionnel · 128 Go",
+      "descriptionLongue": "iPhone 16 Pro 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-018.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-018",
+        "modele": "iPhone 16 Pro",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-019",
+      "slug": "iphone-16-256-go-fonctionnel-grade-a-b-ou-c-gcs-019",
+      "nom": "iPhone 16 256 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 769.0,
+      "description": "Fonctionnel · 256 Go",
+      "descriptionLongue": "iPhone 16 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-019.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "256 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-019",
+        "modele": "iPhone 16",
+        "capacite": "256 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-020",
+      "slug": "iphone-15-pro-256-go-fonctionnel-grade-a-b-ou-c-gcs-020",
+      "nom": "iPhone 15 Pro 256 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 749.0,
+      "description": "Fonctionnel · 256 Go",
+      "descriptionLongue": "iPhone 15 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-020.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "256 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-020",
+        "modele": "iPhone 15 Pro",
+        "capacite": "256 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-021",
+      "slug": "iphone-16-plus-128-go-fonctionnel-grade-a-b-ou-c-gcs-021",
+      "nom": "iPhone 16 Plus 128 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 719.0,
+      "description": "Fonctionnel · 128 Go",
+      "descriptionLongue": "iPhone 16 Plus 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-021.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-021",
+        "modele": "iPhone 16 Plus",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-022",
+      "slug": "iphone-16-128-go-fonctionnel-grade-a-b-ou-c-gcs-022",
+      "nom": "iPhone 16 128 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 649.0,
+      "description": "Fonctionnel · 128 Go",
+      "descriptionLongue": "iPhone 16 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-022.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-022",
+        "modele": "iPhone 16",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-023",
+      "slug": "iphone-16-128-go-blanc-reconditionne-grade-c-gcs-023",
+      "nom": "iPhone 16 128 Go Blanc – Reconditionné Grade C",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 649.0,
+      "description": "Reconditionné grade C · 128 Go · Blanc",
+      "descriptionLongue": "iPhone 16 128 Go Blanc – Reconditionné Grade C. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-023.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "C",
+        "Capacité": "128 Go",
+        "Couleur": "Blanc",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-023",
+        "modele": "iPhone 16",
+        "capacite": "128 Go",
+        "couleur": "Blanc",
+        "etat": "Reconditionné",
+        "grade": "C",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-024",
+      "slug": "iphone-15-pro-128-go-bleu-titane-reconditionne-grade-a-gcs-024",
+      "nom": "iPhone 15 Pro 128 Go Bleu Titane – Reconditionné Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 619.0,
+      "description": "Reconditionné grade A · 128 Go · Bleu Titane",
+      "descriptionLongue": "iPhone 15 Pro 128 Go Bleu Titane – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-024.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "A",
+        "Capacité": "128 Go",
+        "Couleur": "Bleu Titane",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-024",
+        "modele": "iPhone 15 Pro",
+        "capacite": "128 Go",
+        "couleur": "Bleu Titane",
+        "etat": "Reconditionné",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-025",
+      "slug": "iphone-15-pro-128-go-noir-titane-reconditionne-grade-a-gcs-025",
+      "nom": "iPhone 15 Pro 128 Go Noir Titane – Reconditionné Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 619.0,
+      "description": "Reconditionné grade A · 128 Go · Noir Titane",
+      "descriptionLongue": "iPhone 15 Pro 128 Go Noir Titane – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-025.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "A",
+        "Capacité": "128 Go",
+        "Couleur": "Noir Titane",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-025",
+        "modele": "iPhone 15 Pro",
+        "capacite": "128 Go",
+        "couleur": "Noir Titane",
+        "etat": "Reconditionné",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-037",
+      "slug": "iphone-14-pro-256-go-fonctionnel-grade-a-b-ou-c-gcs-037",
+      "nom": "iPhone 14 Pro 256 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 569.0,
+      "description": "Fonctionnel · 256 Go",
+      "descriptionLongue": "iPhone 14 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-037.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "256 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-037",
+        "modele": "iPhone 14 Pro",
+        "capacite": "256 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-038",
+      "slug": "iphone-15-plus-128-go-noir-reconditionne-grade-b-gcs-038",
+      "nom": "iPhone 15 Plus 128 Go Noir – Reconditionné Grade B",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 539.0,
+      "description": "Reconditionné grade B · 128 Go · Noir",
+      "descriptionLongue": "iPhone 15 Plus 128 Go Noir – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-038.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "B",
+        "Capacité": "128 Go",
+        "Couleur": "Noir",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-038",
+        "modele": "iPhone 15 Plus",
+        "capacite": "128 Go",
+        "couleur": "Noir",
+        "etat": "Reconditionné",
+        "grade": "B",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-039",
+      "slug": "iphone-15-plus-128-go-fonctionnel-grade-a-b-ou-c-version-us-gcs-039",
+      "nom": "iPhone 15 Plus 128 Go – Fonctionnel (grade A, B ou C) – version US",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 529.0,
+      "description": "Fonctionnel · 128 Go · version US",
+      "descriptionLongue": "iPhone 15 Plus 128 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-039.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Version": "US",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-039",
+        "modele": "iPhone 15 Plus",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "US"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-046",
+      "slug": "iphone-15-plus-128-go-fonctionnel-grade-a-b-ou-c-gcs-046",
+      "nom": "iPhone 15 Plus 128 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 509.0,
+      "description": "Fonctionnel · 128 Go",
+      "descriptionLongue": "iPhone 15 Plus 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-046.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-046",
+        "modele": "iPhone 15 Plus",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-049",
+      "slug": "iphone-13-pro-max-128-go-fonctionnel-grade-a-b-ou-c-gcs-049",
+      "nom": "iPhone 13 Pro Max 128 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 459.0,
+      "description": "Fonctionnel · 128 Go",
+      "descriptionLongue": "iPhone 13 Pro Max 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-049.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-049",
+        "modele": "iPhone 13 Pro Max",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-050",
+      "slug": "iphone-13-pro-256-go-fonctionnel-grade-a-b-ou-c-gcs-050",
+      "nom": "iPhone 13 Pro 256 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 459.0,
+      "description": "Fonctionnel · 256 Go",
+      "descriptionLongue": "iPhone 13 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-050.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "256 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-050",
+        "modele": "iPhone 13 Pro",
+        "capacite": "256 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-051",
+      "slug": "iphone-14-128-go-fonctionnel-grade-a-b-ou-c-version-chinoise-gcs-051",
+      "nom": "iPhone 14 128 Go – Fonctionnel (grade A, B ou C) – version Chinoise",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 409.0,
+      "description": "Fonctionnel · 128 Go · version Chinoise",
+      "descriptionLongue": "iPhone 14 128 Go – Fonctionnel (grade A, B ou C) – version Chinoise. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version Chinoise. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-051.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Version": "Chinoise",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-051",
+        "modele": "iPhone 14",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "Chinoise"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-052",
+      "slug": "iphone-14-128-go-fonctionnel-grade-a-b-ou-c-gcs-052",
+      "nom": "iPhone 14 128 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 409.0,
+      "description": "Fonctionnel · 128 Go",
+      "descriptionLongue": "iPhone 14 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-052.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-052",
+        "modele": "iPhone 14",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-053",
+      "slug": "iphone-13-256-go-fonctionnel-grade-a-b-ou-c-gcs-053",
+      "nom": "iPhone 13 256 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 369.0,
+      "description": "Fonctionnel · 256 Go",
+      "descriptionLongue": "iPhone 13 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-053.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "256 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-053",
+        "modele": "iPhone 13",
+        "capacite": "256 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-055",
+      "slug": "iphone-13-256-go-fonctionnel-grade-a-b-ou-c-version-us-gcs-055",
+      "nom": "iPhone 13 256 Go – Fonctionnel (grade A, B ou C) – version US",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 349.0,
+      "description": "Fonctionnel · 256 Go · version US",
+      "descriptionLongue": "iPhone 13 256 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-055.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "256 Go",
+        "Couleur": "Au hasard",
+        "Version": "US",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-055",
+        "modele": "iPhone 13",
+        "capacite": "256 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "US"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-056",
+      "slug": "iphone-12-pro-max-128-go-fonctionnel-grade-a-b-ou-c-gcs-056",
+      "nom": "iPhone 12 Pro Max 128 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 349.0,
+      "description": "Fonctionnel · 128 Go",
+      "descriptionLongue": "iPhone 12 Pro Max 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-056.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-056",
+        "modele": "iPhone 12 Pro Max",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-057",
+      "slug": "ipad-pro-10-5-2017-256-go-fonctionnel-grade-c-gcs-057",
+      "nom": "iPad Pro 10.5’’ 2017 256 Go – Fonctionnel Grade C",
+      "categorie": "tablettes",
+      "marque": "Apple",
+      "prix": 379.0,
+      "description": "Fonctionnel grade C · 256 Go",
+      "descriptionLongue": "iPad Pro 10.5’’ 2017 256 Go – Fonctionnel Grade C. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-057.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "C",
+        "Capacité": "256 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-057",
+        "modele": "iPad Pro 10.5’’ 2017",
+        "capacite": "256 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "C",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-058",
+      "slug": "iphone-12-pro-256-go-fonctionnel-grade-a-b-ou-c-gcs-058",
+      "nom": "iPhone 12 Pro 256 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 329.0,
+      "description": "Fonctionnel · 256 Go",
+      "descriptionLongue": "iPhone 12 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-058.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "256 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-058",
+        "modele": "iPhone 12 Pro",
+        "capacite": "256 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-059",
+      "slug": "iphone-13-128-go-fonctionnel-grade-a-b-ou-c-gcs-059",
+      "nom": "iPhone 13 128 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 319.0,
+      "description": "Fonctionnel · 128 Go",
+      "descriptionLongue": "iPhone 13 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-059.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-059",
+        "modele": "iPhone 13",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-060",
+      "slug": "iphone-13-mini-128-go-fonctionnel-grade-a-b-ou-c-version-us-gcs-060",
+      "nom": "iPhone 13 Mini 128 Go – Fonctionnel (grade A, B ou C) – version US",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 289.0,
+      "description": "Fonctionnel · 128 Go · version US",
+      "descriptionLongue": "iPhone 13 Mini 128 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-060.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Version": "US",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-060",
+        "modele": "iPhone 13 Mini",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "US"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-061",
+      "slug": "iphone-13-mini-128-go-fonctionnel-grade-a-b-ou-c-gcs-061",
+      "nom": "iPhone 13 Mini 128 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 289.0,
+      "description": "Fonctionnel · 128 Go",
+      "descriptionLongue": "iPhone 13 Mini 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-061.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-061",
+        "modele": "iPhone 13 Mini",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-062",
+      "slug": "iphone-12-mini-64-go-fonctionnel-grade-a-gcs-062",
+      "nom": "iPhone 12 mini 64 Go – Fonctionnel Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 319.0,
+      "description": "Fonctionnel grade A · 64 Go",
+      "descriptionLongue": "iPhone 12 mini 64 Go – Fonctionnel Grade A. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-062.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-062",
+        "modele": "iPhone 12 mini",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-063",
+      "slug": "iphone-12-128-go-fonctionnel-grade-a-b-ou-c-gcs-063",
+      "nom": "iPhone 12 128 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 259.0,
+      "description": "Fonctionnel · 128 Go",
+      "descriptionLongue": "iPhone 12 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-063.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-063",
+        "modele": "iPhone 12",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-064",
+      "slug": "iphone-12-128-go-fonctionnel-grade-a-b-ou-c-version-us-gcs-064",
+      "nom": "iPhone 12 128 Go – Fonctionnel (grade A, B ou C) – version US",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 259.0,
+      "description": "Fonctionnel · 128 Go · version US",
+      "descriptionLongue": "iPhone 12 128 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-064.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Version": "US",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-064",
+        "modele": "iPhone 12",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "US"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-065",
+      "slug": "iphone-11-64-go-noir-reconditionne-grade-b-gcs-065",
+      "nom": "iPhone 11 64 Go Noir – Reconditionné Grade B",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 249.0,
+      "description": "Reconditionné grade B · 64 Go · Noir",
+      "descriptionLongue": "iPhone 11 64 Go Noir – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-065.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "B",
+        "Capacité": "64 Go",
+        "Couleur": "Noir",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-065",
+        "modele": "iPhone 11",
+        "capacite": "64 Go",
+        "couleur": "Noir",
+        "etat": "Reconditionné",
+        "grade": "B",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-066",
+      "slug": "iphone-11-pro-256-go-fonctionnel-grade-a-b-ou-c-gcs-066",
+      "nom": "iPhone 11 Pro 256 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 249.0,
+      "description": "Fonctionnel · 256 Go",
+      "descriptionLongue": "iPhone 11 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-066.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "256 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-066",
+        "modele": "iPhone 11 Pro",
+        "capacite": "256 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-067",
+      "slug": "iphone-12-mini-128-go-fonctionnel-grade-a-b-ou-c-gcs-067",
+      "nom": "iPhone 12 Mini 128 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 239.0,
+      "description": "Fonctionnel · 128 Go",
+      "descriptionLongue": "iPhone 12 Mini 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-067.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-067",
+        "modele": "iPhone 12 Mini",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-068",
+      "slug": "iphone-12-64-go-fonctionnel-grade-a-b-ou-c-version-us-gcs-068",
+      "nom": "iPhone 12 64 Go – Fonctionnel (grade A, B ou C) – version US",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 239.0,
+      "description": "Fonctionnel · 64 Go · version US",
+      "descriptionLongue": "iPhone 12 64 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-068.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Version": "US",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-068",
+        "modele": "iPhone 12",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "US"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-069",
+      "slug": "iphone-12-64-go-fonctionnel-grade-a-b-ou-c-gcs-069",
+      "nom": "iPhone 12 64 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 229.0,
+      "description": "Fonctionnel · 64 Go",
+      "descriptionLongue": "iPhone 12 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-069.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-069",
+        "modele": "iPhone 12",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-070",
+      "slug": "iphone-11-128-go-fonctionnel-grade-a-gcs-070",
+      "nom": "iPhone 11 128 Go – Fonctionnel Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 259.0,
+      "description": "Fonctionnel grade A · 128 Go",
+      "descriptionLongue": "iPhone 11 128 Go – Fonctionnel Grade A. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-070.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-070",
+        "modele": "iPhone 11",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-071",
+      "slug": "iphone-12-mini-64-go-fonctionnel-grade-c-gcs-071",
+      "nom": "iPhone 12 Mini 64 Go – Fonctionnel Grade C",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 259.0,
+      "description": "Fonctionnel grade C · 64 Go",
+      "descriptionLongue": "iPhone 12 Mini 64 Go – Fonctionnel Grade C. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-071.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "C",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-071",
+        "modele": "iPhone 12 Mini",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "C",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-072",
+      "slug": "iphone-11-128-go-fonctionnel-grade-b-gcs-072",
+      "nom": "iPhone 11 128 Go – Fonctionnel Grade B",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 259.0,
+      "description": "Fonctionnel grade B · 128 Go",
+      "descriptionLongue": "iPhone 11 128 Go – Fonctionnel Grade B. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-072.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "B",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-072",
+        "modele": "iPhone 11",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "B",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-073",
+      "slug": "iphone-12-mini-64-go-fonctionnel-grade-b-gcs-073",
+      "nom": "iPhone 12 mini 64 Go – Fonctionnel Grade B",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 229.0,
+      "description": "Fonctionnel grade B · 64 Go",
+      "descriptionLongue": "iPhone 12 mini 64 Go – Fonctionnel Grade B. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-073.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "B",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-073",
+        "modele": "iPhone 12 mini",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "B",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-074",
+      "slug": "iphone-11-64-go-violet-reconditionne-grade-b-gcs-074",
+      "nom": "iPhone 11 64 Go Violet – Reconditionné Grade B",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 199.0,
+      "description": "Reconditionné grade B · 64 Go · Violet",
+      "descriptionLongue": "iPhone 11 64 Go Violet – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-074.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "B",
+        "Capacité": "64 Go",
+        "Couleur": "Violet",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-074",
+        "modele": "iPhone 11",
+        "capacite": "64 Go",
+        "couleur": "Violet",
+        "etat": "Reconditionné",
+        "grade": "B",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-075",
+      "slug": "iphone-11-pro-64-go-vert-reconditionne-grade-a-gcs-075",
+      "nom": "iPhone 11 Pro 64 Go Vert – Reconditionné Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 189.0,
+      "description": "Reconditionné grade A · 64 Go · Vert",
+      "descriptionLongue": "iPhone 11 Pro 64 Go Vert – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-075.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "A",
+        "Capacité": "64 Go",
+        "Couleur": "Vert",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-075",
+        "modele": "iPhone 11 Pro",
+        "capacite": "64 Go",
+        "couleur": "Vert",
+        "etat": "Reconditionné",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-076",
+      "slug": "iphone-11-pro-64-go-gris-reconditionne-grade-b-gcs-076",
+      "nom": "iPhone 11 Pro 64 Go Gris – Reconditionné Grade B",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 189.0,
+      "description": "Reconditionné grade B · 64 Go · Gris",
+      "descriptionLongue": "iPhone 11 Pro 64 Go Gris – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-076.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "B",
+        "Capacité": "64 Go",
+        "Couleur": "Gris",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-076",
+        "modele": "iPhone 11 Pro",
+        "capacite": "64 Go",
+        "couleur": "Gris",
+        "etat": "Reconditionné",
+        "grade": "B",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-077",
+      "slug": "iphone-11-64-go-blanc-reconditionne-grade-b-gcs-077",
+      "nom": "iPhone 11 64 Go Blanc – Reconditionné Grade B",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 189.0,
+      "description": "Reconditionné grade B · 64 Go · Blanc",
+      "descriptionLongue": "iPhone 11 64 Go Blanc – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-077.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "B",
+        "Capacité": "64 Go",
+        "Couleur": "Blanc",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-077",
+        "modele": "iPhone 11",
+        "capacite": "64 Go",
+        "couleur": "Blanc",
+        "etat": "Reconditionné",
+        "grade": "B",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-078",
+      "slug": "iphone-11-64-go-fonctionnel-grade-a-gcs-078",
+      "nom": "iPhone 11 64 Go – Fonctionnel Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 209.0,
+      "description": "Fonctionnel grade A · 64 Go",
+      "descriptionLongue": "iPhone 11 64 Go – Fonctionnel Grade A. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-078.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-078",
+        "modele": "iPhone 11",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-079",
+      "slug": "iphone-11-64-go-rouge-reconditionne-grade-b-gcs-079",
+      "nom": "iPhone 11 64 Go Rouge – Reconditionné Grade B",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 189.0,
+      "description": "Reconditionné grade B · 64 Go · Rouge",
+      "descriptionLongue": "iPhone 11 64 Go Rouge – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-079.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "B",
+        "Capacité": "64 Go",
+        "Couleur": "Rouge",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-079",
+        "modele": "iPhone 11",
+        "capacite": "64 Go",
+        "couleur": "Rouge",
+        "etat": "Reconditionné",
+        "grade": "B",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-080",
+      "slug": "iphone-11-64-go-noir-reconditionne-grade-c-gcs-080",
+      "nom": "iPhone 11 64 Go Noir – Reconditionné Grade C",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 179.0,
+      "description": "Reconditionné grade C · 64 Go · Noir",
+      "descriptionLongue": "iPhone 11 64 Go Noir – Reconditionné Grade C. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-080.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "C",
+        "Capacité": "64 Go",
+        "Couleur": "Noir",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-080",
+        "modele": "iPhone 11",
+        "capacite": "64 Go",
+        "couleur": "Noir",
+        "etat": "Reconditionné",
+        "grade": "C",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-081",
+      "slug": "iphone-xr-64-go-blanc-reconditionne-grade-a-gcs-081",
+      "nom": "iPhone XR 64 Go Blanc – Reconditionné Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 179.0,
+      "description": "Reconditionné grade A · 64 Go · Blanc",
+      "descriptionLongue": "iPhone XR 64 Go Blanc – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-081.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "A",
+        "Capacité": "64 Go",
+        "Couleur": "Blanc",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-081",
+        "modele": "iPhone XR",
+        "capacite": "64 Go",
+        "couleur": "Blanc",
+        "etat": "Reconditionné",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-082",
+      "slug": "iphone-xr-64-go-noir-reconditionne-grade-b-gcs-082",
+      "nom": "iPhone XR 64 Go Noir – Reconditionné Grade B",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 179.0,
+      "description": "Reconditionné grade B · 64 Go · Noir",
+      "descriptionLongue": "iPhone XR 64 Go Noir – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-082.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "B",
+        "Capacité": "64 Go",
+        "Couleur": "Noir",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-082",
+        "modele": "iPhone XR",
+        "capacite": "64 Go",
+        "couleur": "Noir",
+        "etat": "Reconditionné",
+        "grade": "B",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-083",
+      "slug": "iphone-11-64-go-rouge-reconditionne-grade-c-gcs-083",
+      "nom": "iPhone 11 64 Go Rouge – Reconditionné Grade C",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 179.0,
+      "description": "Reconditionné grade C · 64 Go · Rouge",
+      "descriptionLongue": "iPhone 11 64 Go Rouge – Reconditionné Grade C. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-083.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "C",
+        "Capacité": "64 Go",
+        "Couleur": "Rouge",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-083",
+        "modele": "iPhone 11",
+        "capacite": "64 Go",
+        "couleur": "Rouge",
+        "etat": "Reconditionné",
+        "grade": "C",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-084",
+      "slug": "iphone-xr-128-go-bleu-reconditionne-grade-a-gcs-084",
+      "nom": "iPhone XR 128 Go Bleu – Reconditionné Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 169.0,
+      "description": "Reconditionné grade A · 128 Go · Bleu",
+      "descriptionLongue": "iPhone XR 128 Go Bleu – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-084.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "A",
+        "Capacité": "128 Go",
+        "Couleur": "Bleu",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-084",
+        "modele": "iPhone XR",
+        "capacite": "128 Go",
+        "couleur": "Bleu",
+        "etat": "Reconditionné",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-085",
+      "slug": "iphone-xr-128-go-noir-reconditionne-grade-b-gcs-085",
+      "nom": "iPhone XR 128 Go Noir – Reconditionné Grade B",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 169.0,
+      "description": "Reconditionné grade B · 128 Go · Noir",
+      "descriptionLongue": "iPhone XR 128 Go Noir – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-085.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "B",
+        "Capacité": "128 Go",
+        "Couleur": "Noir",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-085",
+        "modele": "iPhone XR",
+        "capacite": "128 Go",
+        "couleur": "Noir",
+        "etat": "Reconditionné",
+        "grade": "B",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-086",
+      "slug": "iphone-11-64-go-fonctionnel-grade-a-b-ou-c-version-us-gcs-086",
+      "nom": "iPhone 11 64 Go – Fonctionnel (grade A, B ou C) – version US",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 169.0,
+      "description": "Fonctionnel · 64 Go · version US",
+      "descriptionLongue": "iPhone 11 64 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-086.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Version": "US",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-086",
+        "modele": "iPhone 11",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "US"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-087",
+      "slug": "iphone-xs-max-64-go-fonctionnel-grade-a-b-ou-c-gcs-087",
+      "nom": "iPhone XS Max 64 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 169.0,
+      "description": "Fonctionnel · 64 Go",
+      "descriptionLongue": "iPhone XS Max 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-087.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-087",
+        "modele": "iPhone XS Max",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-088",
+      "slug": "iphone-xr-64-go-noir-reconditionne-grade-a-gcs-088",
+      "nom": "iPhone XR 64 Go Noir – Reconditionné Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 169.0,
+      "description": "Reconditionné grade A · 64 Go · Noir",
+      "descriptionLongue": "iPhone XR 64 Go Noir – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-088.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "A",
+        "Capacité": "64 Go",
+        "Couleur": "Noir",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-088",
+        "modele": "iPhone XR",
+        "capacite": "64 Go",
+        "couleur": "Noir",
+        "etat": "Reconditionné",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-089",
+      "slug": "iphone-xs-64-go-gris-reconditionne-grade-b-gcs-089",
+      "nom": "iPhone XS 64 Go Gris – Reconditionné Grade B",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 159.0,
+      "description": "Reconditionné grade B · 64 Go · Gris",
+      "descriptionLongue": "iPhone XS 64 Go Gris – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-089.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Reconditionné",
+        "Grade": "B",
+        "Capacité": "64 Go",
+        "Couleur": "Gris",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-089",
+        "modele": "iPhone XS",
+        "capacite": "64 Go",
+        "couleur": "Gris",
+        "etat": "Reconditionné",
+        "grade": "B",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-090",
+      "slug": "iphone-11-64-go-fonctionnel-grade-b-gcs-090",
+      "nom": "iPhone 11 64 Go – Fonctionnel Grade B",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 179.0,
+      "description": "Fonctionnel grade B · 64 Go",
+      "descriptionLongue": "iPhone 11 64 Go – Fonctionnel Grade B. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-090.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "B",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-090",
+        "modele": "iPhone 11",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "B",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-091",
+      "slug": "iphone-se-3e-gen-64-go-fonctionnel-grade-a-b-ou-c-gcs-091",
+      "nom": "iPhone SE 3e Gen 64 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 159.0,
+      "description": "Fonctionnel · 64 Go",
+      "descriptionLongue": "iPhone SE 3e Gen 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-091.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-091",
+        "modele": "iPhone SE 3e Gen",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-092",
+      "slug": "iphone-se-3e-gen-64-go-fonctionnel-grade-b-gcs-092",
+      "nom": "iPhone SE 3e Gen 64 Go – Fonctionnel Grade B",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 179.0,
+      "description": "Fonctionnel grade B · 64 Go",
+      "descriptionLongue": "iPhone SE 3e Gen 64 Go – Fonctionnel Grade B. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-092.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "B",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-092",
+        "modele": "iPhone SE 3e Gen",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "B",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-093",
+      "slug": "iphone-xr-64-go-fonctionnel-grade-a-b-ou-c-gcs-093",
+      "nom": "iPhone XR 64 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 149.0,
+      "description": "Fonctionnel · 64 Go",
+      "descriptionLongue": "iPhone XR 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-093.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-093",
+        "modele": "iPhone XR",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-094",
+      "slug": "ipad-5e-gen-2017-32-go-fonctionnel-grade-a-gcs-094",
+      "nom": "iPad 5e Gen 2017 32 Go – Fonctionnel Grade A",
+      "categorie": "tablettes",
+      "marque": "Apple",
+      "prix": 159.0,
+      "description": "Fonctionnel grade A · 32 Go",
+      "descriptionLongue": "iPad 5e Gen 2017 32 Go – Fonctionnel Grade A. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-094.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A",
+        "Capacité": "32 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-094",
+        "modele": "iPad 5e Gen 2017",
+        "capacite": "32 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-095",
+      "slug": "iphone-xs-64-go-fonctionnel-grade-a-b-ou-c-gcs-095",
+      "nom": "iPhone XS 64 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 139.0,
+      "description": "Fonctionnel · 64 Go",
+      "descriptionLongue": "iPhone XS 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-095.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-095",
+        "modele": "iPhone XS",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-096",
+      "slug": "iphone-se-2e-gen-128-go-fonctionnel-grade-a-b-ou-c-gcs-096",
+      "nom": "iPhone SE 2e Gen 128 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 139.0,
+      "description": "Fonctionnel · 128 Go",
+      "descriptionLongue": "iPhone SE 2e Gen 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-096.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "128 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-096",
+        "modele": "iPhone SE 2e Gen",
+        "capacite": "128 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-097",
+      "slug": "iphone-xr-64-go-fonctionnel-grade-a-gcs-097",
+      "nom": "iPhone XR 64 Go – Fonctionnel Grade A",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 149.0,
+      "description": "Fonctionnel grade A · 64 Go",
+      "descriptionLongue": "iPhone XR 64 Go – Fonctionnel Grade A. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-097.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-097",
+        "modele": "iPhone XR",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-098",
+      "slug": "iphone-se-3e-gen-64-go-fonctionnel-grade-c-gcs-098",
+      "nom": "iPhone SE 3e Gen 64 Go – Fonctionnel Grade C",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 149.0,
+      "description": "Fonctionnel grade C · 64 Go",
+      "descriptionLongue": "iPhone SE 3e Gen 64 Go – Fonctionnel Grade C. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-098.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "C",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-098",
+        "modele": "iPhone SE 3e Gen",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "C",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-099",
+      "slug": "iphone-8-plus-64-go-fonctionnel-grade-a-b-ou-c-gcs-099",
+      "nom": "iPhone 8 Plus 64 Go – Fonctionnel (grade A, B ou C)",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 129.0,
+      "description": "Fonctionnel · 64 Go",
+      "descriptionLongue": "iPhone 8 Plus 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-099.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-099",
+        "modele": "iPhone 8 Plus",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "",
+        "infoClient": "Couleur et grade non choisis par le client"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-100",
+      "slug": "iphone-xr-64-go-fonctionnel-grade-b-gcs-100",
+      "nom": "iPhone XR 64 Go – Fonctionnel Grade B",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 139.0,
+      "description": "Fonctionnel grade B · 64 Go",
+      "descriptionLongue": "iPhone XR 64 Go – Fonctionnel Grade B. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-100.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "B",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-100",
+        "modele": "iPhone XR",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "B",
+        "version": ""
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-101",
+      "slug": "iphone-8-64-go-fonctionnel-grade-a-b-ou-c-version-us-gcs-101",
+      "nom": "iPhone 8 64 Go – Fonctionnel (grade A, B ou C) – version US",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 119.0,
+      "description": "Fonctionnel · 64 Go · version US",
+      "descriptionLongue": "iPhone 8 64 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-101.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "A, B ou C (au hasard)",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Version": "US",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-101",
+        "modele": "iPhone 8",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "A, B ou C (au hasard)",
+        "version": "US"
+      },
+      "actif": true
+    },
+    {
+      "id": "gcs-102",
+      "slug": "iphone-se-2e-gen-64-go-fonctionnel-grade-c-gcs-102",
+      "nom": "iPhone SE 2e Gen 64 Go – Fonctionnel Grade C",
+      "categorie": "smartphones-reconditionnes",
+      "marque": "Apple",
+      "prix": 119.0,
+      "description": "Fonctionnel grade C · 64 Go",
+      "descriptionLongue": "iPhone SE 2e Gen 64 Go – Fonctionnel Grade C. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "images": [
+        "/images/appareils/gcs-102.webp"
+      ],
+      "compatibilite": [],
+      "caracteristiques": {
+        "État": "Fonctionnel",
+        "Grade": "C",
+        "Capacité": "64 Go",
+        "Couleur": "Au hasard",
+        "Garantie": "12 mois"
+      },
+      "options": [],
+      "variantes": [],
+      "stock": 99,
+      "surCommande": true,
+      "appareil": {
+        "reference": "GCS-102",
+        "modele": "iPhone SE 2e Gen",
+        "capacite": "64 Go",
+        "couleur": "Au hasard",
+        "etat": "Fonctionnel",
+        "grade": "C",
+        "version": ""
+      },
+      "actif": true
+    },
     {
       "id": "chargeur-usb-c-20w",
       "slug": "chargeur-usb-c-20w",

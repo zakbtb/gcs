@@ -197,7 +197,7 @@ export const forfaitMaintenance = {
  *  Mettre null pour masquer un prix.
  * ========================================================================== */
 export const prixVitrine = {
-  reconditionnesDes: 80 as number | null, // smartphones reconditionnés, « dès »
+  reconditionnesDes: 119 as number | null, // smartphones reconditionnés, « dès »
   simPrepayee: 10 as number | null, // cartes SIM prépayées 200 Go
   coquesDes: 10 as number | null,
   hydrogel: 15 as number | null, // film hydrogel transparent posé

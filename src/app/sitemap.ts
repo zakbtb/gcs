@@ -11,6 +11,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ["/creation-site-web-montpellier", 1],
     ["/reparation-telephone-montpellier", 0.9],
     ["/boutique", 0.8],
+    ["/telephones-reconditionnes", 0.9],
     ["/services", 0.7],
     ["/a-propos", 0.5],
     ["/contact", 0.7],

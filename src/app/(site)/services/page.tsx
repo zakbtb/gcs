@@ -34,7 +34,7 @@ export default function PageServices() {
         `Garantie ${boutique.garantieReconditionneMois} mois minimum sur les reconditionnés`,
         "Effacement sécurisé de vos données",
       ],
-      lien: { href: "/conditions-reconditionnes", nom: "Conditions reconditionnés" },
+      lien: { href: "/telephones-reconditionnes", nom: "Voir les iPhone reconditionnés" },
     },
     {
       id: "accessoires",

@@ -28,6 +28,19 @@ export type Produit = {
   variantes: Variante[];
   stock?: number;
   misEnAvant?: boolean;
+  /** Produit commandé chez le fournisseur après la vente (dropshipping) : pas de stock affiché. */
+  surCommande?: boolean;
+  /** Téléphones et tablettes reconditionnés ou d'occasion. */
+  appareil?: {
+    reference: string;
+    modele: string;
+    capacite: string;
+    couleur: string;
+    etat: string;
+    grade: string;
+    version: string;
+    infoClient?: string;
+  };
   actif: boolean;
 };
 

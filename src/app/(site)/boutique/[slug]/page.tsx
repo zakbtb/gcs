@@ -31,16 +31,23 @@ export default async function PageProduit({ params }: { params: Promise<{ slug: 
   const categorie = catalogue.categories.find((c) => c.id === produit.categorie);
   const similaires = catalogue.produits
     .filter((p) => p.actif && p.id !== produit.id && p.categorie === produit.categorie)
-    .concat(catalogue.produits.filter((p) => p.actif && p.id !== produit.id && p.categorie !== produit.categorie && p.misEnAvant))
+    .sort((a, b) => (produit.appareil ? Math.abs(a.prix - produit.prix) - Math.abs(b.prix - produit.prix) : 0))
+    .concat(catalogue.produits.filter((p) => p.actif && p.id !== produit.id && p.categorie !== produit.categorie && p.misEnAvant && !p.appareil))
     .slice(0, 4);
-  const livraisonTexte = boutique.livraison.gratuiteDes
+  const livraisonTexte = produit.surCommande
+    ? `Livraison ${prix(boutique.livraison.prix)}${boutique.livraison.gratuiteDes ? `, offerte dès ${prixCourt(boutique.livraison.gratuiteDes)} d'achat` : ""} · disponible sous 2 à 4 jours ouvrés`
+    : boutique.livraison.gratuiteDes
     ? `Livraison ${prix(boutique.livraison.prix)}, offerte dès ${prixCourt(boutique.livraison.gratuiteDes)} d'achat · expédition sous ${boutique.expeditionSous}`
     : `Livraison ${prix(boutique.livraison.prix)} · expédition sous ${boutique.expeditionSous}`;
 
   const ariane = [
     { nom: "Accueil", href: "/" },
-    { nom: "Boutique", href: "/boutique" },
-    ...(categorie ? [{ nom: categorie.nom, href: `/boutique?categorie=${categorie.id}` }] : []),
+    ...(produit.appareil
+      ? [{ nom: "Téléphones reconditionnés", href: "/telephones-reconditionnes" }]
+      : [
+          { nom: "Boutique", href: "/boutique" },
+          ...(categorie ? [{ nom: categorie.nom, href: `/boutique?categorie=${categorie.id}` }] : []),
+        ]),
     { nom: produit.nom, href: `/boutique/${produit.slug}` },
   ];
 
@@ -61,7 +68,7 @@ export default async function PageProduit({ params }: { params: Promise<{ slug: 
             priceCurrency: "EUR",
             price: produit.prix,
             availability: stockTotal(produit) > 0 ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
-            itemCondition: "https://schema.org/NewCondition",
+            itemCondition: !produit.appareil || produit.appareil.etat === "Neuf" ? "https://schema.org/NewCondition" : produit.appareil.etat === "Reconditionné" ? "https://schema.org/RefurbishedCondition" : "https://schema.org/UsedCondition",
             seller: { "@id": `${entreprise.siteUrl}/#entreprise` },
           },
         }}
@@ -81,10 +88,14 @@ export default async function PageProduit({ params }: { params: Promise<{ slug: 
           <div>
             <h2 id="t-details" className="text-2xl font-semibold">Description</h2>
             <p className="mt-4 leading-relaxed text-ink/85">{produit.descriptionLongue}</p>
-            <h3 className="mt-8 text-lg font-semibold">Compatibilité</h3>
-            <ul className="mt-3 flex flex-wrap gap-2">
-              {produit.compatibilite.map((c) => <li key={c} className="rounded-full bg-surface px-3 py-1.5 text-sm">{c}</li>)}
-            </ul>
+            {produit.compatibilite.length > 0 && (
+              <>
+                <h3 className="mt-8 text-lg font-semibold">Compatibilité</h3>
+                <ul className="mt-3 flex flex-wrap gap-2">
+                  {produit.compatibilite.map((c) => <li key={c} className="rounded-full bg-surface px-3 py-1.5 text-sm">{c}</li>)}
+                </ul>
+              </>
+            )}
           </div>
           <div>
             <h2 className="text-2xl font-semibold">Caractéristiques</h2>

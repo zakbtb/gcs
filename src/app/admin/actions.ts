@@ -102,12 +102,15 @@ export async function sauverProduit(_: unknown, fd: FormData): Promise<{ erreur?
     description: String(fd.get("description") ?? "").trim(),
     descriptionLongue: String(fd.get("descriptionLongue") ?? "").trim(),
     images: images.length ? images : ["/images/produits/chargeur-usb-c-20w-1.svg"],
-    compatibilite: compat.length ? compat : ["Universel"],
+    compatibilite: compat.length ? compat : ancien?.appareil ? [] : ["Universel"],
     caracteristiques,
     options,
     variantes,
     ...(options.length ? {} : { stock: Math.max(0, Math.floor(Number(fd.get("stock") ?? 0))) }),
     misEnAvant: fd.get("misEnAvant") === "on",
+    // Champs des appareils sur commande (importés depuis le catalogue fournisseur) : conservés tels quels
+    ...(ancien?.surCommande ? { surCommande: true } : {}),
+    ...(ancien?.appareil ? { appareil: ancien.appareil } : {}),
     actif: fd.get("actif") === "on",
   };
   await enregistrerProduit(produit, ancienId);

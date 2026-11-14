@@ -13,7 +13,7 @@ const colonnes = [
       { href: "/reparation-telephone-montpellier", nom: "Réparation smartphone, console, PC" },
       { href: "/reparation-telephone-montpellier#simulateur", nom: "Simulateur de prix" },
       { href: "/boutique", nom: "Boutique accessoires" },
-      { href: "/services#reconditionnes", nom: "Téléphones reconditionnés" },
+      { href: "/telephones-reconditionnes", nom: "iPhone reconditionnés" },
     ],
   },
   {
