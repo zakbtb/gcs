@@ -69,10 +69,10 @@ export const entreprise = {
 
   /* ---------- Hébergeur du site (obligatoire dans les mentions légales) ---------- */
   hebergeur: {
-    nom: "Vercel Inc.",
-    adresse: "440 N Barranca Ave #4133, Covina, CA 91723, États-Unis",
-    telephone: "Formulaire de contact : vercel.com/contact",
-    site: "https://vercel.com",
+    nom: "Hostinger International Ltd",
+    adresse: "61 Lordou Vironos Street, 6023 Larnaca, Chypre",
+    telephone: "Formulaire de contact : hostinger.fr/contact",
+    site: "https://www.hostinger.fr",
   },
 
   /* ---------- Médiateur de la consommation (obligatoire pour la vente aux particuliers) ---------- */
