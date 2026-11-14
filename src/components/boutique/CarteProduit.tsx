@@ -50,7 +50,7 @@ export function CarteProduit({ produit, nomCategorie }: { produit: Produit; nomC
             {produit.prixBarre && <span className="ml-2 text-sm text-subtle line-through">{prix(produit.prixBarre)}</span>}
           </p>
           {nbCouleurs > 1 && <p className="text-xs text-muted">{nbCouleurs} coloris</p>}
-          {produit.surCommande && <p className="text-right text-xs text-muted">Sous 2 à 4 jours</p>}
+          {produit.surCommande && <p className="text-right text-xs text-muted">En 24 h</p>}
         </div>
       </div>
     </article>

@@ -21,7 +21,7 @@ export function infosBoutique() {
     whatsapp: `https://wa.me/${boutique.whatsapp}`,
     email: entreprise.email,
     horaires: entreprise.horaires.map((h) => `${h.nom} : ${plagesTexte(h.plages)}`),
-    commande: `Produits commandés sur demande, disponibles sous ${boutique.delaiSurCommande}. Retrait gratuit en boutique ou livraison. Réservation sur WhatsApp, paiement à l'arrivée.`,
+    commande: `${boutique.delaiTexte}. Retrait gratuit en boutique ou livraison. Réservation sur WhatsApp (ou paiement en ligne quand il est proposé sur la fiche).`,
     garanties: `Téléphones, tablettes et montres : garantie ${boutique.garantieReconditionneMois} mois. Réparations : garantie ${boutique.garantieReparationMois} mois. Accessoires : garantie légale de conformité 2 ans.`,
     site: entreprise.siteUrl,
   };
@@ -50,7 +50,7 @@ function publier(p: Produit, nomsCategories: Record<string, string>): ProduitPub
     prixTtc: p.prix,
     categorie: nomsCategories[p.categorie] ?? p.categorie,
     ...(p.appareil ? { etat: p.appareil.etat, grade: p.appareil.grade || undefined, capacite: p.appareil.capacite, couleur: p.appareil.couleur || undefined } : {}),
-    disponibilite: p.surCommande ? `Commandé sur demande, disponible sous ${boutique.delaiSurCommande}` : "En boutique",
+    disponibilite: p.surCommande ? boutique.delaiTexte : "En boutique",
     url: url(`/boutique/${p.slug}`),
     reservationWhatsApp: lienWhatsApp(messageReservation({ reference, nom: p.nom, options, prixTtc: p.prix })),
   };

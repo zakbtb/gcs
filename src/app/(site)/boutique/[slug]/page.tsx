@@ -9,6 +9,7 @@ import { getCatalogue, getProduit, stockTotal } from "@/lib/produits";
 import { arianeJsonLd, meta } from "@/lib/seo";
 import { prix, prixCourt } from "@/lib/format";
 import { accessoiresCompatibles } from "@/lib/compatibles";
+import { stripeActif } from "@/lib/stripe";
 import Link from "next/link";
 import { Sparkles } from "lucide-react";
 
@@ -40,10 +41,10 @@ export default async function PageProduit({ params }: { params: Promise<{ slug: 
   const compatibles = accessoiresCompatibles(produit, catalogue.produits);
   const estTelephone = produit.categorie === "smartphones";
   const livraisonTexte = produit.surCommande
-    ? `Livraison ${prix(boutique.livraison.prix)}${boutique.livraison.gratuiteDes ? `, offerte dès ${prixCourt(boutique.livraison.gratuiteDes)} d'achat` : ""} · disponible sous 2 à 4 jours ouvrés`
+    ? `Livraison ${prix(boutique.livraison.prix)}${boutique.livraison.gratuiteDes ? `, offerte dès ${prixCourt(boutique.livraison.gratuiteDes)} d'achat` : ""} · en 24 h si commande avant ${boutique.heureLimite}`
     : boutique.livraison.gratuiteDes
-    ? `Livraison ${prix(boutique.livraison.prix)}, offerte dès ${prixCourt(boutique.livraison.gratuiteDes)} d'achat · expédition sous ${boutique.expeditionSous}`
-    : `Livraison ${prix(boutique.livraison.prix)} · expédition sous ${boutique.expeditionSous}`;
+    ? `Livraison ${prix(boutique.livraison.prix)}, offerte dès ${prixCourt(boutique.livraison.gratuiteDes)} d'achat · en 24 h si commande avant ${boutique.heureLimite}`
+    : `Livraison ${prix(boutique.livraison.prix)} · en 24 h si commande avant ${boutique.heureLimite}`;
 
   const ariane = [
     { nom: "Accueil", href: "/" },
@@ -83,7 +84,7 @@ export default async function PageProduit({ params }: { params: Promise<{ slug: 
       </div>
 
       <section className="container-x pb-16">
-        <AchatProduit produit={produit} livraisonTexte={livraisonTexte} />
+        <AchatProduit produit={produit} livraisonTexte={livraisonTexte} paiementEnLigne={boutique.paiementEnLigne || stripeActif()} />
       </section>
 
       <section className="bg-white py-16" aria-labelledby="t-details">

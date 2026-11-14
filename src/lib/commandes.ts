@@ -62,7 +62,7 @@ export async function evaluerPanier(panier: LignePanier[]) {
       varianteId: v?.id,
       nom: p.nom,
       // Appareils sur commande : la référence sert à GCS pour le commander chez le fournisseur
-      variante: p.appareil ? `Réf. ${p.appareil.reference} · commandé sur demande, 2 à 4 jours ouvrés` : libelleVariante(v),
+      variante: p.appareil ? `Réf. ${p.appareil.reference} · commandé sur demande, en 24 h` : libelleVariante(v),
       image: v?.image ?? p.images[0],
       prixUnitaire: pu,
       quantite,

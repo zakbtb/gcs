@@ -69,7 +69,7 @@ export default async function Confirmation({ searchParams }: { searchParams: Pro
               </p>
             ) : (
               <p className="mt-3 text-muted">
-                Votre colis est expédié sous {boutique.expeditionSous} ({boutique.livraison.delai}). Vous recevrez le suivi par e-mail.
+                Votre colis est livré en {boutique.expeditionSous} (commande passée avant {boutique.heureLimite}). Vous recevrez le suivi par e-mail.
               </p>
             )}
             <p className="mt-4 text-sm text-muted">

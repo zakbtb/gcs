@@ -75,7 +75,7 @@ export default function CGV() {
       </p>
 
       <h2 id="livraison">6. Livraison et retrait en boutique</h2>
-      <p><strong>Livraison à domicile</strong> : en {boutique.livraison.zones}, à l&apos;adresse indiquée par le Client. Les produits sont expédiés sous {boutique.expeditionSous} après confirmation du paiement, avec un délai d&apos;acheminement indicatif de {boutique.livraison.delai}. Sauf indication contraire, la livraison intervient au plus tard 30 jours après la commande.</p>
+      <p><strong>Livraison à domicile</strong> : en {boutique.livraison.zones}, à l&apos;adresse indiquée par le Client. Les produits sont livrés en {boutique.expeditionSous} pour toute commande passée avant {boutique.heureLimite} (délai indicatif, après confirmation du paiement). Sauf indication contraire, la livraison intervient au plus tard 30 jours après la commande.</p>
       <p><strong>Retrait en boutique</strong> : gratuit, à {adresse}, aux horaires d&apos;ouverture. {boutique.retrait.delai}. Le Client présente son numéro de commande et, si demandé, une pièce d&apos;identité. Les commandes non retirées dans un délai de 30 jours peuvent être annulées et remboursées après relance.</p>
       <p>En cas de retard de livraison, le Client peut, après mise en demeure restée sans effet, résoudre le contrat (art. L.216-6 du Code de la consommation). Le transfert des risques intervient lorsque le Client (ou un tiers désigné par lui) prend physiquement possession des produits. Il est recommandé de vérifier l&apos;état du colis à réception et de signaler toute anomalie au transporteur et au Vendeur.</p>
 

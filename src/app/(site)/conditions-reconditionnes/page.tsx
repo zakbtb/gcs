@@ -44,8 +44,7 @@ export default function ConditionsReconditionnes() {
         <li><strong>Grade et couleur au hasard</strong> : le grade (A, B ou C) et la couleur sont attribués selon l&apos;arrivage ; le client ne les choisit pas.</li>
       </ul>
       <p>
-        Les appareils signalés « commandé sur demande » sont commandés auprès de notre fournisseur après votre commande et sont disponibles sous 2 à 4 jours
-        ouvrés. Une version étrangère (par exemple « version US ») est indiquée sur la fiche de l&apos;appareil.
+        Les appareils signalés « commandé sur demande » sont commandés auprès de notre fournisseur après votre commande et sont disponibles en 24 h pour toute commande passée avant 19 h. Une version étrangère (par exemple « version US ») est indiquée sur la fiche de l&apos;appareil.
       </p>
       <p>Les pièces éventuellement remplacées (écran, batterie…) et leur nature (origine, compatible) sont indiquées au Client avant l&apos;achat.</p>
       <h3 id="garanties">3. Garanties</h3>

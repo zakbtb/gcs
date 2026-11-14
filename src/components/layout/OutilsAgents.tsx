@@ -70,7 +70,7 @@ export function OutilsAgents() {
             telephone: entreprise.telephone,
             whatsapp: `https://wa.me/${boutique.whatsapp}`,
             horaires: entreprise.horaires.map((h) => `${h.nom} : ${h.plages.map(([a, b]) => `${a}-${b}`).join(", ") || "fermé"}`),
-            commande: `Commandé sur demande, disponible sous ${boutique.delaiSurCommande}, retrait gratuit ou livraison, réservation sur WhatsApp.`,
+            commande: `${boutique.delaiTexte}, retrait gratuit ou livraison, réservation sur WhatsApp.`,
           }),
       },
     ];

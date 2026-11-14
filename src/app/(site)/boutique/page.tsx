@@ -9,6 +9,7 @@ import { BanniereHydrogel } from "@/components/hydrogel/BanniereHydrogel";
 import { boutique, hydrogel } from "@/config/entreprise";
 import { getCatalogue } from "@/lib/produits";
 import { meta } from "@/lib/seo";
+import { stripeActif } from "@/lib/stripe";
 import { prix, prixCourt } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -22,6 +23,7 @@ export const metadata = meta({
 export default async function Boutique() {
   const { produits, categories } = await getCatalogue();
   const actifs = produits.filter((p) => p.actif);
+  const paiement = boutique.paiementEnLigne || stripeActif();
   const appareils = actifs.filter((p) => p.appareil);
   const accessoires = actifs.filter((p) => !p.appareil);
   const catsAppareils = categories.filter((c) => appareils.some((p) => p.categorie === c.id));
@@ -34,14 +36,14 @@ export default async function Boutique() {
         ariane={[{ nom: "Accueil", href: "/" }, { nom: "Boutique" }]}
         surtitre="Boutique"
         titre="Téléphones, accessoires et protections"
-        texte={`Commandé sur demande, disponible sous ${boutique.delaiSurCommande} : retrait gratuit à la boutique de Montpellier ou livraison. Réservez sur WhatsApp, vous payez à l'arrivée.`}
+        texte={`${boutique.delaiTexte} : retrait gratuit à la boutique de Montpellier ou livraison. ${paiement ? "Commandez et payez en ligne, ou réservez sur WhatsApp." : "Réservez sur WhatsApp."}`}
       >
         <ul className="mt-10 hidden max-w-4xl grid-cols-2 gap-3 text-sm sm:grid lg:grid-cols-4">
           {[
-            { i: CalendarClock, t: `Disponible sous ${boutique.delaiSurCommande}` },
+            { i: CalendarClock, t: `En 24 h si commande avant ${boutique.heureLimite}` },
             { i: Store, t: "Retrait gratuit en boutique" },
             { i: ShieldCheck, t: `Téléphones garantis ${boutique.garantieReconditionneMois} mois` },
-            { i: MessageCircle, t: "Réservation sur WhatsApp" },
+            { i: MessageCircle, t: paiement ? "Paiement en ligne ou WhatsApp" : "Réservation sur WhatsApp" },
           ].map(({ i: I, t }) => (
             <li key={t} className="flex items-center gap-2.5 rounded-2xl border border-white/10 bg-white/[0.04] px-3 py-3 font-medium">
               <I className="size-5 shrink-0 text-cyan" aria-hidden /> {t}

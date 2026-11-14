@@ -104,30 +104,33 @@ export const boutique = {
   devise: "EUR",
   livraison: {
     nom: "Livraison à domicile (Colis Privé, suivi)",
-    delai: "2 à 4 jours ouvrés après expédition",
+    delai: "Livré en 24 h pour toute commande passée avant 19 h",
     prix: 4.9, // € TTC
     gratuiteDes: 49, // € TTC : livraison offerte à partir de ce montant (null pour désactiver)
     zones: "France métropolitaine",
   },
   retrait: {
     nom: "Retrait gratuit en boutique à Montpellier",
-    delai: "Prêt sous 24 h ouvrées (vous recevez un e-mail)",
+    delai: "Prêt en 24 h pour toute commande passée avant 19 h (vous êtes prévenu)",
     prix: 0,
   },
-  expeditionSous: "1 à 2 jours ouvrés",
+  expeditionSous: "24 h", // délai de livraison affiché (commande avant heureLimite)
+  heureLimite: "19 h",
   // Garantie commerciale sur les réparations (en mois). Indiquez la vôtre.
   garantieReparationMois: 6,
   // Garantie commerciale sur les téléphones reconditionnés (en mois), en plus de la garantie légale de conformité de 2 ans.
   garantieReconditionneMois: 12,
   // Avantages GCS offerts avec chaque téléphone, tablette ou montre (liste vide pour ne rien afficher)
   avantagesAppareil: ["Film hydrogel offert", "Transfert de données offert"],
-  // Paiement par carte sur le site : false = bouton « Réserver » sur WhatsApp seulement.
-  // Passer à true quand Stripe est branché (clés dans les variables d'environnement) : le panier réapparaît.
+  // Paiement par carte sur le site : s'active tout seul dès que les clés Stripe sont dans les variables
+  // d'environnement (le panier et la livraison payée en ligne apparaissent). Sans Stripe : réservation WhatsApp.
   paiementEnLigne: false,
   // Numéro WhatsApp (format international sans +) pour les réservations
   whatsapp: "33615987593",
-  // Délai des produits commandés sur demande
-  delaiSurCommande: "2 à 4 jours ouvrés",
+  // Délai des produits commandés sur demande (commande passée avant heureLimite)
+  delaiSurCommande: "24 h",
+  // Phrase complète affichée sur le site
+  delaiTexte: "Disponible en 24 h pour toute commande passée avant 19 h",
 };
 
 /* ============================================================================

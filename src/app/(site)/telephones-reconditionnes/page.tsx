@@ -12,7 +12,7 @@ export const dynamic = "force-dynamic";
 export const metadata = meta({
   titre: `iPhone reconditionnés et d'occasion à Montpellier – garantis ${boutique.garantieReconditionneMois} mois`,
   description:
-    `iPhone et iPad reconditionnés ou d'occasion testés, garantis ${boutique.garantieReconditionneMois} mois. Retrait gratuit à la boutique GCS de Montpellier ou livraison, disponibles sous 2 à 4 jours ouvrés.`,
+    `iPhone et iPad reconditionnés ou d'occasion testés, garantis ${boutique.garantieReconditionneMois} mois. Retrait gratuit à la boutique GCS de Montpellier ou livraison, disponibles en 24 h pour toute commande passée avant 19 h.`,
   chemin: "/telephones-reconditionnes",
 });
 
@@ -45,7 +45,7 @@ export default async function TelephonesReconditionnes() {
           {[
             { i: ShieldCheck, t: `Garantie ${boutique.garantieReconditionneMois} mois` },
             { i: Gift, t: boutique.avantagesAppareil.join(" + ") },
-            { i: CalendarClock, t: "Disponible sous 2 à 4 jours" },
+            { i: CalendarClock, t: `En 24 h si commande avant ${boutique.heureLimite}` },
             { i: Store, t: "Retrait gratuit à Montpellier" },
           ].map(({ i: I, t }) => (
             <li key={t} className="flex items-center gap-2.5 rounded-2xl border border-white/10 bg-white/[0.04] px-3 py-3 font-medium">
@@ -89,7 +89,7 @@ export default async function TelephonesReconditionnes() {
             <ol className="mt-6 space-y-4">
               {[
                 ["Vous choisissez", "Réservez sur WhatsApp ou par téléphone depuis la fiche de l'appareil : rien à payer avant son arrivée."],
-                ["Nous le commandons", "L'appareil est commandé sur demande : il est disponible sous 2 à 4 jours ouvrés."],
+                ["Nous le commandons", "Commandé avant 19 h, l'appareil est disponible en 24 h."],
                 ["Vous le récupérez", "Retrait gratuit à la boutique GCS, 5 rue des Catalpas à Montpellier, ou livraison à domicile."],
                 ["Vous êtes couvert", `Garantie GCS de ${boutique.garantieReconditionneMois} mois sur l'appareil, en plus de la garantie légale de conformité. Pour un achat en ligne, 14 jours pour changer d'avis.`],
               ].map(([t, d], i) => (

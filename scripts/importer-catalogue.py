@@ -20,7 +20,7 @@ EXCEL = Path(sys.argv[1]) if len(sys.argv) > 1 else RACINE / "Catalogue_Utopya_G
 PRODUITS = RACINE / "data" / "produits.json"
 PHOTOS = RACINE / "data" / "photos-catalogue.json"
 GARANTIE_APPAREILS = "12 mois"  # doit correspondre à boutique.garantieReconditionneMois
-DELAI = "Commandé sur demande, disponible sous 2 à 4 jours ouvrés, en retrait gratuit à la boutique GCS de Montpellier ou en livraison."
+DELAI = "Disponible en 24 h pour toute commande passée avant 19 h, en retrait gratuit à la boutique GCS de Montpellier ou en livraison."
 
 CATEGORIES_APPAREILS = {
     "Smartphone": ("smartphones", "Smartphones", "iPhone reconditionnés et d'occasion, testés et garantis."),

@@ -10,7 +10,7 @@ import { prix } from "@/lib/format";
 import { usePanier } from "@/components/panier/PanierProvider";
 
 /** Galerie + choix des variantes + quantité + ajout au panier */
-export function AchatProduit({ produit, livraisonTexte }: { produit: Produit; livraisonTexte: string }) {
+export function AchatProduit({ produit, livraisonTexte, paiementEnLigne = false }: { produit: Produit; livraisonTexte: string; paiementEnLigne?: boolean }) {
   const { ajouter, articles } = usePanier();
   const aVariantes = produit.variantes.length > 0;
 
@@ -25,13 +25,26 @@ export function AchatProduit({ produit, livraisonTexte }: { produit: Produit; li
   const [ajoute, setAjoute] = useState(false);
   const [mode, setMode] = useState<"retrait" | "livraison">("retrait");
   // Produits commandés sur demande : réservation sur WhatsApp tant que le paiement en ligne n'est pas activé
-  const reservation = Boolean(produit.surCommande) && !boutique.paiementEnLigne;
+  const reservation = Boolean(produit.surCommande) && !paiementEnLigne;
 
   const variante = aVariantes
     ? produit.variantes.find((v) => Object.entries(v.options).every(([k, val]) => choix[k] === val))
     : undefined;
   const stock = aVariantes ? variante?.stock ?? 0 : produit.stock ?? 0;
   const prixActuel = variante?.prix ?? produit.prix;
+  const lienReservation = lienWhatsApp(messageReservation({
+    reference: produit.appareil?.reference ?? produit.accessoire?.reference ?? produit.id.toUpperCase(),
+    nom: produit.nom,
+    options: produit.appareil
+      ? [
+          `Capacité : ${produit.appareil.capacite}`,
+          produit.appareil.couleur ? `Couleur : ${produit.appareil.couleur}` : "",
+          `État : ${produit.appareil.etat}${produit.appareil.grade ? `, grade ${produit.appareil.grade}` : ""}`,
+        ]
+      : variante ? [Object.values(variante.options).join(" · ")] : [],
+    prixTtc: prixActuel,
+    mode,
+  }));
   const dejaAuPanier = articles.find((a) => a.produitId === produit.id && (a.varianteId ?? "") === (variante?.id ?? ""))?.quantite ?? 0;
   const maxAjout = Math.max(0, stock - dejaAuPanier);
   const quantite = Math.max(1, Math.min(quantiteSaisie, maxAjout || 1));
@@ -169,7 +182,7 @@ export function AchatProduit({ produit, livraisonTexte }: { produit: Produit; li
         {/* Stock */}
         <p className="mt-7 flex items-center gap-2 text-sm font-semibold" aria-live="polite">
           {produit.surCommande ? (
-            <><span className="size-2.5 rounded-full bg-brand" aria-hidden /> <span className="text-brand-strong">Commandé sur demande – disponible sous {boutique.delaiSurCommande}</span></>
+            <><span className="size-2.5 rounded-full bg-brand" aria-hidden /> <span className="text-brand-strong">{boutique.delaiTexte}</span></>
           ) : stock === 0 ? (
             <><span className="size-2.5 rounded-full bg-danger" aria-hidden /> <span className="text-danger">Rupture de stock{aVariantes ? " pour cette combinaison" : ""}</span></>
           ) : stock <= 3 ? (
@@ -193,19 +206,7 @@ export function AchatProduit({ produit, livraisonTexte }: { produit: Produit; li
               </div>
             </fieldset>
             <a
-              href={lienWhatsApp(messageReservation({
-                reference: produit.appareil?.reference ?? produit.accessoire?.reference ?? produit.id.toUpperCase(),
-                nom: produit.nom,
-                options: produit.appareil
-                  ? [
-                      `Capacité : ${produit.appareil.capacite}`,
-                      produit.appareil.couleur ? `Couleur : ${produit.appareil.couleur}` : "",
-                      `État : ${produit.appareil.etat}${produit.appareil.grade ? `, grade ${produit.appareil.grade}` : ""}`,
-                    ]
-                  : variante ? [Object.values(variante.options).join(" · ")] : [],
-                prixTtc: prixActuel,
-                mode,
-              }))}
+              href={lienReservation}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-accent mt-3 w-full"
@@ -215,7 +216,7 @@ export function AchatProduit({ produit, livraisonTexte }: { produit: Produit; li
             <a href={`tel:${entreprise.telephoneLien}`} className="btn-ghost mt-2 w-full">
               <Phone className="size-5" aria-hidden /> Ou réserver par téléphone
             </a>
-            <p className="mt-2 text-center text-xs text-muted">Aucun paiement maintenant : vous payez au retrait ou à la livraison, une fois l&apos;appareil arrivé.</p>
+            <p className="mt-2 text-center text-xs text-muted">Aucun paiement maintenant : on vous confirme la commande et le paiement sur WhatsApp.</p>
           </div>
         ) : stock > 0 ? (
           <div className="mt-4 flex gap-3">
@@ -251,6 +252,11 @@ export function AchatProduit({ produit, livraisonTexte }: { produit: Produit; li
             </p>
           </div>
         )}
+        {produit.surCommande && !reservation && (
+          <a href={lienReservation} target="_blank" rel="noopener noreferrer" className="btn-ghost mt-2 w-full">
+            <MessageCircle className="size-5" aria-hidden /> Ou réserver sur WhatsApp
+          </a>
+        )}
         {maxAjout <= 0 && stock > 0 && <p className="mt-2 text-sm text-muted">Vous avez déjà tout le stock disponible dans votre panier.</p>}
 
         <div role="status" aria-live="polite">
@@ -264,7 +270,7 @@ export function AchatProduit({ produit, livraisonTexte }: { produit: Produit; li
 
         <ul className="mt-8 space-y-3 rounded-3xl bg-white p-5 text-sm ring-1 ring-line">
           <li className="flex gap-3"><Truck className="size-5 shrink-0 text-brand" aria-hidden /> {livraisonTexte}</li>
-          <li className="flex gap-3"><Store className="size-5 shrink-0 text-brand" aria-hidden /> Retrait gratuit en boutique à Montpellier sous {produit.surCommande ? "2 à 4 jours ouvrés" : "24 h ouvrées"}</li>
+          <li className="flex gap-3"><Store className="size-5 shrink-0 text-brand" aria-hidden /> Retrait gratuit en boutique à Montpellier en 24 h (commande avant {boutique.heureLimite})</li>
           {produit.appareil ? (
             <li className="flex gap-3"><ShieldCheck className="size-5 shrink-0 text-brand" aria-hidden /> Garantie {boutique.garantieReconditionneMois} mois · <Link href="/conditions-reconditionnes" className="underline underline-offset-2">états et grades expliqués</Link></li>
           ) : (
