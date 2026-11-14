@@ -40,14 +40,14 @@ export default function PageServices() {
       id: "accessoires",
       icon: Headphones,
       titre: "Accessoires",
-      texte: "Coques, verres trempés, chargeurs, câbles, écouteurs, batteries externes : des accessoires sélectionnés pour leur qualité, disponibles en boutique et en ligne.",
+      texte: "Coques, verres trempés, chargeurs, câbles, écouteurs, batteries externes : des accessoires sélectionnés pour leur qualité, disponibles en boutique.",
       points: [
         ...(prixVitrine.coquesDes != null ? [`Coques dès ${prixCourt(prixVitrine.coquesDes)}`] : []),
         ...(prixVitrine.hydrogel != null ? [`Film hydrogel découpé sur mesure et posé : ${prixCourt(prixVitrine.hydrogel)}${prixVitrine.hydrogelAntiEspion != null ? ` (anti-espion ${prixCourt(prixVitrine.hydrogelAntiEspion)})` : ""}`] : []),
         ...(prixVitrine.batteriesExternesDes != null ? [`Batteries externes dès ${prixCourt(prixVitrine.batteriesExternesDes)}`] : []),
         "Retrait gratuit en boutique",
       ],
-      lien: { href: "/boutique", nom: "Voir la boutique en ligne" },
+      lien: { href: "/boutique", nom: "Voir la boutique" },
     },
   ];
 

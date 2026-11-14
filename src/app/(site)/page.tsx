@@ -15,6 +15,7 @@ import { Val } from "@/components/ui/Val";
 import { boutique, entreprise, prixVitrine, servicesProximite } from "@/config/entreprise";
 import { getTarifs } from "@/lib/tarifs";
 import { getCatalogue } from "@/lib/produits";
+import { AccessoiresEnBoutique } from "@/components/boutique/AccessoiresEnBoutique";
 import { faqJsonLd, meta } from "@/lib/seo";
 import { prixCourt } from "@/lib/format";
 import { horairesSemaine, plagesTexte } from "@/lib/horaires";
@@ -49,7 +50,7 @@ const servicesRep = [
 
 export default async function Accueil() {
   const [tarifs, catalogue] = await Promise.all([getTarifs(), getCatalogue()]);
-  const vedettes = catalogue.produits.filter((p) => p.actif && p.misEnAvant).slice(0, 4);
+  const vedettes = catalogue.produits.filter((p) => p.actif && p.misEnAvant && !p.appareil).slice(0, 4);
   const nomCat = Object.fromEntries(catalogue.categories.map((c) => [c.id, c.nom]));
 
   return (
@@ -124,6 +125,13 @@ export default async function Accueil() {
       </section>
 
       {/* ============ BOUTIQUE ============ */}
+      {vedettes.length === 0 && (
+        <section className="py-20 sm:py-24">
+          <div className="container-x">
+            <AccessoiresEnBoutique />
+          </div>
+        </section>
+      )}
       {vedettes.length > 0 && (
         <section className="py-20 sm:py-24" aria-labelledby="titre-boutique">
           <div className="container-x">

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Truck, Store, ShieldCheck, RotateCcw } from "lucide-react";
 import { HeroPage } from "@/components/ui/Section";
 import { Catalogue } from "@/components/boutique/Catalogue";
+import { AccessoiresEnBoutique } from "@/components/boutique/AccessoiresEnBoutique";
 import { boutique } from "@/config/entreprise";
 import { getCatalogue } from "@/lib/produits";
 import { meta } from "@/lib/seo";
@@ -13,7 +14,7 @@ export const dynamic = "force-dynamic";
 export const metadata = meta({
   titre: "Boutique accessoires téléphone à Montpellier – coques, chargeurs, verres trempés",
   description:
-    "Achetez vos accessoires de téléphone en ligne : coques iPhone, chargeurs rapides, câbles, verres trempés, films hydrogel, batteries externes, écouteurs. Livraison ou retrait gratuit à Montpellier.",
+    "Accessoires de téléphone à Montpellier : coques, films hydrogel posés, chargeurs, câbles, batteries externes, écouteurs. Et des iPhone reconditionnés à commander en ligne.",
   chemin: "/boutique",
 });
 
@@ -26,11 +27,15 @@ export default async function Boutique() {
     <>
       <HeroPage
         ariane={[{ nom: "Accueil", href: "/" }, { nom: "Boutique" }]}
-        surtitre="Boutique en ligne"
+        surtitre={actifs.length ? "Boutique en ligne" : "Boutique"}
         titre="Accessoires pour smartphone"
-        texte="Une sélection d'accessoires fiables, au juste prix. Commandez en ligne, faites-vous livrer ou retirez gratuitement en boutique à Montpellier."
+        texte={
+          actifs.length
+            ? "Une sélection d'accessoires fiables, au juste prix. Commandez en ligne, faites-vous livrer ou retirez gratuitement en boutique à Montpellier."
+            : "Coques, films hydrogel posés sur place, chargeurs, batteries externes : tout est en boutique à Montpellier. Nos iPhone reconditionnés se commandent en ligne."
+        }
       >
-        <ul className="mt-10 hidden max-w-4xl grid-cols-2 gap-3 text-sm sm:grid lg:grid-cols-4">
+        <ul className={`mt-10 hidden max-w-4xl grid-cols-2 gap-3 text-sm lg:grid-cols-4 ${actifs.length ? "sm:grid" : ""}`}>
           {[
             { i: Truck, t: boutique.livraison.gratuiteDes ? `Livraison offerte dès ${prixCourt(boutique.livraison.gratuiteDes)}` : "Livraison rapide" },
             { i: Store, t: "Retrait gratuit en boutique" },
@@ -53,7 +58,7 @@ export default async function Boutique() {
             </span>
             <span className="btn-accent shrink-0">Voir les iPhone</span>
           </Link>
-          <Catalogue produits={actifs} categories={cats} />
+          {actifs.length > 0 ? <Catalogue produits={actifs} categories={cats} /> : <AccessoiresEnBoutique />}
           </Suspense>
         </div>
       </section>
