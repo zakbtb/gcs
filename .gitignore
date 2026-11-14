@@ -48,3 +48,8 @@ next-env.d.ts
 /test-results/
 /playwright-report/
 !.env.example
+
+# Catalogue fournisseur : contient les prix d'achat et les marges, ne JAMAIS l'envoyer sur GitHub
+*.xlsx
+# Photos du catalogue : téléchargées pendant la mise en ligne (scripts/telecharger-photos.mjs)
+/public/images/catalogue/

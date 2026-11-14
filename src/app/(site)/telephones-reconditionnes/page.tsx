@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { BadgeCheck, CalendarClock, Store, ShieldCheck, Gift } from "lucide-react";
+import { CalendarClock, Store, ShieldCheck, Gift } from "lucide-react";
 import { boutique } from "@/config/entreprise";
 import { HeroPage } from "@/components/ui/Section";
 import { CatalogueAppareils } from "@/components/boutique/CatalogueAppareils";
@@ -39,12 +39,12 @@ export default async function TelephonesReconditionnes() {
         ariane={[{ nom: "Accueil", href: "/" }, { nom: "Téléphones reconditionnés" }]}
         surtitre="Téléphones reconditionnés"
         titre={<>iPhone reconditionnés{min ? <> dès <span className="text-cyan">{prixCourt(min)}</span></> : null}</>}
-        texte={`Des iPhone et iPad testés et garantis ${boutique.garantieReconditionneMois} mois, à prix juste${boutique.cadeauAppareil ? `, ${boutique.cadeauAppareil.toLowerCase()}` : ""}. Commandez en ligne ou réservez par téléphone, puis récupérez-le en boutique à Montpellier ou faites-vous livrer.`}
+        texte={`Des iPhone et iPad testés et garantis ${boutique.garantieReconditionneMois} mois, à prix juste, avec ${boutique.avantagesAppareil.join(" et ").toLowerCase()} offerts. Réservez sur WhatsApp ou par téléphone, puis récupérez-le en boutique à Montpellier ou faites-vous livrer.`}
       >
         <ul className="mt-10 hidden max-w-4xl grid-cols-2 gap-3 text-sm sm:grid lg:grid-cols-4">
           {[
             { i: ShieldCheck, t: `Garantie ${boutique.garantieReconditionneMois} mois` },
-            boutique.cadeauAppareil ? { i: Gift, t: boutique.cadeauAppareil } : { i: BadgeCheck, t: "Testés, 100 % fonctionnels" },
+            { i: Gift, t: boutique.avantagesAppareil.join(" + ") },
             { i: CalendarClock, t: "Disponible sous 2 à 4 jours" },
             { i: Store, t: "Retrait gratuit à Montpellier" },
           ].map(({ i: I, t }) => (
@@ -88,7 +88,7 @@ export default async function TelephonesReconditionnes() {
             <h2 className="text-2xl font-semibold sm:text-3xl">Comment ça se passe</h2>
             <ol className="mt-6 space-y-4">
               {[
-                ["Vous choisissez", "Commandez en ligne ou réservez par téléphone ou WhatsApp depuis la fiche de l'appareil."],
+                ["Vous choisissez", "Réservez sur WhatsApp ou par téléphone depuis la fiche de l'appareil : rien à payer avant son arrivée."],
                 ["Nous le commandons", "L'appareil est commandé sur demande : il est disponible sous 2 à 4 jours ouvrés."],
                 ["Vous le récupérez", "Retrait gratuit à la boutique GCS, 5 rue des Catalpas à Montpellier, ou livraison à domicile."],
                 ["Vous êtes couvert", `Garantie GCS de ${boutique.garantieReconditionneMois} mois sur l'appareil, en plus de la garantie légale de conformité. Pour un achat en ligne, 14 jours pour changer d'avis.`],

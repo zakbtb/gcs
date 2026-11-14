@@ -114,9 +114,16 @@ export const boutique = {
   // Garantie commerciale sur les réparations (en mois). Indiquez la vôtre.
   garantieReparationMois: 6,
   // Garantie commerciale sur les téléphones reconditionnés (en mois), en plus de la garantie légale de conformité de 2 ans.
-  garantieReconditionneMois: 6,
-  // Cadeau remis avec chaque téléphone ou tablette acheté (null pour ne rien afficher)
-  cadeauAppareil: "Câble de charge offert" as string | null,
+  garantieReconditionneMois: 12,
+  // Avantages GCS offerts avec chaque téléphone, tablette ou montre (liste vide pour ne rien afficher)
+  avantagesAppareil: ["Film hydrogel offert", "Transfert de données offert"],
+  // Paiement par carte sur le site : false = bouton « Réserver » sur WhatsApp seulement.
+  // Passer à true quand Stripe est branché (clés dans les variables d'environnement) : le panier réapparaît.
+  paiementEnLigne: false,
+  // Numéro WhatsApp (format international sans +) pour les réservations
+  whatsapp: "33615987593",
+  // Délai des produits commandés sur demande
+  delaiSurCommande: "2 à 4 jours ouvrés",
 };
 
 /* ============================================================================
@@ -193,6 +200,20 @@ export const forfaitMaintenance = {
     "Sauvegardes et mises à jour de sécurité",
     "Petites modifications de contenu (jusqu'à 1 h / mois)",
     "Suivi de la visibilité Google",
+  ],
+};
+
+/* ============================================================================
+ *  PROTECTION D'ÉCRAN HYDROGEL (produit phare, découpé sur mesure en boutique)
+ *  Liste des marques et modèles : data/hydrogel-modeles.json
+ *  prixBarre : ancien prix affiché barré. La loi impose qu'il soit le prix le plus bas
+ *  pratiqué dans les 30 jours précédant la promo. afficherPrixBarre: false = « PROMO » sans prix barré.
+ * ========================================================================== */
+export const hydrogel = {
+  afficherPrixBarre: true,
+  types: [
+    { id: "transparent", nom: "Transparent", detail: "Invisible, protège des rayures et des chocs du quotidien", prix: 14.9, prixBarre: 24.9 },
+    { id: "anti-espion", nom: "Anti-espion", detail: "Personne ne lit votre écran : il paraît noir vu de côté", prix: 19.9, prixBarre: 34.9 },
   ],
 };
 

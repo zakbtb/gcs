@@ -111,6 +111,9 @@ export async function sauverProduit(_: unknown, fd: FormData): Promise<{ erreur?
     // Champs des appareils sur commande (importés depuis le catalogue fournisseur) : conservés tels quels
     ...(ancien?.surCommande ? { surCommande: true } : {}),
     ...(ancien?.appareil ? { appareil: ancien.appareil } : {}),
+    ...(ancien?.accessoire ? { accessoire: ancien.accessoire } : {}),
+    // Produit ajouté à la main dans l'admin : gardé quand le catalogue est réimporté
+    ...(!ancien || ancien.manuel ? { manuel: true } : {}),
     actif: fd.get("actif") === "on",
   };
   await enregistrerProduit(produit, ancienId);

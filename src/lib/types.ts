@@ -41,6 +41,10 @@ export type Produit = {
     version: string;
     infoClient?: string;
   };
+  /** Accessoire du catalogue fournisseur (référence GCS). */
+  accessoire?: { reference: string };
+  /** Produit créé dans l'admin (et non importé) : conservé quand le catalogue est réimporté. */
+  manuel?: boolean;
   actif: boolean;
 };
 

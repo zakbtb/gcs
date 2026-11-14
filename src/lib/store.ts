@@ -31,7 +31,7 @@ export const DATA_DIR =
  * Quand une nouvelle version du fichier est livrée (nouveau catalogue), la copie en ligne est refaite
  * à partir de la version livrée, en gardant les stocks en ligne et les produits créés dans /admin.
  */
-type CatalogueBrut = { _source?: string; produits?: { id: string; stock?: number; variantes?: { id: string; stock: number }[] }[] };
+type CatalogueBrut = { _source?: string; produits?: { id: string; manuel?: boolean; stock?: number; variantes?: { id: string; stock: number }[] }[] };
 const FUSIONS: Record<string, (livre: CatalogueBrut, enLigne: CatalogueBrut) => CatalogueBrut> = {
   "produits.json": (livre, enLigne) => {
     const anciens = new Map((enLigne.produits ?? []).map((p) => [p.id, p]));
@@ -47,7 +47,8 @@ const FUSIONS: Record<string, (livre: CatalogueBrut, enLigne: CatalogueBrut) => 
           : {}),
       };
     });
-    const creesEnLigne = (enLigne.produits ?? []).filter((p) => !idsLivres.has(p.id));
+    // Seuls les produits ajoutés à la main dans l'admin survivent à un nouvel import du catalogue
+    const creesEnLigne = (enLigne.produits ?? []).filter((p) => !idsLivres.has(p.id) && p.manuel);
     return { ...livre, produits: [...produits, ...creesEnLigne] };
   },
 };

@@ -19,7 +19,7 @@ export function CarteProduit({ produit, nomCategorie }: { produit: Produit; nomC
           width={800}
           height={800}
           loading="lazy"
-          className={`size-full transition-transform duration-500 group-hover:scale-[1.03] ${produit.appareil ? "bg-white object-contain p-4" : "object-cover"}`}
+          className={`size-full transition-transform duration-500 group-hover:scale-[1.03] ${produit.surCommande ? "bg-white object-contain p-4" : "object-cover"}`}
         />
         <div className="absolute left-3 top-3 flex flex-wrap gap-1.5">
           {produit.prixBarre && (

@@ -27,28 +27,34 @@ function rangModele(m: string) {
 }
 
 /** Catalogue des téléphones et tablettes : filtres catégorie, modèle, capacité, état, grade, prix (dans l'URL). */
-export function CatalogueAppareils({ produits, categories }: { produits: Produit[]; categories: Categorie[] }) {
+export function CatalogueAppareils({ produits, categories, prefixe = "" }: { produits: Produit[]; categories: Categorie[]; prefixe?: string }) {
   const router = useRouter();
   const pathname = usePathname();
   const sp = useSearchParams();
   const [ouvert, setOuvert] = useState(false);
 
   const f = {
-    categorie: sp.get("categorie") ?? "",
-    modele: sp.get("modele") ?? "",
-    capacite: sp.get("capacite") ?? "",
-    etat: sp.get("etat") ?? "",
-    grade: sp.get("grade") ?? "",
-    prix: sp.get("prix") ?? "",
+    categorie: sp.get(prefixe + "categorie") ?? "",
+    modele: sp.get(prefixe + "modele") ?? "",
+    capacite: sp.get(prefixe + "capacite") ?? "",
+    etat: sp.get(prefixe + "etat") ?? "",
+    grade: sp.get(prefixe + "grade") ?? "",
+    prix: sp.get(prefixe + "prix") ?? "",
   };
-  const tri = (sp.get("tri") as Tri) || "prix-asc";
+  const tri = (sp.get(prefixe + "tri") as Tri) || "prix-asc";
 
+  const aller = (p: URLSearchParams) => router.replace(`${pathname}${p.size ? `?${p}` : ""}`, { scroll: false });
   const maj = (cle: string, valeur: string) => {
     const p = new URLSearchParams(sp.toString());
-    if (valeur && p.get(cle) !== valeur) p.set(cle, valeur);
-    else p.delete(cle);
-    if (cle === "categorie") p.delete("modele");
-    router.replace(`${pathname}${p.size ? `?${p}` : ""}`, { scroll: false });
+    if (valeur && p.get(prefixe + cle) !== valeur) p.set(prefixe + cle, valeur);
+    else p.delete(prefixe + cle);
+    if (cle === "categorie") p.delete(prefixe + "modele");
+    aller(p);
+  };
+  const effacer = () => {
+    const p = new URLSearchParams(sp.toString());
+    for (const k of ["categorie", "modele", "capacite", "etat", "grade", "prix", "tri"]) p.delete(prefixe + k);
+    aller(p);
   };
 
   const valeurs = useMemo(() => {
@@ -105,8 +111,8 @@ export function CatalogueAppareils({ produits, categories }: { produits: Produit
     <div className="space-y-7">
       {categories.length > 1 && puces("categorie", "Catégorie", categories.map((c) => ({ id: c.id, nom: c.nom })))}
       <div>
-        <label htmlFor="filtre-modele" className="mb-3 block text-sm font-semibold uppercase tracking-wider text-subtle">Modèle</label>
-        <select id="filtre-modele" className="field" value={f.modele} onChange={(e) => maj("modele", e.target.value)}>
+        <label htmlFor={`${prefixe}filtre-modele`} className="mb-3 block text-sm font-semibold uppercase tracking-wider text-subtle">Modèle</label>
+        <select id={`${prefixe}filtre-modele`} className="field" value={f.modele} onChange={(e) => maj("modele", e.target.value)}>
           <option value="">Tous les modèles</option>
           {valeurs.modele.map((m) => <option key={m}>{m}</option>)}
         </select>
@@ -116,7 +122,7 @@ export function CatalogueAppareils({ produits, categories }: { produits: Produit
       {puces("grade", "Grade", valeurs.grade.map((v) => ({ id: v, nom: v.length === 1 ? `Grade ${v}` : "Au hasard" })))}
       {puces("capacite", "Capacité", valeurs.capacite.map((v) => ({ id: v, nom: v })))}
       {nbFiltres > 0 && (
-        <button type="button" onClick={() => router.replace(pathname, { scroll: false })} className="btn-ghost btn-sm w-full">
+        <button type="button" onClick={effacer} className="btn-ghost btn-sm w-full">
           Effacer les filtres
         </button>
       )}

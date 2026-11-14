@@ -4,6 +4,7 @@ import {
   Home as HomeIcon, Stethoscope, Gamepad2, Laptop, Store, RefreshCcw, Code2,
 } from "lucide-react";
 import { VisuelHero } from "@/components/accueil/VisuelHero";
+import { BanniereHydrogel } from "@/components/hydrogel/BanniereHydrogel";
 import { Simulateur } from "@/components/reparation/Simulateur";
 import { CarteProduit } from "@/components/boutique/CarteProduit";
 import { IconeService } from "@/components/services/IconeService";
@@ -56,6 +57,8 @@ export default async function Accueil() {
   return (
     <>
       <JsonLd data={faqJsonLd(faq.map((f) => ({ q: f.q, r: f.r })))} />
+
+      <BanniereHydrogel />
 
       {/* ============ HERO ============ */}
       <section className="relative overflow-hidden bg-ink text-white">
@@ -155,7 +158,7 @@ export default async function Accueil() {
               <h2 id="titre-reco" className="mt-4 text-3xl font-semibold sm:text-4xl">
                 Smartphones reconditionnés{prixVitrine.reconditionnesDes != null && <><br /><span className="text-gradient">dès {prixCourt(prixVitrine.reconditionnesDes)}</span></>}
               </h2>
-              <p className="mt-4 max-w-xl text-white/75">Testés et garantis {boutique.garantieReconditionneMois} mois{boutique.cadeauAppareil ? `, ${boutique.cadeauAppareil.toLowerCase()}` : ""}. On rachète aussi votre ancien téléphone, payé tout de suite.</p>
+              <p className="mt-4 max-w-xl text-white/75">Testés et garantis {boutique.garantieReconditionneMois} mois, avec {boutique.avantagesAppareil.join(" et ").toLowerCase()} offerts. On rachète aussi votre ancien téléphone, payé tout de suite.</p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                 <Link href="/telephones-reconditionnes" className="btn-accent">Voir les téléphones <ArrowRight className="size-5" aria-hidden /></Link>
                 <Link href="/services#estimation" className="btn-ghost-dark">Faire estimer mon téléphone</Link>

@@ -28,25 +28,33 @@ function stock(p: Produit) {
 }
 
 /** Catalogue avec recherche, filtres (catégorie, prix, compatibilité, dispo) et tri. Les filtres sont dans l'URL (partageables). */
-export function Catalogue({ produits, categories }: { produits: Produit[]; categories: Categorie[] }) {
+export function Catalogue({ produits, categories, prefixe = "", texteRecherche = "Rechercher : coque iPhone 15, chargeur…" }: { produits: Produit[]; categories: Categorie[]; prefixe?: string; texteRecherche?: string }) {
   const router = useRouter();
   const pathname = usePathname();
   const sp = useSearchParams();
   const [filtresOuverts, setFiltresOuverts] = useState(false);
 
-  const q = sp.get("q") ?? "";
-  const cat = sp.get("categorie") ?? "";
-  const prixF = sp.get("prix") ?? "";
-  const compat = sp.get("compatibilite") ?? "";
-  const dispo = sp.get("dispo") === "1";
-  const tri = (sp.get("tri") as Tri) || "pertinence";
+  const q = sp.get(prefixe + "q") ?? "";
+  const cat = sp.get(prefixe + "categorie") ?? "";
+  const prixF = sp.get(prefixe + "prix") ?? "";
+  const compat = sp.get(prefixe + "compatibilite") ?? "";
+  const marque = sp.get(prefixe + "marque") ?? "";
+  const dispo = sp.get(prefixe + "dispo") === "1";
+  const surCommande = produits.every((p) => p.surCommande);
+  const tri = (sp.get(prefixe + "tri") as Tri) || "pertinence";
 
   const maj = (cle: string, valeur: string) => {
     const p = new URLSearchParams(sp.toString());
-    if (valeur) p.set(cle, valeur);
-    else p.delete(cle);
+    if (valeur) p.set(prefixe + cle, valeur);
+    else p.delete(prefixe + cle);
     router.replace(`${pathname}${p.size ? `?${p}` : ""}`, { scroll: false });
   };
+  const effacer = () => {
+    const p = new URLSearchParams(sp.toString());
+    for (const k of ["categorie", "prix", "compatibilite", "marque", "dispo"]) p.delete(prefixe + k);
+    router.replace(`${pathname}${p.size ? `?${p}` : ""}`, { scroll: false });
+  };
+  const marques = useMemo(() => [...new Set(produits.map((p) => p.marque).filter(Boolean))].sort((a, b) => a.localeCompare(b, "fr")), [produits]);
 
   const compatibilites = useMemo(() => {
     const s = new Set<string>();
@@ -62,6 +70,7 @@ export function Catalogue({ produits, categories }: { produits: Produit[]; categ
       if (cat && p.categorie !== cat) return false;
       if (tranche && (p.prix < tranche.min || p.prix >= tranche.max)) return false;
       if (dispo && stock(p) === 0) return false;
+      if (marque && p.marque !== marque) return false;
       if (compat) {
         const modeles = p.options.find((o) => o.nom === "Modèle")?.valeurs ?? [];
         if (!p.compatibilite.includes(compat) && !modeles.includes(compat)) return false;
@@ -77,10 +86,10 @@ export function Catalogue({ produits, categories }: { produits: Produit[]; categ
     else if (tri === "nom") liste = [...liste].sort((a, b) => a.nom.localeCompare(b.nom, "fr"));
     else liste = [...liste].sort((a, b) => Number(stock(b) > 0) - Number(stock(a) > 0) || Number(Boolean(b.misEnAvant)) - Number(Boolean(a.misEnAvant)));
     return liste;
-  }, [produits, categories, q, cat, prixF, compat, dispo, tri]);
+  }, [produits, categories, q, cat, prixF, compat, marque, dispo, tri]);
 
   const nomCat = Object.fromEntries(categories.map((c) => [c.id, c.nom]));
-  const nbFiltres = [cat, prixF, compat, dispo ? "1" : ""].filter(Boolean).length;
+  const nbFiltres = [cat, prixF, compat, marque, dispo ? "1" : ""].filter(Boolean).length;
 
   const filtres = (
     <div className="space-y-7">
@@ -89,7 +98,7 @@ export function Catalogue({ produits, categories }: { produits: Produit[]; categ
         <div className="space-y-1">
           {[{ id: "", nom: "Toutes les catégories" }, ...categories].map((c) => (
             <label key={c.id || "toutes"} className={`flex min-h-11 cursor-pointer items-center gap-3 rounded-xl px-3 text-[0.95rem] transition-colors ${cat === c.id ? "bg-brand-soft font-semibold text-brand-strong" : "hover:bg-surface"}`}>
-              <input type="radio" name="categorie" className="accent-brand" checked={cat === c.id} onChange={() => maj("categorie", c.id)} />
+              <input type="radio" name={`${prefixe}categorie`} className="accent-brand" checked={cat === c.id} onChange={() => maj("categorie", c.id)} />
               <span className="flex-1">{c.nom}</span>
               <span className="text-xs text-muted">{c.id ? produits.filter((p) => p.categorie === c.id).length : produits.length}</span>
             </label>
@@ -101,25 +110,36 @@ export function Catalogue({ produits, categories }: { produits: Produit[]; categ
         <div className="space-y-1">
           {[{ id: "", nom: "Tous les prix" }, ...TRANCHES].map((t) => (
             <label key={t.id || "tous"} className={`flex min-h-11 cursor-pointer items-center gap-3 rounded-xl px-3 text-[0.95rem] ${prixF === t.id ? "bg-brand-soft font-semibold text-brand-strong" : "hover:bg-surface"}`}>
-              <input type="radio" name="prix" className="accent-brand" checked={prixF === t.id} onChange={() => maj("prix", t.id)} />
+              <input type="radio" name={`${prefixe}prix`} className="accent-brand" checked={prixF === t.id} onChange={() => maj("prix", t.id)} />
               {t.nom}
             </label>
           ))}
         </div>
       </fieldset>
-      <div>
-        <label htmlFor="filtre-compat" className="mb-3 block text-sm font-semibold uppercase tracking-wider text-subtle">Compatibilité</label>
-        <select id="filtre-compat" className="field" value={compat} onChange={(e) => maj("compatibilite", e.target.value)}>
-          <option value="">Tous les appareils</option>
-          {compatibilites.map((c) => <option key={c}>{c}</option>)}
-        </select>
-      </div>
-      <label className="flex min-h-11 cursor-pointer items-center gap-3 rounded-xl px-3 hover:bg-surface">
+      {compatibilites.length > 0 && (
+        <div>
+          <label htmlFor={`${prefixe}filtre-compat`} className="mb-3 block text-sm font-semibold uppercase tracking-wider text-subtle">{surCommande ? "Connectique" : "Compatibilité"}</label>
+          <select id={`${prefixe}filtre-compat`} className="field" value={compat} onChange={(e) => maj("compatibilite", e.target.value)}>
+            <option value="">{surCommande ? "Toutes" : "Tous les appareils"}</option>
+            {compatibilites.map((c) => <option key={c}>{c}</option>)}
+          </select>
+        </div>
+      )}
+      {marques.length > 1 && (
+        <div>
+          <label htmlFor={`${prefixe}filtre-marque`} className="mb-3 block text-sm font-semibold uppercase tracking-wider text-subtle">Marque</label>
+          <select id={`${prefixe}filtre-marque`} className="field" value={marque} onChange={(e) => maj("marque", e.target.value)}>
+            <option value="">Toutes les marques</option>
+            {marques.map((m) => <option key={m}>{m}</option>)}
+          </select>
+        </div>
+      )}
+      {!surCommande && <label className="flex min-h-11 cursor-pointer items-center gap-3 rounded-xl px-3 hover:bg-surface">
         <input type="checkbox" className="size-5 accent-brand" checked={dispo} onChange={(e) => maj("dispo", e.target.checked ? "1" : "")} />
         <span className="text-[0.95rem] font-medium">En stock uniquement</span>
-      </label>
+      </label>}
       {nbFiltres > 0 && (
-        <button type="button" onClick={() => router.replace(pathname + (q ? `?q=${encodeURIComponent(q)}` : ""), { scroll: false })} className="btn-ghost btn-sm w-full">
+        <button type="button" onClick={effacer} className="btn-ghost btn-sm w-full">
           Effacer les filtres
         </button>
       )}
@@ -135,12 +155,12 @@ export function Catalogue({ produits, categories }: { produits: Produit[]; categ
       <div>
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
           <div className="relative flex-1">
-            <label htmlFor="recherche" className="sr-only">Rechercher un produit</label>
+            <label htmlFor={`${prefixe}recherche`} className="sr-only">Rechercher un produit</label>
             <Search className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-subtle" aria-hidden />
             <input
-              id="recherche"
+              id={`${prefixe}recherche`}
               type="search"
-              placeholder="Rechercher : coque iPhone 15, chargeur…"
+              placeholder={texteRecherche}
               defaultValue={q}
               onChange={(e) => maj("q", e.target.value)}
               className="field pl-12"
@@ -150,8 +170,8 @@ export function Catalogue({ produits, categories }: { produits: Produit[]; categ
             <button type="button" onClick={() => setFiltresOuverts(true)} className="btn-ghost flex-1 lg:hidden" aria-haspopup="dialog">
               <SlidersHorizontal className="size-5" aria-hidden /> Filtres {nbFiltres > 0 && <span className="rounded-full bg-brand px-2 text-xs text-white">{nbFiltres}</span>}
             </button>
-            <label htmlFor="tri" className="sr-only">Trier par</label>
-            <select id="tri" className="field w-auto flex-1 sm:flex-none" value={tri} onChange={(e) => maj("tri", e.target.value === "pertinence" ? "" : e.target.value)}>
+            <label htmlFor={`${prefixe}tri`} className="sr-only">Trier par</label>
+            <select id={`${prefixe}tri`} className="field w-auto flex-1 sm:flex-none" value={tri} onChange={(e) => maj("tri", e.target.value === "pertinence" ? "" : e.target.value)}>
               {Object.entries(TRIS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
             </select>
           </div>

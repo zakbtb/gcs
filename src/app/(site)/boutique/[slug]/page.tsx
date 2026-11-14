@@ -4,10 +4,13 @@ import { AchatProduit } from "@/components/boutique/AchatProduit";
 import { CarteProduit } from "@/components/boutique/CarteProduit";
 import { FilAriane } from "@/components/ui/Section";
 import { JsonLd } from "@/components/ui/JsonLd";
-import { boutique, entreprise } from "@/config/entreprise";
+import { boutique, entreprise, hydrogel } from "@/config/entreprise";
 import { getCatalogue, getProduit, stockTotal } from "@/lib/produits";
 import { arianeJsonLd, meta } from "@/lib/seo";
 import { prix, prixCourt } from "@/lib/format";
+import { accessoiresCompatibles } from "@/lib/compatibles";
+import Link from "next/link";
+import { Sparkles } from "lucide-react";
 
 export const dynamic = "force-dynamic";
 
@@ -32,8 +35,10 @@ export default async function PageProduit({ params }: { params: Promise<{ slug: 
   const similaires = catalogue.produits
     .filter((p) => p.actif && p.id !== produit.id && p.categorie === produit.categorie)
     .sort((a, b) => (produit.appareil ? Math.abs(a.prix - produit.prix) - Math.abs(b.prix - produit.prix) : 0))
-    .concat(catalogue.produits.filter((p) => p.actif && p.id !== produit.id && p.categorie !== produit.categorie && p.misEnAvant && !p.appareil))
+    .concat(produit.appareil ? [] : catalogue.produits.filter((p) => p.actif && p.id !== produit.id && p.categorie !== produit.categorie && p.misEnAvant && !p.appareil))
     .slice(0, 4);
+  const compatibles = accessoiresCompatibles(produit, catalogue.produits);
+  const estTelephone = produit.categorie === "smartphones";
   const livraisonTexte = produit.surCommande
     ? `Livraison ${prix(boutique.livraison.prix)}${boutique.livraison.gratuiteDes ? `, offerte dès ${prixCourt(boutique.livraison.gratuiteDes)} d'achat` : ""} · disponible sous 2 à 4 jours ouvrés`
     : boutique.livraison.gratuiteDes
@@ -42,12 +47,10 @@ export default async function PageProduit({ params }: { params: Promise<{ slug: 
 
   const ariane = [
     { nom: "Accueil", href: "/" },
-    ...(produit.appareil
-      ? [{ nom: "Téléphones reconditionnés", href: "/telephones-reconditionnes" }]
-      : [
-          { nom: "Boutique", href: "/boutique" },
-          ...(categorie ? [{ nom: categorie.nom, href: `/boutique?categorie=${categorie.id}` }] : []),
-        ]),
+    { nom: "Boutique", href: "/boutique" },
+    ...(categorie
+      ? [{ nom: categorie.nom, href: produit.appareil ? `/boutique?categorie=${categorie.id}#telephones` : `/boutique?acc-categorie=${categorie.id}#accessoires` }]
+      : []),
     { nom: produit.nom, href: `/boutique/${produit.slug}` },
   ];
 
@@ -111,8 +114,32 @@ export default async function PageProduit({ params }: { params: Promise<{ slug: 
         </div>
       </section>
 
+      {(compatibles.length > 0 || estTelephone) && (
+        <section className="py-16" aria-labelledby="t-compatibles">
+          <div className="container-x">
+            <h2 id="t-compatibles" className="text-2xl font-semibold sm:text-3xl">Accessoires compatibles</h2>
+            <p className="mt-2 text-muted">Choisis pour {produit.appareil?.modele ?? "cet appareil"}, à commander en même temps.</p>
+            <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
+              {estTelephone && (
+                <Link href="/boutique/protection-hydrogel" className="flex flex-col justify-between rounded-2xl bg-brand p-5 text-white transition-transform hover:-translate-y-0.5">
+                  <span>
+                    <span className="inline-flex items-center gap-1.5 rounded-full bg-accent px-2.5 py-1 text-xs font-bold text-ink"><Sparkles className="size-3.5" aria-hidden /> PROMO</span>
+                    <span className="mt-3 block font-display text-lg font-semibold leading-snug">Protection d&apos;écran hydrogel</span>
+                    <span className="mt-1 block text-sm text-white/80">Déjà offerte avec ce téléphone. Une deuxième, en anti-espion ?</span>
+                  </span>
+                  <span className="mt-4 font-display text-lg font-bold">dès {prix(hydrogel.types[0].prix)}</span>
+                </Link>
+              )}
+              {compatibles.map((p) => (
+                <CarteProduit key={p.id} produit={p} nomCategorie={catalogue.categories.find((c) => c.id === p.categorie)?.nom} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {similaires.length > 0 && (
-        <section className="py-16" aria-labelledby="t-similaires">
+        <section className={`py-16 ${compatibles.length > 0 || estTelephone ? "bg-white" : ""}`} aria-labelledby="t-similaires">
           <div className="container-x">
             <h2 id="t-similaires" className="text-2xl font-semibold sm:text-3xl">Vous aimerez aussi</h2>
             <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
