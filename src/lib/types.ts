@@ -44,7 +44,7 @@ export type Produit = {
   actif: boolean;
 };
 
-export type Catalogue = { _aide?: string; categories: Categorie[]; produits: Produit[] };
+export type Catalogue = { _aide?: string; _source?: string; categories: Categorie[]; produits: Produit[] };
 
 export type LignePanier = { produitId: string; varianteId?: string; quantite: number };
 

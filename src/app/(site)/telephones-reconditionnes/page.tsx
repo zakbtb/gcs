@@ -1,5 +1,6 @@
 import { Suspense } from "react";
-import { BadgeCheck, CalendarClock, Store, ShieldCheck } from "lucide-react";
+import { BadgeCheck, CalendarClock, Store, ShieldCheck, Gift } from "lucide-react";
+import { boutique } from "@/config/entreprise";
 import { HeroPage } from "@/components/ui/Section";
 import { CatalogueAppareils } from "@/components/boutique/CatalogueAppareils";
 import { getCatalogue } from "@/lib/produits";
@@ -9,9 +10,9 @@ import { prixCourt } from "@/lib/format";
 export const dynamic = "force-dynamic";
 
 export const metadata = meta({
-  titre: "iPhone reconditionnés et d'occasion à Montpellier – garantis 12 mois",
+  titre: `iPhone reconditionnés et d'occasion à Montpellier – garantis ${boutique.garantieReconditionneMois} mois`,
   description:
-    "iPhone et iPad reconditionnés ou d'occasion testés, garantis 12 mois. Retrait gratuit à la boutique GCS de Montpellier ou livraison, disponibles sous 2 à 4 jours ouvrés.",
+    `iPhone et iPad reconditionnés ou d'occasion testés, garantis ${boutique.garantieReconditionneMois} mois. Retrait gratuit à la boutique GCS de Montpellier ou livraison, disponibles sous 2 à 4 jours ouvrés.`,
   chemin: "/telephones-reconditionnes",
 });
 
@@ -38,12 +39,12 @@ export default async function TelephonesReconditionnes() {
         ariane={[{ nom: "Accueil", href: "/" }, { nom: "Téléphones reconditionnés" }]}
         surtitre="Téléphones reconditionnés"
         titre={<>iPhone reconditionnés{min ? <> dès <span className="text-cyan">{prixCourt(min)}</span></> : null}</>}
-        texte="Des iPhone et iPad testés et garantis 12 mois, à prix juste. Commandez en ligne ou réservez par téléphone, puis récupérez-le en boutique à Montpellier ou faites-vous livrer."
+        texte={`Des iPhone et iPad testés et garantis ${boutique.garantieReconditionneMois} mois, à prix juste${boutique.cadeauAppareil ? `, ${boutique.cadeauAppareil.toLowerCase()}` : ""}. Commandez en ligne ou réservez par téléphone, puis récupérez-le en boutique à Montpellier ou faites-vous livrer.`}
       >
         <ul className="mt-10 hidden max-w-4xl grid-cols-2 gap-3 text-sm sm:grid lg:grid-cols-4">
           {[
-            { i: ShieldCheck, t: "Garantie 12 mois" },
-            { i: BadgeCheck, t: "Testés, 100 % fonctionnels" },
+            { i: ShieldCheck, t: `Garantie ${boutique.garantieReconditionneMois} mois` },
+            boutique.cadeauAppareil ? { i: Gift, t: boutique.cadeauAppareil } : { i: BadgeCheck, t: "Testés, 100 % fonctionnels" },
             { i: CalendarClock, t: "Disponible sous 2 à 4 jours" },
             { i: Store, t: "Retrait gratuit à Montpellier" },
           ].map(({ i: I, t }) => (
@@ -90,7 +91,7 @@ export default async function TelephonesReconditionnes() {
                 ["Vous choisissez", "Commandez en ligne ou réservez par téléphone ou WhatsApp depuis la fiche de l'appareil."],
                 ["Nous le commandons", "L'appareil est commandé sur demande : il est disponible sous 2 à 4 jours ouvrés."],
                 ["Vous le récupérez", "Retrait gratuit à la boutique GCS, 5 rue des Catalpas à Montpellier, ou livraison à domicile."],
-                ["Vous êtes couvert", "Garantie 12 mois sur l'appareil. Pour un achat en ligne, 14 jours pour changer d'avis."],
+                ["Vous êtes couvert", `Garantie GCS de ${boutique.garantieReconditionneMois} mois sur l'appareil, en plus de la garantie légale de conformité. Pour un achat en ligne, 14 jours pour changer d'avis.`],
               ].map(([t, d], i) => (
                 <li key={t} className="flex gap-4">
                   <span className="grid size-9 shrink-0 place-items-center rounded-full bg-brand font-bold text-white">{i + 1}</span>

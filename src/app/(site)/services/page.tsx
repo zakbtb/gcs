@@ -26,11 +26,11 @@ export default function PageServices() {
       id: "reconditionnes",
       icon: RefreshCcw,
       titre: "Rachat & vente de téléphones reconditionnés",
-      texte: `Vendez votre ancien smartphone au meilleur prix, payé immédiatement, ou repartez avec un téléphone reconditionné testé, nettoyé et garanti${prixVitrine.reconditionnesDes != null ? `, dès ${prixCourt(prixVitrine.reconditionnesDes)}` : ""}.`,
+      texte: `Vendez votre ancien smartphone au meilleur prix, payé immédiatement, ou repartez avec un téléphone reconditionné testé et garanti${prixVitrine.reconditionnesDes != null ? `, dès ${prixCourt(prixVitrine.reconditionnesDes)}` : ""}.`,
       points: [
         "Estimation gratuite en boutique ou en ligne",
         "Paiement immédiat (pièce d'identité obligatoire)",
-        "Reconditionnés testés et contrôlés point par point",
+        "Reconditionnés et occasions testés, grade esthétique indiqué",
         `Garantie ${boutique.garantieReconditionneMois} mois minimum sur les reconditionnés`,
         "Effacement sécurisé de vos données",
       ],

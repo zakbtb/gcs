@@ -28,18 +28,25 @@ export default function ConditionsReconditionnes() {
       <h2 id="vente">A. Vente de téléphones reconditionnés</h2>
       <h3 id="definition">1. Définition</h3>
       <p>
-        Conformément à l&apos;article L.122-21-1 et au décret n° 2022-190 du 17 février 2022, un appareil vendu comme « reconditionné » par GCS a fait
+        Conformément à l&apos;article L.122-21-1 et au décret n° 2022-190 du 17 février 2022, un appareil vendu comme « reconditionné » par GCS (en boutique ou sur ce site) a fait
         l&apos;objet de tests portant sur l&apos;ensemble de ses fonctionnalités afin d&apos;établir qu&apos;il répond aux obligations légales de sécurité et à l&apos;usage
         auquel le consommateur peut légitimement s&apos;attendre, ainsi que, le cas échéant, d&apos;une ou plusieurs interventions afin de lui restituer ses
         fonctionnalités. Les données de l&apos;ancien propriétaire ont été effacées de manière sécurisée et l&apos;appareil n&apos;est rattaché à aucun compte (iCloud, Google).
       </p>
-      <h3 id="etat">2. Grades esthétiques et état de la batterie</h3>
-      <p>Chaque appareil est présenté avec son grade esthétique, sa capacité de stockage, sa couleur et, pour les iPhone, l&apos;état de santé de la batterie :</p>
+      <h3 id="etat">2. États et grades esthétiques</h3>
+      <p>Chaque appareil est présenté avec son état, son grade esthétique, sa capacité de stockage et sa couleur :</p>
       <ul>
-        <li><strong>Comme neuf</strong> : aucune trace d&apos;usure visible ;</li>
-        <li><strong>Très bon état</strong> : micro-rayures invisibles à 20 cm ;</li>
-        <li><strong>Bon état</strong> : rayures légères visibles, sans impact sur l&apos;utilisation.</li>
+        <li><strong>Reconditionné</strong> : testé et remis en état par un professionnel, au sens défini ci-dessus ;</li>
+        <li><strong>Fonctionnel</strong> : appareil d&apos;occasion testé et entièrement fonctionnel, vendu en l&apos;état esthétique indiqué par son grade ;</li>
+        <li><strong>Grade A</strong> : très bon état, micro-rayures à peine visibles ;</li>
+        <li><strong>Grade B</strong> : bon état, rayures légères visibles de près ;</li>
+        <li><strong>Grade C</strong> : état correct, traces d&apos;usage visibles, sans effet sur le fonctionnement ;</li>
+        <li><strong>Grade et couleur au hasard</strong> : le grade (A, B ou C) et la couleur sont attribués selon l&apos;arrivage ; le client ne les choisit pas.</li>
       </ul>
+      <p>
+        Les appareils signalés « commandé sur demande » sont commandés auprès de notre fournisseur après votre commande et sont disponibles sous 2 à 4 jours
+        ouvrés. Une version étrangère (par exemple « version US ») est indiquée sur la fiche de l&apos;appareil.
+      </p>
       <p>Les pièces éventuellement remplacées (écran, batterie…) et leur nature (origine, compatible) sont indiquées au Client avant l&apos;achat.</p>
       <h3 id="garanties">3. Garanties</h3>
       <p>

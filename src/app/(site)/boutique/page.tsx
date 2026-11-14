@@ -49,7 +49,7 @@ export default async function Boutique() {
             <Link href="/telephones-reconditionnes" className="mb-8 flex flex-col gap-3 rounded-3xl bg-ink p-5 text-white sm:flex-row sm:items-center sm:justify-between sm:p-6">
             <span>
               <span className="block font-display text-xl font-semibold">Vous cherchez un téléphone ?</span>
-              <span className="text-white/75">iPhone reconditionnés garantis 12 mois, retrait à Montpellier.</span>
+              <span className="text-white/75">iPhone reconditionnés garantis {boutique.garantieReconditionneMois} mois, retrait à Montpellier.</span>
             </span>
             <span className="btn-accent shrink-0">Voir les iPhone</span>
           </Link>

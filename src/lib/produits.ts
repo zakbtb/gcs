@@ -72,6 +72,7 @@ export async function decrementerStocks(
     }
     for (const l of lignes) {
       const p = cat.produits.find((x) => x.id === l.produitId)!;
+      if (p.surCommande) continue; // commandé chez le fournisseur : pas de stock à décompter
       if (p.variantes.length > 0) {
         const v = p.variantes.find((x) => x.id === l.varianteId)!;
         v.stock -= l.quantite;

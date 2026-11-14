@@ -60,7 +60,7 @@ export default async function DetailCommande({ params }: { params: Promise<{ id:
                 {Object.entries(LIBELLES_STATUT).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
               </select>
               <label htmlFor="note" className="sr-only">Note interne</label>
-              <input id="note" name="note" placeholder="Note (ex. n° de suivi Colissimo)" className="field" />
+              <input id="note" name="note" placeholder="Note (ex. n° de suivi Colis Privé)" className="field" />
               <button className="btn-dark w-full">Enregistrer</button>
             </form>
             <p className="mt-3 text-xs text-muted">Pensez à prévenir le client (e-mail/SMS) quand la commande est expédiée ou prête à retirer.</p>

@@ -11,11 +11,14 @@ import json, re, sys, unicodedata
 from pathlib import Path
 import openpyxl
 
+# Garantie commerciale GCS sur les appareils (mois) : doit correspondre à boutique.garantieReconditionneMois
+GARANTIE_MOIS = 6
+
 RACINE = Path(__file__).resolve().parent.parent
 FICHIER = RACINE / "data" / "produits.json"
 CATEGORIES = {
-    "Smartphone": ("smartphones-reconditionnes", "Smartphones reconditionnés", "iPhone reconditionnés et d'occasion testés, garantis 12 mois."),
-    "Tablette": ("tablettes", "Tablettes", "iPad reconditionnés et d'occasion testés, garantis 12 mois."),
+    "Smartphone": ("smartphones-reconditionnes", "Smartphones reconditionnés", "iPhone reconditionnés et d'occasion testés et garantis."),
+    "Tablette": ("tablettes", "Tablettes", "iPad reconditionnés et d'occasion testés et garantis."),
     "Montre": ("montres", "Montres connectées", "Apple Watch reconditionnées et d'occasion testées."),
 }
 ETATS = {
@@ -70,7 +73,7 @@ def main():
         for morceau in g("Caractéristiques").split(";"):
             if morceau.strip():
                 caract.setdefault("Détail" if "Détail" not in caract else f"Détail {len(caract)}", morceau.strip())
-        caract["Garantie"] = "12 mois"
+        caract["Garantie"] = f"{GARANTIE_MOIS} mois (GCS) + garantie légale"
         resume = " · ".join(x for x in [etat + (f" grade {grade_txt}" if grade_txt and not grade.startswith("Mix") else ""), g("Capacité"), couleur_txt if couleur_txt != "Au hasard" else "", f"version {version_txt}" if version_txt else ""] if x)
         slug = slugify(f"{titre}-{ref}")
         image_locale = f"/images/appareils/{ref.lower()}.webp"
@@ -80,7 +83,7 @@ def main():
             f"{titre}. {ETATS.get(etat, '')} "
             + ("Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. " if grade.startswith("Mix") else "")
             + (f"Appareil en version {version_txt}. " if version_txt else "")
-            + "Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois."
+            + f"Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de {GARANTIE_MOIS} mois en plus de la garantie légale de conformité. Câble de charge offert."
         )
         nouveaux.append({
             "id": ref.lower(),

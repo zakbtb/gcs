@@ -2,6 +2,7 @@ import "server-only";
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import os from "node:os";
 
 /**
  * Stockage simple en fichiers JSON (dossier `data/`).
@@ -11,9 +12,46 @@ import crypto from "node:crypto";
  */
 const DATA_INITIAL = path.join(/*turbopackIgnore: true*/ process.cwd(), "data");
 
-// Sur Vercel, seul /tmp est inscriptible : les données y sont copiées à la première écriture
-// (elles ne survivent pas aux redémarrages ; une vraie base de données sera nécessaire pour la boutique).
-export const DATA_DIR = process.env.DATA_DIR || (process.env.VERCEL ? "/tmp/gcs-data" : DATA_INITIAL);
+// Où sont gardées les données qui changent (commandes, messages, stocks) :
+// - DATA_DIR si la variable est définie ;
+// - sur Vercel, /tmp (non durable) ;
+// - en production ailleurs (Hostinger), un dossier « gcs-data » dans le dossier personnel du compte,
+//   HORS du dossier du site : chaque mise à jour du site remplace le dossier du site, pas celui-ci ;
+// - en développement, le dossier data/ du projet.
+export const DATA_DIR =
+  process.env.DATA_DIR ||
+  (process.env.VERCEL
+    ? "/tmp/gcs-data"
+    : process.env.NODE_ENV === "production"
+      ? path.join(/*turbopackIgnore: true*/ os.homedir(), "gcs-data")
+      : DATA_INITIAL);
+
+/**
+ * Fichiers livrés avec le site ET modifiés en ligne (produits.json : stocks, édition dans /admin).
+ * Quand une nouvelle version du fichier est livrée (nouveau catalogue), la copie en ligne est refaite
+ * à partir de la version livrée, en gardant les stocks en ligne et les produits créés dans /admin.
+ */
+type CatalogueBrut = { _source?: string; produits?: { id: string; stock?: number; variantes?: { id: string; stock: number }[] }[] };
+const FUSIONS: Record<string, (livre: CatalogueBrut, enLigne: CatalogueBrut) => CatalogueBrut> = {
+  "produits.json": (livre, enLigne) => {
+    const anciens = new Map((enLigne.produits ?? []).map((p) => [p.id, p]));
+    const idsLivres = new Set((livre.produits ?? []).map((p) => p.id));
+    const produits = (livre.produits ?? []).map((p) => {
+      const a = anciens.get(p.id);
+      if (!a) return p;
+      return {
+        ...p,
+        ...(p.stock != null && a.stock != null ? { stock: a.stock } : {}),
+        ...(p.variantes
+          ? { variantes: p.variantes.map((v) => ({ ...v, stock: a.variantes?.find((x) => x.id === v.id)?.stock ?? v.stock })) }
+          : {}),
+      };
+    });
+    const creesEnLigne = (enLigne.produits ?? []).filter((p) => !idsLivres.has(p.id));
+    return { ...livre, produits: [...produits, ...creesEnLigne] };
+  },
+};
+const empreinte = (texte: string) => crypto.createHash("sha256").update(texte).digest("hex").slice(0, 16);
 
 const verrous = new Map<string, Promise<unknown>>();
 
@@ -24,6 +62,16 @@ export function cheminData(fichier: string) {
 export async function lireJson<T>(fichier: string, defaut: T): Promise<T> {
   try {
     const brut = await fs.readFile(/*turbopackIgnore: true*/ cheminData(fichier), "utf8");
+    const fusion = FUSIONS[fichier];
+    if (fusion && DATA_DIR !== DATA_INITIAL) {
+      const enLigne = JSON.parse(brut) as CatalogueBrut;
+      const brutLivre = await fs.readFile(/*turbopackIgnore: true*/ path.join(DATA_INITIAL, fichier), "utf8").catch(() => null);
+      if (brutLivre) {
+        const source = empreinte(brutLivre);
+        if (enLigne._source !== source) return { ...fusion(JSON.parse(brutLivre), enLigne), _source: source } as T;
+      }
+      return enLigne as T;
+    }
     return JSON.parse(brut) as T;
   } catch (e) {
     if ((e as NodeJS.ErrnoException).code !== "ENOENT") throw e;
@@ -31,7 +79,7 @@ export async function lireJson<T>(fichier: string, defaut: T): Promise<T> {
     // Fichier pas encore copié dans DATA_DIR : on lit la version livrée avec le site
     try {
       const brut = await fs.readFile(/*turbopackIgnore: true*/ path.join(DATA_INITIAL, fichier), "utf8");
-      return JSON.parse(brut) as T;
+      return (FUSIONS[fichier] ? { ...JSON.parse(brut), _source: empreinte(brut) } : JSON.parse(brut)) as T;
     } catch {
       return defaut;
     }

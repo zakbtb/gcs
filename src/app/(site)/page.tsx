@@ -31,7 +31,7 @@ export const metadata = meta({
 const faq = [
   { q: "Combien de temps dure la réparation d'un iPhone ?", r: "La plupart des réparations (écran, batterie, connecteur) sont réalisées en 20 à 45 minutes, pendant que vous patientez ou faites une course. Les interventions plus longues (désoxydation, consoles, PC) demandent 24 à 48 h." },
   { q: "Le diagnostic est-il vraiment gratuit ?", r: "Oui. Nous examinons votre appareil gratuitement et sans engagement, puis nous vous annonçons un prix ferme avant toute intervention." },
-  { q: "Vos téléphones reconditionnés sont-ils garantis ?", r: `Oui : chaque téléphone est testé point par point, nettoyé et garanti ${boutique.garantieReconditionneMois} mois, en plus de la garantie légale de conformité.` },
+  { q: "Vos téléphones reconditionnés sont-ils garantis ?", r: `Oui : chaque téléphone est testé et garanti ${boutique.garantieReconditionneMois} mois par GCS, en plus de la garantie légale de conformité.` },
   { q: "Pouvez-vous faire ma carte grise ?", r: "Oui, en boutique : changement de titulaire, changement d'adresse, duplicata, déclaration de cession… Passez avec vos documents, on vous dit tout de suite ce qu'il faut et combien ça coûte." },
   { q: "Mes données sont-elles en sécurité pendant la réparation ?", r: "Nous n'accédons à vos données que si c'est indispensable et avec votre accord. Nous vous conseillons toutefois de faire une sauvegarde avant toute réparation ; nous pouvons aussi la réaliser pour vous." },
 ];
@@ -147,7 +147,7 @@ export default async function Accueil() {
               <h2 id="titre-reco" className="mt-4 text-3xl font-semibold sm:text-4xl">
                 Smartphones reconditionnés{prixVitrine.reconditionnesDes != null && <><br /><span className="text-gradient">dès {prixCourt(prixVitrine.reconditionnesDes)}</span></>}
               </h2>
-              <p className="mt-4 max-w-xl text-white/75">Testés point par point, nettoyés, garantis {boutique.garantieReconditionneMois} mois. On rachète aussi votre ancien téléphone, payé tout de suite.</p>
+              <p className="mt-4 max-w-xl text-white/75">Testés et garantis {boutique.garantieReconditionneMois} mois{boutique.cadeauAppareil ? `, ${boutique.cadeauAppareil.toLowerCase()}` : ""}. On rachète aussi votre ancien téléphone, payé tout de suite.</p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                 <Link href="/telephones-reconditionnes" className="btn-accent">Voir les téléphones <ArrowRight className="size-5" aria-hidden /></Link>
                 <Link href="/services#estimation" className="btn-ghost-dark">Faire estimer mon téléphone</Link>

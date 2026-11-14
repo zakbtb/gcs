@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { Check, Minus, Plus, ShoppingBag, Truck, Store, AlertCircle, Phone, MessageCircle, Info, ShieldCheck } from "lucide-react";
-import { entreprise } from "@/config/entreprise";
+import { Check, Minus, Plus, ShoppingBag, Truck, Store, AlertCircle, Phone, MessageCircle, Info, ShieldCheck, Gift } from "lucide-react";
+import { boutique, entreprise } from "@/config/entreprise";
 import type { Produit } from "@/lib/types";
 import { prix } from "@/lib/format";
 import { usePanier } from "@/components/panier/PanierProvider";
@@ -144,6 +144,11 @@ export function AchatProduit({ produit, livraisonTexte }: { produit: Produit; li
             ))}
           </dl>
         )}
+        {produit.appareil && boutique.cadeauAppareil && (
+          <p className="mt-3 flex items-center gap-2 rounded-2xl bg-accent-soft px-4 py-3 text-sm font-semibold text-ink">
+            <Gift className="size-4 shrink-0 text-accent-strong" aria-hidden /> {boutique.cadeauAppareil} avec cet appareil
+          </p>
+        )}
         {produit.appareil?.infoClient && (
           <p className="mt-3 flex gap-2 rounded-2xl bg-brand-soft px-4 py-3 text-sm text-brand-strong">
             <Info className="mt-0.5 size-4 shrink-0" aria-hidden /> {produit.appareil.infoClient}.
@@ -228,7 +233,7 @@ export function AchatProduit({ produit, livraisonTexte }: { produit: Produit; li
           <li className="flex gap-3"><Truck className="size-5 shrink-0 text-brand" aria-hidden /> {livraisonTexte}</li>
           <li className="flex gap-3"><Store className="size-5 shrink-0 text-brand" aria-hidden /> Retrait gratuit en boutique à Montpellier sous {produit.surCommande ? "2 à 4 jours ouvrés" : "24 h ouvrées"}</li>
           {produit.appareil ? (
-            <li className="flex gap-3"><ShieldCheck className="size-5 shrink-0 text-brand" aria-hidden /> Garantie 12 mois · Rétractation 14 jours pour un achat en ligne</li>
+            <li className="flex gap-3"><ShieldCheck className="size-5 shrink-0 text-brand" aria-hidden /> Garantie GCS {boutique.garantieReconditionneMois} mois + garantie légale de conformité · Rétractation 14 jours pour un achat en ligne</li>
           ) : (
             <li className="flex gap-3"><Check className="size-5 shrink-0 text-brand" aria-hidden /> Garantie légale de conformité 2 ans · Rétractation 14 jours</li>
           )}

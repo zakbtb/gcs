@@ -4,12 +4,12 @@
     {
       "id": "smartphones-reconditionnes",
       "nom": "Smartphones reconditionnés",
-      "description": "iPhone reconditionnés et d'occasion testés, garantis 12 mois."
+      "description": "iPhone reconditionnés et d'occasion testés et garantis."
     },
     {
       "id": "tablettes",
       "nom": "Tablettes",
-      "description": "iPad reconditionnés et d'occasion testés, garantis 12 mois."
+      "description": "iPad reconditionnés et d'occasion testés et garantis."
     },
     {
       "id": "chargeurs",
@@ -51,7 +51,7 @@
       "marque": "Apple",
       "prix": 889.0,
       "description": "Reconditionné grade A · 256 Go · Titane Naturel",
-      "descriptionLongue": "iPhone 16 Pro Max 256 Go Titane Naturel – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 16 Pro Max 256 Go Titane Naturel – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-008.webp"
       ],
@@ -61,7 +61,7 @@
         "Grade": "A",
         "Capacité": "256 Go",
         "Couleur": "Titane Naturel",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -86,7 +86,7 @@
       "marque": "Apple",
       "prix": 879.0,
       "description": "Reconditionné grade A · 256 Go · Sauge",
-      "descriptionLongue": "iPhone 17 256 Go Sauge – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 17 256 Go Sauge – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-009.webp"
       ],
@@ -96,7 +96,7 @@
         "Grade": "A",
         "Capacité": "256 Go",
         "Couleur": "Sauge",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -121,7 +121,7 @@
       "marque": "Apple",
       "prix": 879.0,
       "description": "Reconditionné grade A · 256 Go · Noir",
-      "descriptionLongue": "iPhone 17 256 Go Noir – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 17 256 Go Noir – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-010.webp"
       ],
@@ -131,7 +131,7 @@
         "Grade": "A",
         "Capacité": "256 Go",
         "Couleur": "Noir",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -156,7 +156,7 @@
       "marque": "Apple",
       "prix": 879.0,
       "description": "Fonctionnel · 256 Go",
-      "descriptionLongue": "iPhone 16 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 16 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-011.webp"
       ],
@@ -166,7 +166,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "256 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -192,7 +192,7 @@
       "marque": "Apple",
       "prix": 869.0,
       "description": "Reconditionné grade A · 256 Go · Blanc",
-      "descriptionLongue": "iPhone 16 Pro Max 256 Go Blanc – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 16 Pro Max 256 Go Blanc – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-012.webp"
       ],
@@ -202,7 +202,7 @@
         "Grade": "A",
         "Capacité": "256 Go",
         "Couleur": "Blanc",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -227,7 +227,7 @@
       "marque": "Apple",
       "prix": 859.0,
       "description": "Reconditionné grade A · 256 Go · Lavande",
-      "descriptionLongue": "iPhone 17 256 Go Lavande – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 17 256 Go Lavande – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-013.webp"
       ],
@@ -237,7 +237,7 @@
         "Grade": "A",
         "Capacité": "256 Go",
         "Couleur": "Lavande",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -262,7 +262,7 @@
       "marque": "Apple",
       "prix": 849.0,
       "description": "Fonctionnel · 256 Go",
-      "descriptionLongue": "iPhone 16 Pro Max 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 16 Pro Max 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-014.webp"
       ],
@@ -272,7 +272,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "256 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -298,7 +298,7 @@
       "marque": "Apple",
       "prix": 849.0,
       "description": "Reconditionné grade A · 256 Go · Titane Sable",
-      "descriptionLongue": "iPhone 16 Pro Max 256 Go Titane Sable – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 16 Pro Max 256 Go Titane Sable – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-015.webp"
       ],
@@ -308,7 +308,7 @@
         "Grade": "A",
         "Capacité": "256 Go",
         "Couleur": "Titane Sable",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -333,7 +333,7 @@
       "marque": "Apple",
       "prix": 849.0,
       "description": "Fonctionnel · 256 Go",
-      "descriptionLongue": "iPhone 17 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 17 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-016.webp"
       ],
@@ -343,7 +343,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "256 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -369,7 +369,7 @@
       "marque": "Apple",
       "prix": 839.0,
       "description": "Reconditionné grade A · 256 Go · Bleu",
-      "descriptionLongue": "iPhone 17 256 Go Bleu – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 17 256 Go Bleu – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-017.webp"
       ],
@@ -379,7 +379,7 @@
         "Grade": "A",
         "Capacité": "256 Go",
         "Couleur": "Bleu",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -404,7 +404,7 @@
       "marque": "Apple",
       "prix": 769.0,
       "description": "Fonctionnel · 128 Go",
-      "descriptionLongue": "iPhone 16 Pro 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 16 Pro 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-018.webp"
       ],
@@ -414,7 +414,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -440,7 +440,7 @@
       "marque": "Apple",
       "prix": 769.0,
       "description": "Fonctionnel · 256 Go",
-      "descriptionLongue": "iPhone 16 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 16 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-019.webp"
       ],
@@ -450,7 +450,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "256 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -476,7 +476,7 @@
       "marque": "Apple",
       "prix": 749.0,
       "description": "Fonctionnel · 256 Go",
-      "descriptionLongue": "iPhone 15 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 15 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-020.webp"
       ],
@@ -486,7 +486,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "256 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -512,7 +512,7 @@
       "marque": "Apple",
       "prix": 719.0,
       "description": "Fonctionnel · 128 Go",
-      "descriptionLongue": "iPhone 16 Plus 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 16 Plus 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-021.webp"
       ],
@@ -522,7 +522,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -548,7 +548,7 @@
       "marque": "Apple",
       "prix": 649.0,
       "description": "Fonctionnel · 128 Go",
-      "descriptionLongue": "iPhone 16 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 16 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-022.webp"
       ],
@@ -558,7 +558,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -584,7 +584,7 @@
       "marque": "Apple",
       "prix": 649.0,
       "description": "Reconditionné grade C · 128 Go · Blanc",
-      "descriptionLongue": "iPhone 16 128 Go Blanc – Reconditionné Grade C. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 16 128 Go Blanc – Reconditionné Grade C. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-023.webp"
       ],
@@ -594,7 +594,7 @@
         "Grade": "C",
         "Capacité": "128 Go",
         "Couleur": "Blanc",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -619,7 +619,7 @@
       "marque": "Apple",
       "prix": 619.0,
       "description": "Reconditionné grade A · 128 Go · Bleu Titane",
-      "descriptionLongue": "iPhone 15 Pro 128 Go Bleu Titane – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 15 Pro 128 Go Bleu Titane – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-024.webp"
       ],
@@ -629,7 +629,7 @@
         "Grade": "A",
         "Capacité": "128 Go",
         "Couleur": "Bleu Titane",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -654,7 +654,7 @@
       "marque": "Apple",
       "prix": 619.0,
       "description": "Reconditionné grade A · 128 Go · Noir Titane",
-      "descriptionLongue": "iPhone 15 Pro 128 Go Noir Titane – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 15 Pro 128 Go Noir Titane – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-025.webp"
       ],
@@ -664,7 +664,7 @@
         "Grade": "A",
         "Capacité": "128 Go",
         "Couleur": "Noir Titane",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -689,7 +689,7 @@
       "marque": "Apple",
       "prix": 569.0,
       "description": "Fonctionnel · 256 Go",
-      "descriptionLongue": "iPhone 14 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 14 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-037.webp"
       ],
@@ -699,7 +699,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "256 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -725,7 +725,7 @@
       "marque": "Apple",
       "prix": 539.0,
       "description": "Reconditionné grade B · 128 Go · Noir",
-      "descriptionLongue": "iPhone 15 Plus 128 Go Noir – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 15 Plus 128 Go Noir – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-038.webp"
       ],
@@ -735,7 +735,7 @@
         "Grade": "B",
         "Capacité": "128 Go",
         "Couleur": "Noir",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -760,7 +760,7 @@
       "marque": "Apple",
       "prix": 529.0,
       "description": "Fonctionnel · 128 Go · version US",
-      "descriptionLongue": "iPhone 15 Plus 128 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 15 Plus 128 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-039.webp"
       ],
@@ -771,7 +771,7 @@
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
         "Version": "US",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -796,7 +796,7 @@
       "marque": "Apple",
       "prix": 509.0,
       "description": "Fonctionnel · 128 Go",
-      "descriptionLongue": "iPhone 15 Plus 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 15 Plus 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-046.webp"
       ],
@@ -806,7 +806,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -832,7 +832,7 @@
       "marque": "Apple",
       "prix": 459.0,
       "description": "Fonctionnel · 128 Go",
-      "descriptionLongue": "iPhone 13 Pro Max 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 13 Pro Max 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-049.webp"
       ],
@@ -842,7 +842,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -868,7 +868,7 @@
       "marque": "Apple",
       "prix": 459.0,
       "description": "Fonctionnel · 256 Go",
-      "descriptionLongue": "iPhone 13 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 13 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-050.webp"
       ],
@@ -878,7 +878,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "256 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -904,7 +904,7 @@
       "marque": "Apple",
       "prix": 409.0,
       "description": "Fonctionnel · 128 Go · version Chinoise",
-      "descriptionLongue": "iPhone 14 128 Go – Fonctionnel (grade A, B ou C) – version Chinoise. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version Chinoise. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 14 128 Go – Fonctionnel (grade A, B ou C) – version Chinoise. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version Chinoise. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-051.webp"
       ],
@@ -915,7 +915,7 @@
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
         "Version": "Chinoise",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -940,7 +940,7 @@
       "marque": "Apple",
       "prix": 409.0,
       "description": "Fonctionnel · 128 Go",
-      "descriptionLongue": "iPhone 14 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 14 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-052.webp"
       ],
@@ -950,7 +950,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -976,7 +976,7 @@
       "marque": "Apple",
       "prix": 369.0,
       "description": "Fonctionnel · 256 Go",
-      "descriptionLongue": "iPhone 13 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 13 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-053.webp"
       ],
@@ -986,7 +986,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "256 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1012,7 +1012,7 @@
       "marque": "Apple",
       "prix": 349.0,
       "description": "Fonctionnel · 256 Go · version US",
-      "descriptionLongue": "iPhone 13 256 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 13 256 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-055.webp"
       ],
@@ -1023,7 +1023,7 @@
         "Capacité": "256 Go",
         "Couleur": "Au hasard",
         "Version": "US",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1048,7 +1048,7 @@
       "marque": "Apple",
       "prix": 349.0,
       "description": "Fonctionnel · 128 Go",
-      "descriptionLongue": "iPhone 12 Pro Max 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 12 Pro Max 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-056.webp"
       ],
@@ -1058,7 +1058,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1084,7 +1084,7 @@
       "marque": "Apple",
       "prix": 379.0,
       "description": "Fonctionnel grade C · 256 Go",
-      "descriptionLongue": "iPad Pro 10.5’’ 2017 256 Go – Fonctionnel Grade C. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPad Pro 10.5’’ 2017 256 Go – Fonctionnel Grade C. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-057.webp"
       ],
@@ -1094,7 +1094,7 @@
         "Grade": "C",
         "Capacité": "256 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1119,7 +1119,7 @@
       "marque": "Apple",
       "prix": 329.0,
       "description": "Fonctionnel · 256 Go",
-      "descriptionLongue": "iPhone 12 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 12 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-058.webp"
       ],
@@ -1129,7 +1129,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "256 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1155,7 +1155,7 @@
       "marque": "Apple",
       "prix": 319.0,
       "description": "Fonctionnel · 128 Go",
-      "descriptionLongue": "iPhone 13 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 13 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-059.webp"
       ],
@@ -1165,7 +1165,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1191,7 +1191,7 @@
       "marque": "Apple",
       "prix": 289.0,
       "description": "Fonctionnel · 128 Go · version US",
-      "descriptionLongue": "iPhone 13 Mini 128 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 13 Mini 128 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-060.webp"
       ],
@@ -1202,7 +1202,7 @@
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
         "Version": "US",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1227,7 +1227,7 @@
       "marque": "Apple",
       "prix": 289.0,
       "description": "Fonctionnel · 128 Go",
-      "descriptionLongue": "iPhone 13 Mini 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 13 Mini 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-061.webp"
       ],
@@ -1237,7 +1237,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1263,7 +1263,7 @@
       "marque": "Apple",
       "prix": 319.0,
       "description": "Fonctionnel grade A · 64 Go",
-      "descriptionLongue": "iPhone 12 mini 64 Go – Fonctionnel Grade A. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 12 mini 64 Go – Fonctionnel Grade A. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-062.webp"
       ],
@@ -1273,7 +1273,7 @@
         "Grade": "A",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1298,7 +1298,7 @@
       "marque": "Apple",
       "prix": 259.0,
       "description": "Fonctionnel · 128 Go",
-      "descriptionLongue": "iPhone 12 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 12 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-063.webp"
       ],
@@ -1308,7 +1308,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1334,7 +1334,7 @@
       "marque": "Apple",
       "prix": 259.0,
       "description": "Fonctionnel · 128 Go · version US",
-      "descriptionLongue": "iPhone 12 128 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 12 128 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-064.webp"
       ],
@@ -1345,7 +1345,7 @@
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
         "Version": "US",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1370,7 +1370,7 @@
       "marque": "Apple",
       "prix": 249.0,
       "description": "Reconditionné grade B · 64 Go · Noir",
-      "descriptionLongue": "iPhone 11 64 Go Noir – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 11 64 Go Noir – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-065.webp"
       ],
@@ -1380,7 +1380,7 @@
         "Grade": "B",
         "Capacité": "64 Go",
         "Couleur": "Noir",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1405,7 +1405,7 @@
       "marque": "Apple",
       "prix": 249.0,
       "description": "Fonctionnel · 256 Go",
-      "descriptionLongue": "iPhone 11 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 11 Pro 256 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-066.webp"
       ],
@@ -1415,7 +1415,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "256 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1441,7 +1441,7 @@
       "marque": "Apple",
       "prix": 239.0,
       "description": "Fonctionnel · 128 Go",
-      "descriptionLongue": "iPhone 12 Mini 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 12 Mini 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-067.webp"
       ],
@@ -1451,7 +1451,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1477,7 +1477,7 @@
       "marque": "Apple",
       "prix": 239.0,
       "description": "Fonctionnel · 64 Go · version US",
-      "descriptionLongue": "iPhone 12 64 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 12 64 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-068.webp"
       ],
@@ -1488,7 +1488,7 @@
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
         "Version": "US",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1513,7 +1513,7 @@
       "marque": "Apple",
       "prix": 229.0,
       "description": "Fonctionnel · 64 Go",
-      "descriptionLongue": "iPhone 12 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 12 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-069.webp"
       ],
@@ -1523,7 +1523,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1549,7 +1549,7 @@
       "marque": "Apple",
       "prix": 259.0,
       "description": "Fonctionnel grade A · 128 Go",
-      "descriptionLongue": "iPhone 11 128 Go – Fonctionnel Grade A. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 11 128 Go – Fonctionnel Grade A. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-070.webp"
       ],
@@ -1559,7 +1559,7 @@
         "Grade": "A",
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1584,7 +1584,7 @@
       "marque": "Apple",
       "prix": 259.0,
       "description": "Fonctionnel grade C · 64 Go",
-      "descriptionLongue": "iPhone 12 Mini 64 Go – Fonctionnel Grade C. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 12 Mini 64 Go – Fonctionnel Grade C. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-071.webp"
       ],
@@ -1594,7 +1594,7 @@
         "Grade": "C",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1619,7 +1619,7 @@
       "marque": "Apple",
       "prix": 259.0,
       "description": "Fonctionnel grade B · 128 Go",
-      "descriptionLongue": "iPhone 11 128 Go – Fonctionnel Grade B. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 11 128 Go – Fonctionnel Grade B. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-072.webp"
       ],
@@ -1629,7 +1629,7 @@
         "Grade": "B",
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1654,7 +1654,7 @@
       "marque": "Apple",
       "prix": 229.0,
       "description": "Fonctionnel grade B · 64 Go",
-      "descriptionLongue": "iPhone 12 mini 64 Go – Fonctionnel Grade B. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 12 mini 64 Go – Fonctionnel Grade B. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-073.webp"
       ],
@@ -1664,7 +1664,7 @@
         "Grade": "B",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1689,7 +1689,7 @@
       "marque": "Apple",
       "prix": 199.0,
       "description": "Reconditionné grade B · 64 Go · Violet",
-      "descriptionLongue": "iPhone 11 64 Go Violet – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 11 64 Go Violet – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-074.webp"
       ],
@@ -1699,7 +1699,7 @@
         "Grade": "B",
         "Capacité": "64 Go",
         "Couleur": "Violet",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1724,7 +1724,7 @@
       "marque": "Apple",
       "prix": 189.0,
       "description": "Reconditionné grade A · 64 Go · Vert",
-      "descriptionLongue": "iPhone 11 Pro 64 Go Vert – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 11 Pro 64 Go Vert – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-075.webp"
       ],
@@ -1734,7 +1734,7 @@
         "Grade": "A",
         "Capacité": "64 Go",
         "Couleur": "Vert",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1759,7 +1759,7 @@
       "marque": "Apple",
       "prix": 189.0,
       "description": "Reconditionné grade B · 64 Go · Gris",
-      "descriptionLongue": "iPhone 11 Pro 64 Go Gris – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 11 Pro 64 Go Gris – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-076.webp"
       ],
@@ -1769,7 +1769,7 @@
         "Grade": "B",
         "Capacité": "64 Go",
         "Couleur": "Gris",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1794,7 +1794,7 @@
       "marque": "Apple",
       "prix": 189.0,
       "description": "Reconditionné grade B · 64 Go · Blanc",
-      "descriptionLongue": "iPhone 11 64 Go Blanc – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 11 64 Go Blanc – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-077.webp"
       ],
@@ -1804,7 +1804,7 @@
         "Grade": "B",
         "Capacité": "64 Go",
         "Couleur": "Blanc",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1829,7 +1829,7 @@
       "marque": "Apple",
       "prix": 209.0,
       "description": "Fonctionnel grade A · 64 Go",
-      "descriptionLongue": "iPhone 11 64 Go – Fonctionnel Grade A. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 11 64 Go – Fonctionnel Grade A. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-078.webp"
       ],
@@ -1839,7 +1839,7 @@
         "Grade": "A",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1864,7 +1864,7 @@
       "marque": "Apple",
       "prix": 189.0,
       "description": "Reconditionné grade B · 64 Go · Rouge",
-      "descriptionLongue": "iPhone 11 64 Go Rouge – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 11 64 Go Rouge – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-079.webp"
       ],
@@ -1874,7 +1874,7 @@
         "Grade": "B",
         "Capacité": "64 Go",
         "Couleur": "Rouge",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1899,7 +1899,7 @@
       "marque": "Apple",
       "prix": 179.0,
       "description": "Reconditionné grade C · 64 Go · Noir",
-      "descriptionLongue": "iPhone 11 64 Go Noir – Reconditionné Grade C. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 11 64 Go Noir – Reconditionné Grade C. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-080.webp"
       ],
@@ -1909,7 +1909,7 @@
         "Grade": "C",
         "Capacité": "64 Go",
         "Couleur": "Noir",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1934,7 +1934,7 @@
       "marque": "Apple",
       "prix": 179.0,
       "description": "Reconditionné grade A · 64 Go · Blanc",
-      "descriptionLongue": "iPhone XR 64 Go Blanc – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone XR 64 Go Blanc – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-081.webp"
       ],
@@ -1944,7 +1944,7 @@
         "Grade": "A",
         "Capacité": "64 Go",
         "Couleur": "Blanc",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -1969,7 +1969,7 @@
       "marque": "Apple",
       "prix": 179.0,
       "description": "Reconditionné grade B · 64 Go · Noir",
-      "descriptionLongue": "iPhone XR 64 Go Noir – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone XR 64 Go Noir – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-082.webp"
       ],
@@ -1979,7 +1979,7 @@
         "Grade": "B",
         "Capacité": "64 Go",
         "Couleur": "Noir",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2004,7 +2004,7 @@
       "marque": "Apple",
       "prix": 179.0,
       "description": "Reconditionné grade C · 64 Go · Rouge",
-      "descriptionLongue": "iPhone 11 64 Go Rouge – Reconditionné Grade C. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 11 64 Go Rouge – Reconditionné Grade C. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-083.webp"
       ],
@@ -2014,7 +2014,7 @@
         "Grade": "C",
         "Capacité": "64 Go",
         "Couleur": "Rouge",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2039,7 +2039,7 @@
       "marque": "Apple",
       "prix": 169.0,
       "description": "Reconditionné grade A · 128 Go · Bleu",
-      "descriptionLongue": "iPhone XR 128 Go Bleu – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone XR 128 Go Bleu – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-084.webp"
       ],
@@ -2049,7 +2049,7 @@
         "Grade": "A",
         "Capacité": "128 Go",
         "Couleur": "Bleu",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2074,7 +2074,7 @@
       "marque": "Apple",
       "prix": 169.0,
       "description": "Reconditionné grade B · 128 Go · Noir",
-      "descriptionLongue": "iPhone XR 128 Go Noir – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone XR 128 Go Noir – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-085.webp"
       ],
@@ -2084,7 +2084,7 @@
         "Grade": "B",
         "Capacité": "128 Go",
         "Couleur": "Noir",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2109,7 +2109,7 @@
       "marque": "Apple",
       "prix": 169.0,
       "description": "Fonctionnel · 64 Go · version US",
-      "descriptionLongue": "iPhone 11 64 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 11 64 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-086.webp"
       ],
@@ -2120,7 +2120,7 @@
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
         "Version": "US",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2145,7 +2145,7 @@
       "marque": "Apple",
       "prix": 169.0,
       "description": "Fonctionnel · 64 Go",
-      "descriptionLongue": "iPhone XS Max 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone XS Max 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-087.webp"
       ],
@@ -2155,7 +2155,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2181,7 +2181,7 @@
       "marque": "Apple",
       "prix": 169.0,
       "description": "Reconditionné grade A · 64 Go · Noir",
-      "descriptionLongue": "iPhone XR 64 Go Noir – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone XR 64 Go Noir – Reconditionné Grade A. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-088.webp"
       ],
@@ -2191,7 +2191,7 @@
         "Grade": "A",
         "Capacité": "64 Go",
         "Couleur": "Noir",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2216,7 +2216,7 @@
       "marque": "Apple",
       "prix": 159.0,
       "description": "Reconditionné grade B · 64 Go · Gris",
-      "descriptionLongue": "iPhone XS 64 Go Gris – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone XS 64 Go Gris – Reconditionné Grade B. Testé et remis en état par un professionnel. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-089.webp"
       ],
@@ -2226,7 +2226,7 @@
         "Grade": "B",
         "Capacité": "64 Go",
         "Couleur": "Gris",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2251,7 +2251,7 @@
       "marque": "Apple",
       "prix": 179.0,
       "description": "Fonctionnel grade B · 64 Go",
-      "descriptionLongue": "iPhone 11 64 Go – Fonctionnel Grade B. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 11 64 Go – Fonctionnel Grade B. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-090.webp"
       ],
@@ -2261,7 +2261,7 @@
         "Grade": "B",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2286,7 +2286,7 @@
       "marque": "Apple",
       "prix": 159.0,
       "description": "Fonctionnel · 64 Go",
-      "descriptionLongue": "iPhone SE 3e Gen 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone SE 3e Gen 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-091.webp"
       ],
@@ -2296,7 +2296,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2322,7 +2322,7 @@
       "marque": "Apple",
       "prix": 179.0,
       "description": "Fonctionnel grade B · 64 Go",
-      "descriptionLongue": "iPhone SE 3e Gen 64 Go – Fonctionnel Grade B. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone SE 3e Gen 64 Go – Fonctionnel Grade B. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-092.webp"
       ],
@@ -2332,7 +2332,7 @@
         "Grade": "B",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2357,7 +2357,7 @@
       "marque": "Apple",
       "prix": 149.0,
       "description": "Fonctionnel · 64 Go",
-      "descriptionLongue": "iPhone XR 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone XR 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-093.webp"
       ],
@@ -2367,7 +2367,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2393,7 +2393,7 @@
       "marque": "Apple",
       "prix": 159.0,
       "description": "Fonctionnel grade A · 32 Go",
-      "descriptionLongue": "iPad 5e Gen 2017 32 Go – Fonctionnel Grade A. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPad 5e Gen 2017 32 Go – Fonctionnel Grade A. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-094.webp"
       ],
@@ -2403,7 +2403,7 @@
         "Grade": "A",
         "Capacité": "32 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2428,7 +2428,7 @@
       "marque": "Apple",
       "prix": 139.0,
       "description": "Fonctionnel · 64 Go",
-      "descriptionLongue": "iPhone XS 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone XS 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-095.webp"
       ],
@@ -2438,7 +2438,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2464,7 +2464,7 @@
       "marque": "Apple",
       "prix": 139.0,
       "description": "Fonctionnel · 128 Go",
-      "descriptionLongue": "iPhone SE 2e Gen 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone SE 2e Gen 128 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-096.webp"
       ],
@@ -2474,7 +2474,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "128 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2500,7 +2500,7 @@
       "marque": "Apple",
       "prix": 149.0,
       "description": "Fonctionnel grade A · 64 Go",
-      "descriptionLongue": "iPhone XR 64 Go – Fonctionnel Grade A. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone XR 64 Go – Fonctionnel Grade A. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-097.webp"
       ],
@@ -2510,7 +2510,7 @@
         "Grade": "A",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2535,7 +2535,7 @@
       "marque": "Apple",
       "prix": 149.0,
       "description": "Fonctionnel grade C · 64 Go",
-      "descriptionLongue": "iPhone SE 3e Gen 64 Go – Fonctionnel Grade C. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone SE 3e Gen 64 Go – Fonctionnel Grade C. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-098.webp"
       ],
@@ -2545,7 +2545,7 @@
         "Grade": "C",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2570,7 +2570,7 @@
       "marque": "Apple",
       "prix": 129.0,
       "description": "Fonctionnel · 64 Go",
-      "descriptionLongue": "iPhone 8 Plus 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 8 Plus 64 Go – Fonctionnel (grade A, B ou C). Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-099.webp"
       ],
@@ -2580,7 +2580,7 @@
         "Grade": "A, B ou C (au hasard)",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2606,7 +2606,7 @@
       "marque": "Apple",
       "prix": 139.0,
       "description": "Fonctionnel grade B · 64 Go",
-      "descriptionLongue": "iPhone XR 64 Go – Fonctionnel Grade B. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone XR 64 Go – Fonctionnel Grade B. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-100.webp"
       ],
@@ -2616,7 +2616,7 @@
         "Grade": "B",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2641,7 +2641,7 @@
       "marque": "Apple",
       "prix": 119.0,
       "description": "Fonctionnel · 64 Go · version US",
-      "descriptionLongue": "iPhone 8 64 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone 8 64 Go – Fonctionnel (grade A, B ou C) – version US. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Le grade (A, B ou C) et la couleur sont attribués selon l'arrivage : vous ne les choisissez pas, d'où ce prix. Appareil en version US. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-101.webp"
       ],
@@ -2652,7 +2652,7 @@
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
         "Version": "US",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],
@@ -2677,7 +2677,7 @@
       "marque": "Apple",
       "prix": 119.0,
       "description": "Fonctionnel grade C · 64 Go",
-      "descriptionLongue": "iPhone SE 2e Gen 64 Go – Fonctionnel Grade C. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie 12 mois.",
+      "descriptionLongue": "iPhone SE 2e Gen 64 Go – Fonctionnel Grade C. Occasion testée et 100 % fonctionnelle, aspect selon le grade. Commandé sur demande auprès de notre fournisseur, disponible sous 2 à 4 jours ouvrés, en retrait à la boutique GCS de Montpellier ou en livraison. Garantie GCS de 6 mois en plus de la garantie légale de conformité. Câble de charge offert.",
       "images": [
         "/images/appareils/gcs-102.webp"
       ],
@@ -2687,7 +2687,7 @@
         "Grade": "C",
         "Capacité": "64 Go",
         "Couleur": "Au hasard",
-        "Garantie": "12 mois"
+        "Garantie": "6 mois (GCS) + garantie légale"
       },
       "options": [],
       "variantes": [],

@@ -70,7 +70,7 @@ export default function ConditionsSitesWeb() {
       <p>Lorsque le Prestataire héberge ou maintient un site collectant des données personnelles, il agit en qualité de sous-traitant du Client au sens de l&apos;article 28 du RGPD et ne traite ces données que sur instruction du Client, pour les besoins de la prestation. Les engagements correspondants (sécurité, confidentialité, sort des données en fin de contrat) peuvent être formalisés dans un accord de sous-traitance annexé au devis.</p>
 
       <h2 id="responsabilite">10. Responsabilité</h2>
-      <p>La responsabilité du Prestataire envers un Client professionnel est limitée aux dommages directs et prouvés, et plafonnée au montant payé au titre de la prestation concernée. Le Prestataire n&apos;est pas responsable des contenus fournis par le Client, des interruptions imputables à l&apos;hébergeur ou aux réseaux, ni des modifications réalisées par le Client ou un tiers. Assurance : <Val v={e.assuranceRcPro} />.</p>
+      <p>La responsabilité du Prestataire envers un Client professionnel est limitée aux dommages directs et prouvés, et plafonnée au montant payé au titre de la prestation concernée. Le Prestataire n&apos;est pas responsable des contenus fournis par le Client, des interruptions imputables à l&apos;hébergeur ou aux réseaux, ni des modifications réalisées par le Client ou un tiers.{e.assuranceRcPro ? <> Assurance : {e.assuranceRcPro}.</> : null}</p>
 
       <h2 id="retractation">11. Droit de rétractation (clients consommateurs)</h2>
       <p>

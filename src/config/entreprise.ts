@@ -34,8 +34,8 @@ export const entreprise = {
     ville: "Montpellier",
     pays: "France",
     // Coordonnées GPS de la boutique (pour Google et la carte). Laisser null si inconnu.
-    latitude: null as number | null,
-    longitude: null as number | null,
+    latitude: 43.592316 as number | null, // Base Adresse Nationale (api-adresse.data.gouv.fr)
+    longitude: 3.884157 as number | null,
   },
   telephone: "06 15 98 75 93",
   // Format international sans espace, utilisé pour les liens « Appeler »
@@ -77,13 +77,15 @@ export const entreprise = {
 
   /* ---------- Médiateur de la consommation (obligatoire pour la vente aux particuliers) ---------- */
   mediateur: {
-    nom: "[À COMPLÉTER : nom du médiateur de la consommation auquel vous adhérez]",
-    adresse: "[À COMPLÉTER : adresse postale du médiateur]",
-    site: "[À COMPLÉTER : site web du médiateur]",
+    // CM2C, référencé par la CECMC. Saisine en ligne : https://www.cm2c.net/declarer-un-litige.php
+    nom: "CM2C (Centre de la médiation de la consommation de conciliateurs de justice)",
+    adresse: "49 rue de Ponthieu, 75008 Paris",
+    site: "https://www.cm2c.net",
   },
 
   /* ---------- Assurance (recommandé pour les prestations web) ---------- */
-  assuranceRcPro: "[À COMPLÉTER : assureur RC Pro et zone couverte (facultatif, recommandé)]",
+  // Facultatif : nom de l'assureur RC Pro et zone couverte. Vide = la phrase n'est pas affichée.
+  assuranceRcPro: "",
 
   /* ---------- Services complémentaires ---------- */
   partenaireTransfertArgent: "Ria",
@@ -97,7 +99,7 @@ export const entreprise = {
 export const boutique = {
   devise: "EUR",
   livraison: {
-    nom: "Livraison à domicile (Colissimo suivi)",
+    nom: "Livraison à domicile (Colis Privé, suivi)",
     delai: "2 à 4 jours ouvrés après expédition",
     prix: 4.9, // € TTC
     gratuiteDes: 49, // € TTC : livraison offerte à partir de ce montant (null pour désactiver)
@@ -112,7 +114,9 @@ export const boutique = {
   // Garantie commerciale sur les réparations (en mois). Indiquez la vôtre.
   garantieReparationMois: 6,
   // Garantie commerciale sur les téléphones reconditionnés (en mois), en plus de la garantie légale de conformité de 2 ans.
-  garantieReconditionneMois: 12,
+  garantieReconditionneMois: 6,
+  // Cadeau remis avec chaque téléphone ou tablette acheté (null pour ne rien afficher)
+  cadeauAppareil: "Câble de charge offert" as string | null,
 };
 
 /* ============================================================================
@@ -134,7 +138,7 @@ export const offresWeb = [
     id: "vitrine",
     nom: "Site vitrine",
     accroche: "Être trouvé et contacté facilement",
-    prixDepuis: 690,
+    prixDepuis: 250,
     delai: "2 à 3 semaines",
     inclus: [
       "Jusqu'à 5 pages sur mesure",
@@ -151,7 +155,7 @@ export const offresWeb = [
     id: "ecommerce",
     nom: "Boutique en ligne",
     accroche: "Vendre 24 h/24, même quand vous êtes fermé",
-    prixDepuis: 1490,
+    prixDepuis: 850,
     delai: "4 à 6 semaines",
     inclus: [
       "Catalogue produits, variantes & stocks",
@@ -199,10 +203,10 @@ export const forfaitMaintenance = {
 export const prixVitrine = {
   reconditionnesDes: 119 as number | null, // smartphones reconditionnés, « dès »
   simPrepayee: 10 as number | null, // cartes SIM prépayées 200 Go
-  coquesDes: 10 as number | null,
-  hydrogel: 15 as number | null, // film hydrogel transparent posé
-  hydrogelAntiEspion: 20 as number | null,
-  batteriesExternesDes: 15 as number | null,
+  coquesDes: 9.9 as number | null,
+  hydrogel: 14.9 as number | null, // film hydrogel transparent posé
+  hydrogelAntiEspion: 19.9 as number | null,
+  batteriesExternesDes: 14.9 as number | null,
 };
 
 /* ============================================================================
