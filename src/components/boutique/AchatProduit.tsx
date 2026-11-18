@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { Check, Minus, Plus, ShoppingBag, Truck, Store, AlertCircle, Phone, MessageCircle, Info, ShieldCheck, Gift } from "lucide-react";
+import { Check, Minus, Plus, ShoppingBag, Truck, Store, AlertCircle, Phone, MessageCircle, Mail, Info, ShieldCheck, Gift } from "lucide-react";
 import { lienWhatsApp, messageReservation } from "@/lib/whatsapp";
 import { boutique, entreprise } from "@/config/entreprise";
 import type { Produit } from "@/lib/types";
@@ -32,7 +32,7 @@ export function AchatProduit({ produit, livraisonTexte, paiementEnLigne = false 
     : undefined;
   const stock = aVariantes ? variante?.stock ?? 0 : produit.stock ?? 0;
   const prixActuel = variante?.prix ?? produit.prix;
-  const lienReservation = lienWhatsApp(messageReservation({
+  const messageCommande = messageReservation({
     reference: produit.appareil?.reference ?? produit.accessoire?.reference ?? produit.id.toUpperCase(),
     nom: produit.nom,
     options: produit.appareil
@@ -44,7 +44,8 @@ export function AchatProduit({ produit, livraisonTexte, paiementEnLigne = false 
       : variante ? [Object.values(variante.options).join(" · ")] : [],
     prixTtc: prixActuel,
     mode,
-  }));
+  });
+  const lienReservation = lienWhatsApp(messageCommande);
   const dejaAuPanier = articles.find((a) => a.produitId === produit.id && (a.varianteId ?? "") === (variante?.id ?? ""))?.quantite ?? 0;
   const maxAjout = Math.max(0, stock - dejaAuPanier);
   const quantite = Math.max(1, Math.min(quantiteSaisie, maxAjout || 1));
@@ -213,10 +214,15 @@ export function AchatProduit({ produit, livraisonTexte, paiementEnLigne = false 
             >
               <MessageCircle className="size-5" aria-hidden /> Réserver sur WhatsApp
             </a>
-            <a href={`tel:${entreprise.telephoneLien}`} className="btn-ghost mt-2 w-full">
-              <Phone className="size-5" aria-hidden /> Ou réserver par téléphone
-            </a>
-            <p className="mt-2 text-center text-xs text-muted">Aucun paiement maintenant : on vous confirme la commande et le paiement sur WhatsApp.</p>
+            <div className="mt-2 grid grid-cols-2 gap-2">
+              <a href={`tel:${entreprise.telephoneLien}`} className="btn-ghost w-full">
+                <Phone className="size-5" aria-hidden /> Par téléphone
+              </a>
+              <a href={`mailto:${entreprise.email}?subject=${encodeURIComponent(`Commande ${produit.nom}`)}&body=${encodeURIComponent(messageCommande + "\n\nMon nom :\nMon téléphone :")}`} className="btn-ghost w-full">
+                <Mail className="size-5" aria-hidden /> Par e-mail
+              </a>
+            </div>
+            <p className="mt-2 text-center text-xs text-muted">Aucun paiement maintenant : on vous rappelle pour confirmer la commande et le paiement.</p>
           </div>
         ) : stock > 0 ? (
           <div className="mt-4 flex gap-3">

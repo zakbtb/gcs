@@ -123,16 +123,16 @@ function Bandeau({
       role="dialog"
       aria-modal="false"
       aria-labelledby={titreId}
-      className="no-print fixed inset-x-0 bottom-0 z-[60] p-3 sm:p-4"
+      className="no-print fixed inset-x-0 bottom-0 z-[60] p-3 sm:p-4 lg:right-auto lg:max-w-md"
     >
-      <div className="mx-auto max-w-3xl rounded-2xl border border-line bg-white p-5 text-ink shadow-pop sm:p-6">
+      <div className="mx-auto max-w-3xl rounded-2xl border border-line bg-white p-4 text-ink shadow-pop sm:p-5">
         <div className="flex items-start gap-3">
           <span className="mt-0.5 hidden size-10 shrink-0 place-items-center rounded-xl bg-brand-soft text-brand sm:grid">
             <Cookie className="size-5" aria-hidden />
           </span>
           <div className="min-w-0 flex-1">
             <div className="flex items-start justify-between gap-2">
-              <h2 id={titreId} className="text-lg font-semibold">
+              <h2 id={titreId} className="text-base font-semibold">
                 Vos choix en matière de cookies
               </h2>
               {fermer && (
@@ -142,10 +142,8 @@ function Bandeau({
               )}
             </div>
             <p className="mt-1 text-[0.85rem] leading-relaxed text-muted sm:text-sm">
-              Nous utilisons uniquement les cookies nécessaires au fonctionnement du site (panier, paiement sécurisé,
-              mémorisation de vos choix). Avec votre accord, nous pouvons aussi afficher des contenus tiers comme la
-              carte Google Maps{mesureAudience.active ? " et mesurer l'audience du site" : ""}. Vous pouvez changer
-              d&apos;avis à tout moment via le lien « Gérer les cookies » en bas de chaque page.{" "}
+              Cookies nécessaires uniquement (panier, paiement). Avec votre accord : carte Google Maps
+              {mesureAudience.active ? " et mesure d'audience" : ""}. Modifiable à tout moment en bas de page.{" "}
               <Link href="/cookies" className="font-medium text-brand underline underline-offset-2">
                 En savoir plus
               </Link>
@@ -177,7 +175,7 @@ function Bandeau({
               </fieldset>
             )}
 
-            <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3">
+            <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3">
               <button onClick={toutRefuser} className="btn btn-sm border border-ink bg-white text-ink hover:bg-surface">
                 Tout refuser
               </button>
